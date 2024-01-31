@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/headerBiddingFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.HeaderBiddingFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.HeaderBiddingFragment"
         android:label="@string/app_name">
 
         <!--In-App actions-->
@@ -563,296 +563,296 @@
     <!--In-App fragments-->
     <fragment
         android:id="@+id/navigation_in_app_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerFragment"
         android:label="In-App Banner" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_plugin_event_listener"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmBannerPluginEventListenerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmBannerPluginEventListenerFragment"
         android:label="In-App Banner PluginEventListener" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_plugin_renderer"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmBannerPluginRendererFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmBannerPluginRendererFragment"
         android:label="In-App Banner PluginRenderer" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_special_symbols"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerSpecialSymbolsFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerSpecialSymbolsFragment"
         android:label="In-App Banner" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_memory_leak_testing"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.testing.MemoryLeakTestingRenderingApiBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.testing.MemoryLeakTestingRenderingApiBannerFragment"
         android:label="In-App Banner Memory Leak Testing" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_in_layout"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerInLayoutFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerInLayoutFragment"
         android:label="In-App Banner In Layout" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_sdk_config"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerCreativeFactoryFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerCreativeFactoryFragment"
         android:label="In-App Banner Sdk Config" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_scrollable"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerScrollableFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannerScrollableFragment" />
 
     <fragment
         android:id="@+id/navigation_in_app_multisize_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmMultisizeBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmMultisizeBannerFragment"
         android:label="In-App Multisize Banner" />
 
     <fragment
         android:id="@+id/navigation_in_app_banners_and_interstitial"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannersWithInterstitialFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmBannersWithInterstitialFragment" />
 
     <fragment
         android:id="@+id/navigation_in_app_interstitial"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialFragment"
         android:label="In-App Interstitial" />
 
     <fragment
         android:id="@+id/navigation_in_app_interstitial_plugin_event_listener"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmInterstitialPluginEventListenerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmInterstitialPluginEventListenerFragment"
         android:label="In-App Interstitial PluginEventListener" />
 
     <fragment
         android:id="@+id/navigation_in_app_interstitial_plugin_renderer"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmInterstitialPluginRendererFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.pluginrenderer.PpmInterstitialPluginRendererFragment"
         android:label="In-App Interstitial PluginRenderer" />
 
     <fragment
         android:id="@+id/navigation_interstitial_memory_leak_testing"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.testing.MemoryLeakTestingRenderingApiInterstitialFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.testing.MemoryLeakTestingRenderingApiInterstitialFragment"
         android:label="In-App Interstitial" />
 
     <fragment
         android:id="@+id/navigation_in_app_interstitial_multiformat"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialMultiformatFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialMultiformatFragment"
         android:label="In-App Interstitial" />
 
     <fragment
         android:id="@+id/navigation_in_app_interstitial_close_button_area"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialCloseButtonAreaFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialCloseButtonAreaFragment"
         android:label="In-App Interstitial Close Button Area" />
 
     <fragment
         android:id="@+id/navigation_in_app_interstitial_sound_button"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialSoundButtonFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialSoundButtonFragment"
         android:label="In-App Interstitial with Sound button" />
 
     <fragment
         android:id="@+id/navigation_in_app_interstitial_skip_button"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialSkipButtonFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmInterstitialSkipButtonFragment"
         android:label="In-App Interstitial with Skip button" />
 
     <fragment
         android:id="@+id/navigation_in_app_video_rewarded"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmRewardedVideoFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmRewardedVideoFragment"
         android:label="In-App Video Rewarded" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_video"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmVideoFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmVideoFragment"
         android:label="Video Outstream (In-App)" />
 
     <fragment
         android:id="@+id/navigation_in_app_banner_video_feed"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmFeedVideoFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmFeedVideoFragment"
         android:label="Video Outstream Feed (In-App)" />
 
     <fragment
         android:id="@+id/navigation_in_app_native"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmNativeFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmNativeFragment" />
 
     <fragment
         android:id="@+id/navigation_in_app_native_links"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmNativeLinksFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmNativeLinksFragment" />
 
     <fragment
         android:id="@+id/navigation_in_app_native_feed"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.ppm.PpmNativeFeedFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.ppm.PpmNativeFeedFragment" />
 
     <!--GAM fragments-->
     <fragment
         android:id="@+id/navigation_gam_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamBannerFragment"
         android:label="GAM Banner" />
 
     <fragment
         android:id="@+id/navigation_gam_multisize_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamMultisizeBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamMultisizeBannerFragment"
         android:label="GAM Multisize Banner" />
 
     <fragment
         android:id="@+id/navigation_gam_banners_and_interstitial"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamBannersAndInterstitialFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamBannersAndInterstitialFragment" />
 
     <fragment
         android:id="@+id/navigation_gam_interstitial"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamInterstitialFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamInterstitialFragment"
         android:label="GAM Interstitial" />
 
     <fragment
         android:id="@+id/navigation_gam_interstitial_multiformat"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamInterstitialMultiformatFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamInterstitialMultiformatFragment"
         android:label="GAM Interstitial" />
 
     <fragment
         android:id="@+id/navigation_gam_video_rewarded"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamRewardedVideoFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamRewardedVideoFragment"
         android:label="GAM Video Rewarded" />
 
     <fragment
         android:id="@+id/navigation_gam_video_300_250"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamOutstreamFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamOutstreamFragment"
         android:label="Video Outstream (GAM)" />
 
     <fragment
         android:id="@+id/navigation_gam_video_300_250_feed"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamOustreamFeedFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamOustreamFeedFragment"
         android:label="Video Outstream Feed (GAM)" />
 
     <fragment
         android:id="@+id/navigation_gam_native"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamNativeFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamNativeFragment" />
 
     <fragment
         android:id="@+id/navigation_gam_native_feed"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamNativeFeedFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.rendering.GamNativeFeedFragment" />
 
 
     <!-- AdMob fragments -->
     <fragment
             android:id="@+id/navigation_admob_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobBannerFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobBannerFragment" />
     <fragment
         android:id="@+id/navigation_admob_random_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobBannerRandomFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobBannerRandomFragment" />
     <fragment
         android:id="@+id/navigation_admob_flexible_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobBannerFlexibleFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobBannerFlexibleFragment" />
     <fragment
         android:id="@+id/navigation_admob_interstitial"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobInterstitialFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobInterstitialFragment" />
     <fragment
         android:id="@+id/navigation_admob_interstitial_multiformat"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobInterstitialMultiformatFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobInterstitialMultiformatFragment" />
     <fragment
         android:id="@+id/navigation_admob_interstitial_random"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobInterstitialRandomFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobInterstitialRandomFragment" />
     <fragment
         android:id="@+id/navigation_admob_rewarded"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobRewardedFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobRewardedFragment" />
     <fragment
         android:id="@+id/navigation_admob_rewarded_random"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobRewardedRandomFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobRewardedRandomFragment" />
     <fragment
         android:id="@+id/navigation_admob_native"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.admob.AdMobNativeFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.admob.AdMobNativeFragment" />
 
     <!-- Applovin MAX fragments -->
     <fragment
         android:id="@+id/navigation_max_banner"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxBannerFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxBannerFragment" />
 
     <fragment
         android:id="@+id/navigation_max_banner_random"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxBannerFragmentRandom" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxBannerFragmentRandom" />
 
     <fragment
         android:id="@+id/navigation_max_banner_adaptive"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxBannerFragmentAdaptive" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxBannerFragmentAdaptive" />
 
     <fragment
         android:id="@+id/navigation_max_interstitial"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxInterstitialFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxInterstitialFragment" />
 
     <fragment
         android:id="@+id/navigation_max_interstitial_random"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxInterstitialFragmentRandom" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxInterstitialFragmentRandom" />
 
     <fragment
         android:id="@+id/navigation_max_interstitial_multiformat"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxInterstitialFragmentMultiformat" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxInterstitialFragmentMultiformat" />
 
     <fragment
         android:id="@+id/navigation_max_rewarded"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxRewardedFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxRewardedFragment" />
 
     <fragment
         android:id="@+id/navigation_max_rewarded_random"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxRewardedFragmentRandom" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxRewardedFragmentRandom" />
 
     <fragment
         android:id="@+id/navigation_max_native"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.max.MaxNativeFragment" />
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.max.MaxNativeFragment" />
     <fragment
         android:id="@+id/gamOriginalBannerFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalBannerFragment"
         android:label="GamOriginalBannerFragment" />
     <fragment
         android:id="@+id/gamOriginalMultiformatFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatBannerVideoNativeFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatBannerVideoNativeFragment"
         android:label="GamOriginalMultiformatFragment" />
     <fragment
         android:id="@+id/gamOriginalMultiformatNativeStylesFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatBannerVideoNativeStylesFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatBannerVideoNativeStylesFragment"
         android:label="GamOriginalMultiformatFragment" />
     <fragment
         android:id="@+id/gamOriginalMultiformatInterstitialFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatRewardedFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatRewardedFragment"
         android:label="GamOriginalMultiformatRewardedFragment" />
     <fragment
         android:id="@+id/gamOriginalMultiformatRewardedFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatRewardedFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalMultiformatRewardedFragment"
         android:label="GamOriginalMultiformatRewardedFragment" />
     <fragment
         android:id="@+id/gamOriginalBannerMemoryLeakTestingFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.testing.MemoryLeakTestingOriginalApiBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.testing.MemoryLeakTestingOriginalApiBannerFragment"
         android:label="GamOriginalBannerMemoryLeakTestingFragment" />
     <fragment
         android:id="@+id/gamOriginalBannerFragmentMultiformat"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalBannerRandomMultiformatFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalBannerRandomMultiformatFragment"
         android:label="GamOriginalBannerFragment" />
     <fragment
         android:id="@+id/gamOriginalInterstitialFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInterstitialFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInterstitialFragment"
         android:label="GamOriginalInterstitialFragment" />
     <fragment
         android:id="@+id/gamOriginalInterstitialFragmentMultiformat"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInterstitialRandomMultiformatFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInterstitialRandomMultiformatFragment"
         android:label="GamOriginalInterstitialFragment" />
     <fragment
         android:id="@+id/gamVideoOutstreamOriginalFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalOutstreamFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalOutstreamFragment"
         android:label="GamVideoOutstreamOriginalFragment" />
     <fragment
         android:id="@+id/gamVideoOutstreamOriginalFragmentNewApi"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalOutstreamNewApiFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalOutstreamNewApiFragment"
         android:label="GamVideoOutstreamOriginalFragment" />
     <fragment
         android:id="@+id/gamOriginalRewardedVideoFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalRewardedVideoFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalRewardedVideoFragment"
         android:label="GamOriginalRewardedVideoFragment" />
     <fragment
         android:id="@+id/gamOriginalInstreamFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInstreamFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInstreamFragment"
         android:label="GamOriginalInstreamFragment" />
     <fragment
         android:id="@+id/gamOriginalInstreamFragmentNewApi"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInstreamNewApiFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalInstreamNewApiFragment"
         android:label="GamOriginalInstreamFragment" />
     <fragment
         android:id="@+id/gamOriginalNativeInAppFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalNativeInAppFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalNativeInAppFragment"
         android:label="GamOriginalNativeInAppFragment" />
     <fragment
         android:id="@+id/gamOriginalNativeBannerFragment"
-        android:name="org.prebid.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalNativeBannerFragment"
+        android:name="org.silvermob.mobile.renderingtestapp.plugplay.bidding.gam.original.GamOriginalNativeBannerFragment"
         android:label="GamOriginalNativeBannerFragment" />
 
 </navigation>

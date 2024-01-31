@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.ui.viewholders;
+package org.silvermob.mobile.drprebid.ui.viewholders;
 
 import android.content.Intent;
 import android.view.View;
@@ -11,16 +11,16 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
-import org.prebid.mobile.drprebid.R;
-import org.prebid.mobile.drprebid.managers.SettingsManager;
-import org.prebid.mobile.drprebid.model.AdFormat;
-import org.prebid.mobile.drprebid.model.AdSize;
-import org.prebid.mobile.drprebid.model.GeneralSettings;
-import org.prebid.mobile.drprebid.model.HelpScreen;
-import org.prebid.mobile.drprebid.ui.activities.InfoActivity;
-import org.prebid.mobile.drprebid.ui.dialog.AdSizeDialog;
-import org.prebid.mobile.drprebid.ui.viewmodels.SettingsViewModel;
-import org.prebid.mobile.drprebid.util.HelpScreenUtil;
+import org.silvermob.mobile.drprebid.R;
+import org.silvermob.mobile.drprebid.managers.SettingsManager;
+import org.silvermob.mobile.drprebid.model.AdFormat;
+import org.silvermob.mobile.drprebid.model.AdSize;
+import org.silvermob.mobile.drprebid.model.GeneralSettings;
+import org.silvermob.mobile.drprebid.model.HelpScreen;
+import org.silvermob.mobile.drprebid.ui.activities.InfoActivity;
+import org.silvermob.mobile.drprebid.ui.dialog.AdSizeDialog;
+import org.silvermob.mobile.drprebid.ui.viewmodels.SettingsViewModel;
+import org.silvermob.mobile.drprebid.util.HelpScreenUtil;
 
 public class GeneralSettingsViewHolder extends RecyclerView.ViewHolder implements SettingsViewHolder, LifecycleOwner {
 

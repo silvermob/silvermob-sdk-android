@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.validation;
+package org.silvermob.mobile.drprebid.validation;
 
 import android.content.Context;
 import android.net.Uri;
@@ -6,14 +6,14 @@ import android.text.TextUtils;
 import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.prebid.mobile.*;
-import org.prebid.mobile.drprebid.Constants;
-import org.prebid.mobile.drprebid.async.DemandTestResultTask;
-import org.prebid.mobile.drprebid.async.DemandTestTask;
-import org.prebid.mobile.drprebid.managers.DemandTestManager;
-import org.prebid.mobile.drprebid.managers.SettingsManager;
-import org.prebid.mobile.drprebid.model.AdSize;
-import org.prebid.mobile.drprebid.model.*;
+import org.silvermob.mobile.*;
+import org.silvermob.mobile.drprebid.Constants;
+import org.silvermob.mobile.drprebid.async.DemandTestResultTask;
+import org.silvermob.mobile.drprebid.async.DemandTestTask;
+import org.silvermob.mobile.drprebid.managers.DemandTestManager;
+import org.silvermob.mobile.drprebid.managers.SettingsManager;
+import org.silvermob.mobile.drprebid.model.AdSize;
+import org.silvermob.mobile.drprebid.model.*;
 
 import java.util.*;
 

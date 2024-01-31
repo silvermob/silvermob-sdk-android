@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.ui.viewholders;
+package org.silvermob.mobile.drprebid.ui.viewholders;
 
 import android.content.Intent;
 import android.view.View;
@@ -13,11 +13,11 @@ import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.prebid.mobile.drprebid.R;
-import org.prebid.mobile.drprebid.model.HelpScreen;
-import org.prebid.mobile.drprebid.ui.activities.InfoActivity;
-import org.prebid.mobile.drprebid.ui.viewmodels.SdkValidationViewModel;
-import org.prebid.mobile.drprebid.util.HelpScreenUtil;
+import org.silvermob.mobile.drprebid.R;
+import org.silvermob.mobile.drprebid.model.HelpScreen;
+import org.silvermob.mobile.drprebid.ui.activities.InfoActivity;
+import org.silvermob.mobile.drprebid.ui.viewmodels.SdkValidationViewModel;
+import org.silvermob.mobile.drprebid.util.HelpScreenUtil;
 
 public class SdkValidationViewHolder extends RecyclerView.ViewHolder implements TestResultViewHolder, LifecycleOwner {
     private ProgressBar totalProgress;

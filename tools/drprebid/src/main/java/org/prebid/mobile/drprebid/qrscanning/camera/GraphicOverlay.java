@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.qrscanning.camera;
+package org.silvermob.mobile.drprebid.qrscanning.camera;
 
 import android.content.Context;
 import android.graphics.Canvas;

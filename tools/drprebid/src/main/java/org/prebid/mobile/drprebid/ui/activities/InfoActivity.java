@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.ui.activities;
+package org.silvermob.mobile.drprebid.ui.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.webkit.WebView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import org.prebid.mobile.drprebid.R;
+import org.silvermob.mobile.drprebid.R;
 
 import java.util.Locale;
 

@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.util;
+package org.silvermob.mobile.drprebid.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

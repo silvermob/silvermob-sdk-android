@@ -1,8 +1,8 @@
-package org.prebid.mobile.drprebid.managers;
+package org.silvermob.mobile.drprebid.managers;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import org.prebid.mobile.drprebid.Constants;
+import org.silvermob.mobile.drprebid.Constants;
 
 public class QrCodeScanCacheManager {
     private static final String PREFERENCES_NAME = "dr_prebid_qr_scan_cache";

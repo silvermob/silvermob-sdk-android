@@ -1,9 +1,9 @@
-package org.prebid.mobile.drprebid.managers;
+package org.silvermob.mobile.drprebid.managers;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import org.prebid.mobile.drprebid.Constants;
-import org.prebid.mobile.drprebid.model.*;
+import org.silvermob.mobile.drprebid.Constants;
+import org.silvermob.mobile.drprebid.model.*;
 
 public class SettingsManager {
     private static final String PREFERENCES_NAME = "dr_prebid_settings";

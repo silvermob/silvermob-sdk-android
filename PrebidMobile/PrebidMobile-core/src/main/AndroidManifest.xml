@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.prebid.mobile.core">
+    package="org.silvermob.mobile.core">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,7 +13,7 @@
             android:required="false" />
         <activity
                 android:exported="true"
-                android:name="org.prebid.mobile.rendering.views.browser.AdBrowserActivity"
+                android:name="org.silvermob.mobile.rendering.views.browser.AdBrowserActivity"
                 android:configChanges="orientation|screenSize|keyboardHidden"
                 android:theme="@android:style/Theme.Translucent.NoTitleBar"
                 android:windowSoftInputMode="adjustPan|stateHidden"

@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.model;
+package org.silvermob.mobile.drprebid.model;
 
 import java.util.HashMap;
 import java.util.Map;

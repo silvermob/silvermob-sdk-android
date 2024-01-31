@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.ui.viewmodels;
+package org.silvermob.mobile.drprebid.ui.viewmodels;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.LiveData;

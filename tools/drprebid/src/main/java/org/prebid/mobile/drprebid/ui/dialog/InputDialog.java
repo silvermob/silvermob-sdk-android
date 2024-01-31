@@ -1,4 +1,4 @@
-package org.prebid.mobile.drprebid.ui.dialog;
+package org.silvermob.mobile.drprebid.ui.dialog;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -14,12 +14,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProviders;
-import org.prebid.mobile.drprebid.Constants;
-import org.prebid.mobile.drprebid.R;
-import org.prebid.mobile.drprebid.managers.QrCodeScanCacheManager;
-import org.prebid.mobile.drprebid.managers.SettingsManager;
-import org.prebid.mobile.drprebid.ui.activities.QrCodeCaptureActivity;
-import org.prebid.mobile.drprebid.ui.viewmodels.SettingsViewModel;
+import org.silvermob.mobile.drprebid.Constants;
+import org.silvermob.mobile.drprebid.R;
+import org.silvermob.mobile.drprebid.managers.QrCodeScanCacheManager;
+import org.silvermob.mobile.drprebid.managers.SettingsManager;
+import org.silvermob.mobile.drprebid.ui.activities.QrCodeCaptureActivity;
+import org.silvermob.mobile.drprebid.ui.viewmodels.SettingsViewModel;
 
 public class InputDialog extends DialogFragment {
 

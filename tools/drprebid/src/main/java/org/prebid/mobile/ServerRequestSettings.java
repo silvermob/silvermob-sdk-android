@@ -1,4 +1,4 @@
-package org.prebid.mobile;
+package org.silvermob.mobile;
 
 import android.content.Context;
 

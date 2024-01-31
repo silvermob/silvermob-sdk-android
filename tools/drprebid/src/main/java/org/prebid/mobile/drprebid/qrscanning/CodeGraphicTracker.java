@@ -1,11 +1,11 @@
-package org.prebid.mobile.drprebid.qrscanning;
+package org.silvermob.mobile.drprebid.qrscanning;
 
 import android.content.Context;
 import androidx.annotation.UiThread;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.Tracker;
 import com.google.android.gms.vision.barcode.Barcode;
-import org.prebid.mobile.drprebid.qrscanning.camera.GraphicOverlay;
+import org.silvermob.mobile.drprebid.qrscanning.camera.GraphicOverlay;
 
 public class CodeGraphicTracker extends Tracker<Barcode> {
 

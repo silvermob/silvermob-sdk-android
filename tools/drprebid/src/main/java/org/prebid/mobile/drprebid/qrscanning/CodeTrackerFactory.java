@@ -1,10 +1,10 @@
-package org.prebid.mobile.drprebid.qrscanning;
+package org.silvermob.mobile.drprebid.qrscanning;
 
 import android.content.Context;
 import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.Tracker;
 import com.google.android.gms.vision.barcode.Barcode;
-import org.prebid.mobile.drprebid.qrscanning.camera.GraphicOverlay;
+import org.silvermob.mobile.drprebid.qrscanning.camera.GraphicOverlay;
 
 public class CodeTrackerFactory implements MultiProcessor.Factory<Barcode> {
 

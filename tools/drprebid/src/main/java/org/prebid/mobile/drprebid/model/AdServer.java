@@ -1,6 +1,6 @@
-package org.prebid.mobile.drprebid.model;
+package org.silvermob.mobile.drprebid.model;
 
-import org.prebid.mobile.drprebid.Constants;
+import org.silvermob.mobile.drprebid.Constants;
 
 public enum AdServer {
     GOOGLE_AD_MANAGER(Constants.Settings.AdServerCodes.GOOGLE_AD_MANAGER);

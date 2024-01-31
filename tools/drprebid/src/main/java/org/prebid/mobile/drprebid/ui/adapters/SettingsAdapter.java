@@ -1,14 +1,14 @@
-package org.prebid.mobile.drprebid.ui.adapters;
+package org.silvermob.mobile.drprebid.ui.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import org.prebid.mobile.drprebid.R;
-import org.prebid.mobile.drprebid.managers.SettingsManager;
-import org.prebid.mobile.drprebid.model.*;
-import org.prebid.mobile.drprebid.ui.viewholders.*;
+import org.silvermob.mobile.drprebid.R;
+import org.silvermob.mobile.drprebid.managers.SettingsManager;
+import org.silvermob.mobile.drprebid.model.*;
+import org.silvermob.mobile.drprebid.ui.viewholders.*;
 
 import java.util.ArrayList;
 import java.util.List;

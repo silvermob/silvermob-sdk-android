@@ -1,15 +1,15 @@
-package org.prebid.mobile.drprebid.ui.adapters;
+package org.silvermob.mobile.drprebid.ui.adapters;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import org.prebid.mobile.drprebid.R;
-import org.prebid.mobile.drprebid.model.AdServerValidationResult;
-import org.prebid.mobile.drprebid.model.PrebidServerValidationResult;
-import org.prebid.mobile.drprebid.model.ResultItem;
-import org.prebid.mobile.drprebid.model.SdkValidationResult;
-import org.prebid.mobile.drprebid.ui.viewholders.*;
+import org.silvermob.mobile.drprebid.R;
+import org.silvermob.mobile.drprebid.model.AdServerValidationResult;
+import org.silvermob.mobile.drprebid.model.PrebidServerValidationResult;
+import org.silvermob.mobile.drprebid.model.ResultItem;
+import org.silvermob.mobile.drprebid.model.SdkValidationResult;
+import org.silvermob.mobile.drprebid.ui.viewholders.*;
 
 import java.util.ArrayList;
 import java.util.List;

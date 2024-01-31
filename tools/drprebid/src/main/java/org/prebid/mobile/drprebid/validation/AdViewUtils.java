@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package org.prebid.mobile.drprebid.validation;
+package org.silvermob.mobile.drprebid.validation;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -22,7 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.ValueCallback;
 import android.webkit.WebView;
-import org.prebid.mobile.LogUtil;
+import org.silvermob.mobile.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;

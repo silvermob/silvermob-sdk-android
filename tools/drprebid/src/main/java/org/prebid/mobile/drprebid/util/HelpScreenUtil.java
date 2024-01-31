@@ -1,9 +1,9 @@
-package org.prebid.mobile.drprebid.util;
+package org.silvermob.mobile.drprebid.util;
 
 import android.content.Context;
 
-import org.prebid.mobile.drprebid.R;
-import org.prebid.mobile.drprebid.model.HelpScreen;
+import org.silvermob.mobile.drprebid.R;
+import org.silvermob.mobile.drprebid.model.HelpScreen;
 
 public class HelpScreenUtil {
 

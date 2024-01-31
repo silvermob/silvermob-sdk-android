@@ -20,8 +20,8 @@ import com.applovin.mediation.adapters.prebid.managers.MaxInterstitialManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxNativeManager;
 import com.applovin.sdk.AppLovinSdk;
 
-import org.prebid.mobile.PrebidMobile;
-import org.prebid.mobile.TargetingParams;
+import org.silvermob.mobile.PrebidMobile;
+import org.silvermob.mobile.TargetingParams;
 
 public class PrebidMaxMediationAdapter extends MediationAdapterBase implements MaxAdViewAdapter, MaxInterstitialAdapter, MaxRewardedAdapter, MaxNativeAdAdapter {
 
@@ -55,7 +55,7 @@ public class PrebidMaxMediationAdapter extends MediationAdapterBase implements M
 
                 PrebidMobile.initializeSdk(activity.getApplicationContext(), status -> {
                     if (onCompletionListener != null) {
-                        if (status != org.prebid.mobile.api.data.InitializationStatus.FAILED) {
+                        if (status != org.silvermob.mobile.api.data.InitializationStatus.FAILED) {
                             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_SUCCESS, null);
                         } else {
                             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_FAILURE, status.getDescription());

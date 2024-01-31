@@ -1,6 +1,6 @@
-package org.prebid.mobile.drprebid.model;
+package org.silvermob.mobile.drprebid.model;
 
-import org.prebid.mobile.drprebid.Constants;
+import org.silvermob.mobile.drprebid.Constants;
 
 public enum AdFormat {
     BANNER(Constants.Settings.AdFormatCodes.BANNER),

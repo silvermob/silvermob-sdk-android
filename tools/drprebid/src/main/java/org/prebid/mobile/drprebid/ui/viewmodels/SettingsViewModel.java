@@ -1,10 +1,10 @@
-package org.prebid.mobile.drprebid.ui.viewmodels;
+package org.silvermob.mobile.drprebid.ui.viewmodels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import org.prebid.mobile.drprebid.model.AdSize;
-import org.prebid.mobile.drprebid.model.PrebidServer;
+import org.silvermob.mobile.drprebid.model.AdSize;
+import org.silvermob.mobile.drprebid.model.PrebidServer;
 
 public class SettingsViewModel extends ViewModel {
 
