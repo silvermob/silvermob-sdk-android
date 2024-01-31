@@ -1,28 +1,28 @@
-include ':PrebidMobile',
-        ':PrebidMobile-core',
-        ':PrebidMobile-gamEventHandlers',
-        ':PrebidMobile-admobAdapters',
-        ':PrebidMobile-maxAdapters',
+include ':SilverMobSdk',
+        ':SilverMobSdk-core',
+        ':SilverMobSdk-gamEventHandlers',
+        ':SilverMobSdk-admobAdapters',
+        ':SilverMobSdk-maxAdapters',
         ':test-utils',
         ':omsdk-android',
         // Prebid Demo apps
-        ':PrebidDemoJava',
-        ':PrebidDemoKotlin',
-        ':PrebidInternalTestApp'
+        ':SilverMobDemoJava',
+        ':SilverMobDemoKotlin',
+        ':SilverMobInternalTestApp'
         // Other
 //        ':DrPrebid'
 
 
-project(':PrebidMobile').projectDir = new File('PrebidMobile')
-project(':PrebidMobile-core').projectDir = new File('PrebidMobile/PrebidMobile-core')
-project(':PrebidMobile-gamEventHandlers').projectDir = new File('PrebidMobile/PrebidMobile-gamEventHandlers')
-project(':PrebidMobile-admobAdapters').projectDir = new File('PrebidMobile/PrebidMobile-admobAdapters')
-project(':PrebidMobile-maxAdapters').projectDir = new File('PrebidMobile/PrebidMobile-maxAdapters')
-project(':omsdk-android').projectDir = new File('PrebidMobile/omsdk-android')
-project(':test-utils').projectDir = new File('PrebidMobile/test-utils')
+project(':SilverMobSdk').projectDir = new File('SilverMobSdk')
+project(':SilverMobSdk-core').projectDir = new File('SilverMobSdk/SilverMobSdk-core')
+project(':SilverMobSdk-gamEventHandlers').projectDir = new File('SilverMobSdk/SilverMobSdk-gamEventHandlers')
+project(':SilverMobSdk-admobAdapters').projectDir = new File('SilverMobSdk/SilverMobSdk-admobAdapters')
+project(':SilverMobSdk-maxAdapters').projectDir = new File('SilverMobSdk/SilverMobSdk-maxAdapters')
+project(':omsdk-android').projectDir = new File('SilverMobSdk/omsdk-android')
+project(':test-utils').projectDir = new File('SilverMobSdk/test-utils')
 
-project(':PrebidDemoJava').projectDir = new File('Example/PrebidDemoJava')
-project(':PrebidDemoKotlin').projectDir = new File('Example/PrebidDemoKotlin')
-project(':PrebidInternalTestApp').projectDir = new File('Example/PrebidInternalTestApp')
+project(':SilverMobDemoJava').projectDir = new File('Example/SilverMobDemoJava')
+project(':SilverMobDemoKotlin').projectDir = new File('Example/SilverMobDemoKotlin')
+project(':SilverMobInternalTestApp').projectDir = new File('Example/SilverMobInternalTestApp')
 
 //project(':DrPrebid').projectDir = new File('tools/drprebid')

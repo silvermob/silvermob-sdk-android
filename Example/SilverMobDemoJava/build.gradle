@@ -28,7 +28,7 @@ android {
 
 dependencies {
 //    Source code
-    implementation project(':PrebidMobile')
+    implementation project(':SilverMobSdk')
 
     // For testing staging releases
 //    implementation "org.prebid:prebid-mobile-sdk:$prebidSdkVersionName"

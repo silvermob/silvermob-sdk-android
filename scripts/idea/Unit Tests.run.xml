@@ -10,10 +10,10 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value=":PrebidMobile-core:testReleaseUnitTest" />
-          <option value=":PrebidMobile-gamEventHandlers:testReleaseUnitTest" />
-          <option value=":PrebidMobile-admobAdapters:testReleaseUnitTest" />
-          <option value=":PrebidMobile-maxAdapters:testReleaseUnitTest" />
+          <option value=":SilverMobSdk-core:testReleaseUnitTest" />
+          <option value=":SilverMobSdk-gamEventHandlers:testReleaseUnitTest" />
+          <option value=":SilverMobSdk-admobAdapters:testReleaseUnitTest" />
+          <option value=":SilverMobSdk-maxAdapters:testReleaseUnitTest" />
         </list>
       </option>
       <option name="vmOptions" />

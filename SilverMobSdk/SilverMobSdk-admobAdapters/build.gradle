@@ -9,6 +9,6 @@ android {
 }
 
 dependencies {
-    implementation project(":PrebidMobile")
+    implementation project(':SilverMobSdk')
     implementation 'com.google.android.gms:play-services-ads:+'
 }

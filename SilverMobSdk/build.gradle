@@ -2,5 +2,5 @@ apply from: 'android.gradle'
 apply from: 'publisher.gradle'
 
 dependencies {
-    api project(':PrebidMobile-core')
+    api project(':SilverMobSdk-core')
 }

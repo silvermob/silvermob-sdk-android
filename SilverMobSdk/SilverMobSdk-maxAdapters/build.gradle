@@ -3,6 +3,6 @@ apply from: '../publisher.gradle'
 apply from: '../tests.gradle'
 
 dependencies {
-    implementation project(":PrebidMobile")
+    implementation project(':SilverMobSdk')
     implementation "com.applovin:applovin-sdk:11.3.2"
 }

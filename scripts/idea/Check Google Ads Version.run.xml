@@ -10,7 +10,7 @@
             </option>
             <option name="taskNames">
                 <list>
-                    <option value=":PrebidMobile-gamEventHandlers:testDebugUnitTest"/>
+                    <option value=":SilverMobSdk-gamEventHandlers:testDebugUnitTest"/>
                     <option value="--tests"/>
                     <option value="&quot;com.silvermob.sdk.eventhandlers.global.GoogleAdVersionTest&quot;"/>
                 </list>

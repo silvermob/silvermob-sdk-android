@@ -62,10 +62,10 @@ workflows:
     jobs:
       - build:
          name: Build Java Demo 
-         buildCommand: ./gradlew PrebidDemoJava:assembleDebug
+         buildCommand: ./gradlew SilverMobDemoJava:assembleDebug
       - build:
           name: Build Internal Test App
-          buildCommand: ./gradlew PrebidInternalTestApp:assembleDebug
+          buildCommand: ./gradlew SilverMobInternalTestApp:assembleDebug
       - build:
          name: Build PrebidMobile Frameworks
          buildCommand: scripts/buildPrebidMobile.sh -nojar
