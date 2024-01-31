@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.validation;
+package com.silvermob.sdk.drprebid.validation;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -8,16 +8,16 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
 import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
-import org.silvermob.sdk.*;
-import org.silvermob.sdk.drprebid.managers.SettingsManager;
-import org.silvermob.sdk.drprebid.model.AdSize;
-import org.silvermob.sdk.drprebid.model.*;
+import com.silvermob.sdk.*;
+import com.silvermob.sdk.drprebid.managers.SettingsManager;
+import com.silvermob.sdk.drprebid.model.AdSize;
+import com.silvermob.sdk.drprebid.model.*;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.silvermob.sdk.ResultCode.SUCCESS;
+import static com.silvermob.sdk.ResultCode.SUCCESS;
 
 public class SdkTest {
     private static final String TAG = SdkTest.class.getSimpleName();

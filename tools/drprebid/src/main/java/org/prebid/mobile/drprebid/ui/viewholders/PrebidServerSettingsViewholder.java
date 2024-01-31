@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.ui.viewholders;
+package com.silvermob.sdk.drprebid.ui.viewholders;
 
 import android.content.Intent;
 import android.text.TextUtils;
@@ -11,17 +11,17 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
-import org.silvermob.sdk.drprebid.Constants;
-import org.silvermob.sdk.drprebid.R;
-import org.silvermob.sdk.drprebid.managers.SettingsManager;
-import org.silvermob.sdk.drprebid.model.HelpScreen;
-import org.silvermob.sdk.drprebid.model.PrebidServer;
-import org.silvermob.sdk.drprebid.model.PrebidServerSettings;
-import org.silvermob.sdk.drprebid.ui.activities.InfoActivity;
-import org.silvermob.sdk.drprebid.ui.dialog.InputDialog;
-import org.silvermob.sdk.drprebid.ui.dialog.PrebidServerDialog;
-import org.silvermob.sdk.drprebid.ui.viewmodels.SettingsViewModel;
-import org.silvermob.sdk.drprebid.util.HelpScreenUtil;
+import com.silvermob.sdk.drprebid.Constants;
+import com.silvermob.sdk.drprebid.R;
+import com.silvermob.sdk.drprebid.managers.SettingsManager;
+import com.silvermob.sdk.drprebid.model.HelpScreen;
+import com.silvermob.sdk.drprebid.model.PrebidServer;
+import com.silvermob.sdk.drprebid.model.PrebidServerSettings;
+import com.silvermob.sdk.drprebid.ui.activities.InfoActivity;
+import com.silvermob.sdk.drprebid.ui.dialog.InputDialog;
+import com.silvermob.sdk.drprebid.ui.dialog.PrebidServerDialog;
+import com.silvermob.sdk.drprebid.ui.viewmodels.SettingsViewModel;
+import com.silvermob.sdk.drprebid.util.HelpScreenUtil;
 
 public class PrebidServerSettingsViewholder extends RecyclerView.ViewHolder implements SettingsViewHolder, LifecycleOwner, View.OnClickListener {
 

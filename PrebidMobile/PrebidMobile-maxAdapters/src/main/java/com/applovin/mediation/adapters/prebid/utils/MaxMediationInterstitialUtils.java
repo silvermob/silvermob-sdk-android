@@ -3,8 +3,8 @@ package com.applovin.mediation.adapters.prebid.utils;
 import androidx.annotation.Nullable;
 import com.applovin.mediation.adapters.PrebidMaxMediationAdapter;
 import com.applovin.mediation.ads.MaxInterstitialAd;
-import org.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import org.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 
 import java.util.HashMap;
 

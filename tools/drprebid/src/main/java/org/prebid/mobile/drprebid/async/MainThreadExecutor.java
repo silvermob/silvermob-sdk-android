@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.async;
+package com.silvermob.sdk.drprebid.async;
 
 import android.os.Handler;
 import android.os.Looper;

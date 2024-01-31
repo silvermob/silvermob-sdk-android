@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.ui.fragments;
+package com.silvermob.sdk.drprebid.ui.fragments;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import org.silvermob.sdk.drprebid.R;
+import com.silvermob.sdk.drprebid.R;
 
 public class ImageFragment extends Fragment {
     private static final String IMAGE_RESOURCE_ARG = "image_res";

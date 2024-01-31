@@ -21,7 +21,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.silvermob.sdk.rendering.bidding.data.ntv.MediaView
+    <com.silvermob.sdk.rendering.bidding.data.ntv.MediaView
         android:id="@+id/mediaView"
         android:layout_width="300dp"
         android:layout_height="250dp"

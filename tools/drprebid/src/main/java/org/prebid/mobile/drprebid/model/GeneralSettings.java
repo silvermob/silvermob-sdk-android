@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.model;
+package com.silvermob.sdk.drprebid.model;
 
 public class GeneralSettings extends SettingsItem {
     private AdFormat adFormat;

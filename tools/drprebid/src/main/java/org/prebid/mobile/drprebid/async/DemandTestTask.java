@@ -1,9 +1,9 @@
-package org.silvermob.sdk.drprebid.async;
+package com.silvermob.sdk.drprebid.async;
 
 import android.util.Log;
 
-import org.silvermob.sdk.drprebid.managers.DemandTestManager;
-import org.silvermob.sdk.drprebid.util.IOUtil;
+import com.silvermob.sdk.drprebid.managers.DemandTestManager;
+import com.silvermob.sdk.drprebid.util.IOUtil;
 
 import java.io.InputStream;
 

@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.ui.viewmodels;
+package com.silvermob.sdk.drprebid.ui.viewmodels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

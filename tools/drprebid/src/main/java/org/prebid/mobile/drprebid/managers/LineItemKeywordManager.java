@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.managers;
+package com.silvermob.sdk.drprebid.managers;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,11 +8,11 @@ import okhttp3.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.silvermob.sdk.drprebid.model.AdFormat;
-import org.silvermob.sdk.drprebid.model.AdSize;
-import org.silvermob.sdk.drprebid.model.PrebidServer;
-import org.silvermob.sdk.drprebid.model.PrebidServerSettings;
-import org.silvermob.sdk.drprebid.util.IOUtil;
+import com.silvermob.sdk.drprebid.model.AdFormat;
+import com.silvermob.sdk.drprebid.model.AdSize;
+import com.silvermob.sdk.drprebid.model.PrebidServer;
+import com.silvermob.sdk.drprebid.model.PrebidServerSettings;
+import com.silvermob.sdk.drprebid.util.IOUtil;
 
 import java.io.IOException;
 import java.io.InputStream;

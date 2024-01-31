@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.ui.activities;
+package com.silvermob.sdk.drprebid.ui.activities;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -8,16 +8,16 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.gms.ads.MobileAds;
-import org.silvermob.sdk.drprebid.R;
-import org.silvermob.sdk.drprebid.managers.SettingsManager;
-import org.silvermob.sdk.drprebid.model.AdServerSettings;
-import org.silvermob.sdk.drprebid.ui.adapters.TestResultsAdapter;
-import org.silvermob.sdk.drprebid.ui.viewmodels.AdServerValidationViewModel;
-import org.silvermob.sdk.drprebid.ui.viewmodels.PrebidServerValidationViewModel;
-import org.silvermob.sdk.drprebid.ui.viewmodels.SdkValidationViewModel;
-import org.silvermob.sdk.drprebid.validation.AdServerTest;
-import org.silvermob.sdk.drprebid.validation.RealTimeDemandTest;
-import org.silvermob.sdk.drprebid.validation.SdkTest;
+import com.silvermob.sdk.drprebid.R;
+import com.silvermob.sdk.drprebid.managers.SettingsManager;
+import com.silvermob.sdk.drprebid.model.AdServerSettings;
+import com.silvermob.sdk.drprebid.ui.adapters.TestResultsAdapter;
+import com.silvermob.sdk.drprebid.ui.viewmodels.AdServerValidationViewModel;
+import com.silvermob.sdk.drprebid.ui.viewmodels.PrebidServerValidationViewModel;
+import com.silvermob.sdk.drprebid.ui.viewmodels.SdkValidationViewModel;
+import com.silvermob.sdk.drprebid.validation.AdServerTest;
+import com.silvermob.sdk.drprebid.validation.RealTimeDemandTest;
+import com.silvermob.sdk.drprebid.validation.SdkTest;
 
 public class TestResultsActivity extends AppCompatActivity {
 

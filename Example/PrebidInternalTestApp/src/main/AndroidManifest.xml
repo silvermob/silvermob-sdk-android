@@ -17,7 +17,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.silvermob.sdk.renderingtestapp">
+    package="com.silvermob.sdk.renderingtestapp">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,7 +31,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="org.silvermob.sdk.renderingtestapp.InternalTestApplication"
+        android:name="com.silvermob.sdk.renderingtestapp.InternalTestApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:label="@string/app_name"
@@ -39,7 +39,7 @@
         android:theme="@style/SdkDemoTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-                android:name="org.silvermob.sdk.renderingtestapp.MainActivity"
+                android:name="com.silvermob.sdk.renderingtestapp.MainActivity"
                 android:configChanges="orientation|screenSize|keyboardHidden"
                 android:windowSoftInputMode="adjustPan|stateHidden" android:exported="true">
 

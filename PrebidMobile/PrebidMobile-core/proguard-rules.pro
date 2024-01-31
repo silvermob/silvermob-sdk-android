@@ -1,10 +1,10 @@
 # Save names for all Prebid classes
--keepnames class org.silvermob.sdk.**
--keepnames interface org.silvermob.sdk.**
--keepnames enum org.silvermob.sdk.**
+-keepnames class com.silvermob.sdk.**
+-keepnames interface com.silvermob.sdk.**
+-keepnames enum com.silvermob.sdk.**
 
 # Google Ad Manager and AdMob
--keep class org.silvermob.sdk.PrebidNativeAd { *; }
+-keep class com.silvermob.sdk.PrebidNativeAd { *; }
 -keep class com.google.android.gms.ads.admanager.AdManagerAdView { *; }
 -keep class com.google.android.gms.ads.admanager.AdManagerAdRequest { *; }
 -keep class com.google.android.gms.ads.admanager.AdManagerAdRequest$Builder { *; }

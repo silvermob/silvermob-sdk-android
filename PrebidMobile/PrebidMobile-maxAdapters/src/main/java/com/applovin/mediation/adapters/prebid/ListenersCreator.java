@@ -5,9 +5,9 @@ import com.applovin.mediation.adapter.MaxAdapterError;
 import com.applovin.mediation.adapter.listeners.MaxAdViewAdapterListener;
 import com.applovin.mediation.adapter.listeners.MaxInterstitialAdapterListener;
 import com.applovin.mediation.adapter.listeners.MaxRewardedAdapterListener;
-import org.silvermob.sdk.api.exceptions.AdException;
-import org.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener;
-import org.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
+import com.silvermob.sdk.api.exceptions.AdException;
+import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener;
+import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
 
 public class ListenersCreator {
 

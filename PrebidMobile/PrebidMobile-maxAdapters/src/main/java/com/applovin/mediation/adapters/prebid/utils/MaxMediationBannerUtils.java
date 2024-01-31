@@ -4,12 +4,12 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import com.applovin.mediation.adapters.PrebidMaxMediationAdapter;
 import com.applovin.mediation.ads.MaxAdView;
-import org.silvermob.sdk.LogUtil;
-import org.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import org.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
-import org.silvermob.sdk.rendering.models.internal.VisibilityTrackerOption;
-import org.silvermob.sdk.rendering.models.ntv.NativeEventTracker;
-import org.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
+import com.silvermob.sdk.LogUtil;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
+import com.silvermob.sdk.rendering.models.internal.VisibilityTrackerOption;
+import com.silvermob.sdk.rendering.models.ntv.NativeEventTracker;
+import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;

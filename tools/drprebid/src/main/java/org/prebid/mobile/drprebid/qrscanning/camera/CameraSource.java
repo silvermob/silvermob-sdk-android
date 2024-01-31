@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.qrscanning.camera;
+package com.silvermob.sdk.drprebid.qrscanning.camera;
 
 import android.Manifest;
 import android.annotation.SuppressLint;

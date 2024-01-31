@@ -12,12 +12,12 @@ import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
 import com.applovin.mediation.adapters.prebid.ListenersCreator;
 import com.applovin.mediation.adapters.prebid.ParametersChecker;
 
-import org.silvermob.sdk.LogUtil;
-import org.silvermob.sdk.api.data.AdFormat;
-import org.silvermob.sdk.api.rendering.DisplayView;
-import org.silvermob.sdk.configuration.AdUnitConfiguration;
-import org.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import org.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
+import com.silvermob.sdk.LogUtil;
+import com.silvermob.sdk.api.data.AdFormat;
+import com.silvermob.sdk.api.rendering.DisplayView;
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
 
 public class MaxBannerManager {
 

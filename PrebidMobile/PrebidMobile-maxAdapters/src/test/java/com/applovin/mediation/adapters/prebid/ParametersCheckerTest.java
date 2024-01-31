@@ -6,10 +6,10 @@ import com.applovin.mediation.adapters.PrebidMaxMediationAdapter;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.silvermob.sdk.PrebidNativeAd;
-import org.silvermob.sdk.configuration.AdUnitConfiguration;
-import org.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import org.silvermob.sdk.rendering.bidding.display.BidResponseCache;
+import com.silvermob.sdk.PrebidNativeAd;
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.display.BidResponseCache;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 

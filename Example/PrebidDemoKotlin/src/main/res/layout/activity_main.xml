@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="org.silvermob.sdk.prebidkotlindemo.activities.MainActivity">
+        tools:context="com.silvermob.sdk.prebidkotlindemo.activities.MainActivity">
 
         <EditText
             android:id="@+id/etSearch"

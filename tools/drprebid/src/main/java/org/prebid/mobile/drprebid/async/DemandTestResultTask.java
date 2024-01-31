@@ -1,4 +1,4 @@
-package org.silvermob.sdk.drprebid.async;
+package com.silvermob.sdk.drprebid.async;
 
 public class DemandTestResultTask implements Runnable {
     public interface RequestCompletionListener {
