@@ -1,8 +1,8 @@
-package org.silvermob.mobile.drprebid;
+package org.silvermob.sdk.drprebid;
 
 import androidx.multidex.MultiDexApplication;
-import org.silvermob.mobile.ServerRequestSettings;
-import org.silvermob.mobile.drprebid.managers.LineItemKeywordManager;
+import org.silvermob.sdk.ServerRequestSettings;
+import org.silvermob.sdk.drprebid.managers.LineItemKeywordManager;
 
 public class DrPrebidApplication extends MultiDexApplication {
     @Override

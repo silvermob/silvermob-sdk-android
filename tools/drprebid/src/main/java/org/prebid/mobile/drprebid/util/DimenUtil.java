@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.util;
+package org.silvermob.sdk.drprebid.util;
 
 import android.content.Context;
 

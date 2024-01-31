@@ -1,4 +1,4 @@
-package org.silvermob.mobile;
+package org.silvermob.sdk;
 
 import android.content.Context;
 

@@ -12,7 +12,7 @@
                 <list>
                     <option value=":PrebidMobile-gamEventHandlers:testDebugUnitTest"/>
                     <option value="--tests"/>
-                    <option value="&quot;org.silvermob.mobile.eventhandlers.global.GoogleAdVersionTest&quot;"/>
+                    <option value="&quot;org.silvermob.sdk.eventhandlers.global.GoogleAdVersionTest&quot;"/>
                 </list>
             </option>
             <option name="vmOptions"/>

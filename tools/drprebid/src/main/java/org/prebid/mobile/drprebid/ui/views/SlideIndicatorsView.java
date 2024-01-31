@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.views;
+package org.silvermob.sdk.drprebid.ui.views;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import org.silvermob.mobile.drprebid.R;
+import org.silvermob.sdk.drprebid.R;
 
 public class SlideIndicatorsView extends FrameLayout {
 

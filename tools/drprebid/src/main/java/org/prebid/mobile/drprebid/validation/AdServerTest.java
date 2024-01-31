@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.validation;
+package org.silvermob.sdk.drprebid.validation;
 
 import android.app.Activity;
 import android.text.TextUtils;
@@ -7,13 +7,13 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
 import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
-import org.silvermob.mobile.drprebid.managers.LineItemKeywordManager;
-import org.silvermob.mobile.drprebid.managers.SettingsManager;
-import org.silvermob.mobile.drprebid.model.*;
+import org.silvermob.sdk.drprebid.managers.LineItemKeywordManager;
+import org.silvermob.sdk.drprebid.managers.SettingsManager;
+import org.silvermob.sdk.drprebid.model.*;
 
 import java.util.*;
 
-import static org.silvermob.mobile.drprebid.managers.LineItemKeywordManager.KEYWORD_REQUEST_ID;
+import static org.silvermob.sdk.drprebid.managers.LineItemKeywordManager.KEYWORD_REQUEST_ID;
 
 public class AdServerTest {
     private static final String TAG = AdServerTest.class.getSimpleName();

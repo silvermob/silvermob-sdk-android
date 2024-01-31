@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.activities;
+package org.silvermob.sdk.drprebid.ui.activities;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -29,14 +29,14 @@ import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 import com.google.android.material.snackbar.Snackbar;
-import org.silvermob.mobile.drprebid.R;
-import org.silvermob.mobile.drprebid.managers.QrCodeScanCacheManager;
-import org.silvermob.mobile.drprebid.qrscanning.CodeGraphic;
-import org.silvermob.mobile.drprebid.qrscanning.CodeGraphicTracker;
-import org.silvermob.mobile.drprebid.qrscanning.CodeTrackerFactory;
-import org.silvermob.mobile.drprebid.qrscanning.camera.CameraSource;
-import org.silvermob.mobile.drprebid.qrscanning.camera.CameraSourcePreview;
-import org.silvermob.mobile.drprebid.qrscanning.camera.GraphicOverlay;
+import org.silvermob.sdk.drprebid.R;
+import org.silvermob.sdk.drprebid.managers.QrCodeScanCacheManager;
+import org.silvermob.sdk.drprebid.qrscanning.CodeGraphic;
+import org.silvermob.sdk.drprebid.qrscanning.CodeGraphicTracker;
+import org.silvermob.sdk.drprebid.qrscanning.CodeTrackerFactory;
+import org.silvermob.sdk.drprebid.qrscanning.camera.CameraSource;
+import org.silvermob.sdk.drprebid.qrscanning.camera.CameraSourcePreview;
+import org.silvermob.sdk.drprebid.qrscanning.camera.GraphicOverlay;
 
 import java.io.IOException;
 

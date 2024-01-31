@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.activities;
+package org.silvermob.sdk.drprebid.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import org.silvermob.mobile.drprebid.R;
-import org.silvermob.mobile.drprebid.managers.UserPrefsManager;
-import org.silvermob.mobile.drprebid.model.HelpScreen;
-import org.silvermob.mobile.drprebid.ui.adapters.SettingsAdapter;
-import org.silvermob.mobile.drprebid.util.HelpScreenUtil;
+import org.silvermob.sdk.drprebid.R;
+import org.silvermob.sdk.drprebid.managers.UserPrefsManager;
+import org.silvermob.sdk.drprebid.model.HelpScreen;
+import org.silvermob.sdk.drprebid.ui.adapters.SettingsAdapter;
+import org.silvermob.sdk.drprebid.util.HelpScreenUtil;
 
 public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_WELCOME = 2000;

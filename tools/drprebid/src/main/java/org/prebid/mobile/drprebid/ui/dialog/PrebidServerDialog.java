@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.dialog;
+package org.silvermob.sdk.drprebid.ui.dialog;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProviders;
-import org.silvermob.mobile.drprebid.R;
-import org.silvermob.mobile.drprebid.managers.SettingsManager;
-import org.silvermob.mobile.drprebid.model.PrebidServer;
-import org.silvermob.mobile.drprebid.model.PrebidServerSettings;
-import org.silvermob.mobile.drprebid.ui.viewmodels.SettingsViewModel;
+import org.silvermob.sdk.drprebid.R;
+import org.silvermob.sdk.drprebid.managers.SettingsManager;
+import org.silvermob.sdk.drprebid.model.PrebidServer;
+import org.silvermob.sdk.drprebid.model.PrebidServerSettings;
+import org.silvermob.sdk.drprebid.ui.viewmodels.SettingsViewModel;
 
 public class PrebidServerDialog extends DialogFragment {
 

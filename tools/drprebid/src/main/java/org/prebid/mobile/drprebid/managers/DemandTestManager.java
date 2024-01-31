@@ -1,6 +1,6 @@
-package org.silvermob.mobile.drprebid.managers;
+package org.silvermob.sdk.drprebid.managers;
 
-import org.silvermob.mobile.drprebid.async.MainThreadExecutor;
+import org.silvermob.sdk.drprebid.async.MainThreadExecutor;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

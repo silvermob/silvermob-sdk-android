@@ -1,6 +1,6 @@
-package org.silvermob.mobile.drprebid.model;
+package org.silvermob.sdk.drprebid.model;
 
-import org.silvermob.mobile.drprebid.Constants;
+import org.silvermob.sdk.drprebid.Constants;
 
 public enum AdSize {
     BANNER_300x250(Constants.Settings.AdSizeCodes.SIZE_300x250, 300, 250),

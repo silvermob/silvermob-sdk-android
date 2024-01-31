@@ -12,9 +12,9 @@ import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
 import com.applovin.mediation.adapters.prebid.ListenersCreator;
 import com.applovin.mediation.adapters.prebid.ParametersChecker;
 
-import org.silvermob.mobile.api.exceptions.AdException;
-import org.silvermob.mobile.rendering.bidding.display.InterstitialController;
-import org.silvermob.mobile.rendering.bidding.interfaces.InterstitialControllerListener;
+import org.silvermob.sdk.api.exceptions.AdException;
+import org.silvermob.sdk.rendering.bidding.display.InterstitialController;
+import org.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener;
 
 public class MaxInterstitialManager {
 

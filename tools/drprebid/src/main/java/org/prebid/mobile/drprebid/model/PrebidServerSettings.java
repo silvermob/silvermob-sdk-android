@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.model;
+package org.silvermob.sdk.drprebid.model;
 
 public class PrebidServerSettings extends SettingsItem {
     private PrebidServer prebidServer;

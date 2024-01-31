@@ -20,8 +20,8 @@ import com.applovin.mediation.adapters.prebid.managers.MaxInterstitialManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxNativeManager;
 import com.applovin.sdk.AppLovinSdk;
 
-import org.silvermob.mobile.PrebidMobile;
-import org.silvermob.mobile.TargetingParams;
+import org.silvermob.sdk.SilverMob;
+import org.silvermob.sdk.TargetingParams;
 
 public class PrebidMaxMediationAdapter extends MediationAdapterBase implements MaxAdViewAdapter, MaxInterstitialAdapter, MaxRewardedAdapter, MaxNativeAdAdapter {
 
@@ -44,7 +44,7 @@ public class PrebidMaxMediationAdapter extends MediationAdapterBase implements M
             OnCompletionListener onCompletionListener
     ) {
         setConsents(parameters);
-        if (PrebidMobile.isSdkInitialized()) {
+        if (SilverMob.isSdkInitialized()) {
             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_SUCCESS, null);
         } else {
             Handler handler = new Handler(Looper.getMainLooper());
@@ -53,9 +53,9 @@ public class PrebidMaxMediationAdapter extends MediationAdapterBase implements M
                     return;
                 }
 
-                PrebidMobile.initializeSdk(activity.getApplicationContext(), status -> {
+                SilverMob.initializeSdk(activity.getApplicationContext(), status -> {
                     if (onCompletionListener != null) {
-                        if (status != org.silvermob.mobile.api.data.InitializationStatus.FAILED) {
+                        if (status != org.silvermob.sdk.api.data.InitializationStatus.FAILED) {
                             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_SUCCESS, null);
                         } else {
                             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_FAILURE, status.getDescription());
@@ -149,12 +149,12 @@ public class PrebidMaxMediationAdapter extends MediationAdapterBase implements M
 
     @Override
     public String getAdapterVersion() {
-        return PrebidMobile.SDK_VERSION;
+        return SilverMob.SDK_VERSION;
     }
 
     @Override
     public String getSdkVersion() {
-        return PrebidMobile.SDK_VERSION;
+        return SilverMob.SDK_VERSION;
     }
 
 

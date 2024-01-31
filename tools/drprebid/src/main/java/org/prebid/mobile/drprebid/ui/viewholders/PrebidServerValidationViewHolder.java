@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.viewholders;
+package org.silvermob.sdk.drprebid.ui.viewholders;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
@@ -12,11 +12,11 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import org.silvermob.mobile.drprebid.R;
-import org.silvermob.mobile.drprebid.model.HelpScreen;
-import org.silvermob.mobile.drprebid.ui.activities.InfoActivity;
-import org.silvermob.mobile.drprebid.ui.viewmodels.PrebidServerValidationViewModel;
-import org.silvermob.mobile.drprebid.util.HelpScreenUtil;
+import org.silvermob.sdk.drprebid.R;
+import org.silvermob.sdk.drprebid.model.HelpScreen;
+import org.silvermob.sdk.drprebid.ui.activities.InfoActivity;
+import org.silvermob.sdk.drprebid.ui.viewmodels.PrebidServerValidationViewModel;
+import org.silvermob.sdk.drprebid.util.HelpScreenUtil;
 
 import java.util.Locale;
 

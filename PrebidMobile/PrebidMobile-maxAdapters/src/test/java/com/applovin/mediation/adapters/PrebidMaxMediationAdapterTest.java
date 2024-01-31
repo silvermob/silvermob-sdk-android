@@ -2,7 +2,7 @@ package com.applovin.mediation.adapters;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.silvermob.mobile.Util;
+import org.silvermob.sdk.Util;
 
 import static org.junit.Assert.assertEquals;
 

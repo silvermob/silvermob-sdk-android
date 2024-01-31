@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.validation;
+package org.silvermob.sdk.drprebid.validation;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,11 +14,11 @@ import android.view.Display;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.silvermob.mobile.AdUnit;
-import org.silvermob.mobile.InterstitialAdUnit;
-import org.silvermob.mobile.ServerRequestSettings;
-import org.silvermob.mobile.TargetingParams;
-import org.silvermob.mobile.drprebid.model.AdSize;
+import org.silvermob.sdk.AdUnit;
+import org.silvermob.sdk.InterstitialAdUnit;
+import org.silvermob.sdk.ServerRequestSettings;
+import org.silvermob.sdk.TargetingParams;
+import org.silvermob.sdk.drprebid.model.AdSize;
 
 import java.util.*;
 

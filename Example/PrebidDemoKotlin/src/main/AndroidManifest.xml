@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.silvermob.mobile.prebidkotlindemo">
+          package="org.silvermob.sdk.prebidkotlindemo">
 
     <!-- Required permissions -->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -14,7 +14,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
-        android:name="org.silvermob.mobile.prebidkotlindemo.CustomApplication"
+        android:name="org.silvermob.sdk.prebidkotlindemo.CustomApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -32,7 +32,7 @@
             android:value="1tLUnP4cVQqpHuHH2yMtfdESvvUhTB05NdbCoDTceDDNVnhd_T8kwIzXDN9iwbdULTboByF-TtNaiTmsoVbxZw" />
 
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.MainActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,143 +41,143 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.SettingsActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.SettingsActivity"
             android:exported="true" />
 
         <!-- GAM Original -->
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBanner320x50Activity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBanner320x50Activity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBanner300x250Activity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBanner300x250Activity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBannerMultiSizeActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBannerMultiSizeActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoBannerActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoBannerActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiInStreamActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiInStreamActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoRewardedActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoRewardedActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiNativeStylesActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiNativeStylesActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiNativeInAppActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiNativeInAppActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerVideoNativeInAppActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerVideoNativeInAppActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerVideoNativeStylesActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerVideoNativeStylesActivity"
             android:exported="true" />
 
         <!-- GAM Rendering -->
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiDisplayBanner320x50Activity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiDisplayBanner320x50Activity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiDisplayInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiDisplayInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoBannerActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoBannerActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoRewardedActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoRewardedActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiNativeActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiNativeActivity"
             android:exported="true" />
 
         <!-- In-App -->
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppDisplayBanner320x50Activity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayBanner320x50Activity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMultiSizeActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMultiSizeActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMraidResizeActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMraidResizeActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMraidExpandActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMraidExpandActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMraidResizeWithErrorsActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayBannerMraidResizeWithErrorsActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppVideoBannerActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoBannerActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppDisplayInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppVideoInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppVideoInterstitialWithEndCardActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoInterstitialWithEndCardActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppVideoInterstitialMultiFormatActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoInterstitialMultiFormatActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppVideoRewardedActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoRewardedActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.inapp.InAppNativeActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppNativeActivity"
             android:exported="true" />
 
         <!-- AdMob -->
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.admob.AdMobDisplayBanner320x50Activity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobDisplayBanner320x50Activity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.admob.AdMobDisplayInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobDisplayInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.admob.AdMobVideoInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobVideoInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.admob.AdMobVideoRewardedActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobVideoRewardedActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.admob.AdMobNativeActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobNativeActivity"
             android:exported="true" />
 
         <!-- AppLovin MAX -->
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner320x50Activity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner320x50Activity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner300x250Activity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner300x250Activity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayInterstitialActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayInterstitialActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.applovin.AppLovinMaxVideoRewardedActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxVideoRewardedActivity"
             android:exported="true" />
         <activity
-            android:name="org.silvermob.mobile.prebidkotlindemo.activities.ads.applovin.AppLovinMaxNativeActivity"
+            android:name="org.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxNativeActivity"
             android:exported="true" />
 
     </application>

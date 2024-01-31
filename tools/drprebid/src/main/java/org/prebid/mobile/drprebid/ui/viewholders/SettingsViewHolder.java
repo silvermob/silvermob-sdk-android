@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.viewholders;
+package org.silvermob.sdk.drprebid.ui.viewholders;
 
 public interface SettingsViewHolder {
     void bind();

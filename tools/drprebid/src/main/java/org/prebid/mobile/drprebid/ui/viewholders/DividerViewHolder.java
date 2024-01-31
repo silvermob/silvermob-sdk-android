@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.viewholders;
+package org.silvermob.sdk.drprebid.ui.viewholders;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;

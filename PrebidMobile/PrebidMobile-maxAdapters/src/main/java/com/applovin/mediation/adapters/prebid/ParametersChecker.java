@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.annotation.Nullable;
 import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
-import org.silvermob.mobile.ParametersMatcher;
-import org.silvermob.mobile.PrebidNativeAd;
-import org.silvermob.mobile.rendering.bidding.data.bid.BidResponse;
-import org.silvermob.mobile.rendering.bidding.display.BidResponseCache;
+import org.silvermob.sdk.ParametersMatcher;
+import org.silvermob.sdk.PrebidNativeAd;
+import org.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import org.silvermob.sdk.rendering.bidding.display.BidResponseCache;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,11 +1,11 @@
-package org.silvermob.mobile.drprebid.qrscanning;
+package org.silvermob.sdk.drprebid.qrscanning;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import com.google.android.gms.vision.barcode.Barcode;
-import org.silvermob.mobile.drprebid.qrscanning.camera.GraphicOverlay;
+import org.silvermob.sdk.drprebid.qrscanning.camera.GraphicOverlay;
 
 public class CodeGraphic extends GraphicOverlay.Graphic {
 

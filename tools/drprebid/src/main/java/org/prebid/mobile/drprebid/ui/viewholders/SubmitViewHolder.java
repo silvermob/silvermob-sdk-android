@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.viewholders;
+package org.silvermob.sdk.drprebid.ui.viewholders;
 
 import android.content.Intent;
 import androidx.annotation.NonNull;
@@ -7,12 +7,12 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
-import org.silvermob.mobile.drprebid.R;
-import org.silvermob.mobile.drprebid.managers.SettingsManager;
-import org.silvermob.mobile.drprebid.model.AdServerSettings;
-import org.silvermob.mobile.drprebid.model.PrebidServer;
-import org.silvermob.mobile.drprebid.model.PrebidServerSettings;
-import org.silvermob.mobile.drprebid.ui.activities.TestResultsActivity;
+import org.silvermob.sdk.drprebid.R;
+import org.silvermob.sdk.drprebid.managers.SettingsManager;
+import org.silvermob.sdk.drprebid.model.AdServerSettings;
+import org.silvermob.sdk.drprebid.model.PrebidServer;
+import org.silvermob.sdk.drprebid.model.PrebidServerSettings;
+import org.silvermob.sdk.drprebid.ui.activities.TestResultsActivity;
 
 public class SubmitViewHolder extends RecyclerView.ViewHolder implements SettingsViewHolder, View.OnClickListener {
 

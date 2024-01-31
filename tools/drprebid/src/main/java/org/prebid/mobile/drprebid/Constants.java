@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid;
+package org.silvermob.sdk.drprebid;
 
 public final class Constants {
     public static final class Preferences {

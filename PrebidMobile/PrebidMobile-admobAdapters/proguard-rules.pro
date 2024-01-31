@@ -1,1 +1,1 @@
--keep class org.silvermob.mobile.admob.*Adapter
+-keep class org.silvermob.sdk.admob.*Adapter

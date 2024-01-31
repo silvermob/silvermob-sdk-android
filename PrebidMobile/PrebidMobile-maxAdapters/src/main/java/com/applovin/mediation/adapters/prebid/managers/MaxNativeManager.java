@@ -18,8 +18,8 @@ import com.applovin.mediation.adapters.prebid.ParametersChecker;
 import com.applovin.mediation.adapters.prebid.PrebidMaxNativeAd;
 import com.applovin.mediation.nativeAds.MaxNativeAd;
 
-import org.silvermob.mobile.PrebidNativeAd;
-import org.silvermob.mobile.rendering.bidding.events.EventsNotifier;
+import org.silvermob.sdk.PrebidNativeAd;
+import org.silvermob.sdk.rendering.bidding.events.EventsNotifier;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;

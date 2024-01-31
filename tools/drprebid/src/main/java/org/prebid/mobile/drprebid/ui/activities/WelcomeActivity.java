@@ -1,4 +1,4 @@
-package org.silvermob.mobile.drprebid.ui.activities;
+package org.silvermob.sdk.drprebid.ui.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,9 +11,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import org.silvermob.mobile.drprebid.R;
-import org.silvermob.mobile.drprebid.ui.fragments.ImageFragment;
-import org.silvermob.mobile.drprebid.ui.views.SlideIndicatorsView;
+import org.silvermob.sdk.drprebid.R;
+import org.silvermob.sdk.drprebid.ui.fragments.ImageFragment;
+import org.silvermob.sdk.drprebid.ui.views.SlideIndicatorsView;
 
 import java.util.ArrayList;
 import java.util.List;
