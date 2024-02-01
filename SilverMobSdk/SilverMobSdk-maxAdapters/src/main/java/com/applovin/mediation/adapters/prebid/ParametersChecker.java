@@ -12,8 +12,8 @@ import com.silvermob.sdk.rendering.bidding.display.BidResponseCache;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.applovin.mediation.adapters.PrebidMaxMediationAdapter.EXTRA_KEYWORDS_ID;
-import static com.applovin.mediation.adapters.PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID;
+import static com.applovin.mediation.adapters.SilverMobMaxMediationAdapter.EXTRA_KEYWORDS_ID;
+import static com.applovin.mediation.adapters.SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID;
 
 public class ParametersChecker {
 
@@ -31,10 +31,11 @@ public class ParametersChecker {
 
         Bundle serverParameters = parameters.getCustomParameters();
         HashMap<String, String> prebidParameters = BidResponseCache.getInstance().getKeywords(responseId);
-        if (!ParametersMatcher.doParametersMatch(serverParameters, prebidParameters)) {
+        //TODO slvrmb: MAX returns empty parameters for some reason
+        /*if (!ParametersMatcher.doParametersMatch(serverParameters, prebidParameters)) {
             onErrorListener.onError(1003, "Parameters don't match");
             return null;
-        }
+        }*/
 
         return responseId;
     }

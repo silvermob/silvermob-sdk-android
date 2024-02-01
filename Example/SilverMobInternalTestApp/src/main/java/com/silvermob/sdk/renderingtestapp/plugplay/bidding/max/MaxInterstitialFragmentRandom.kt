@@ -1,7 +1,7 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.max
 
 import android.util.Log
-import com.applovin.mediation.adapters.PrebidMaxMediationAdapter
+import com.applovin.mediation.adapters.SilverMobMaxMediationAdapter
 
 class MaxInterstitialFragmentRandom : MaxInterstitialFragment() {
 
@@ -23,7 +23,7 @@ class MaxInterstitialFragmentRandom : MaxInterstitialFragment() {
         val doRemove = randomValue == 1
         if (doRemove) {
             Log.d(TAG, "Random removing response!")
-            maxInterstitialAd?.setLocalExtraParameter(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, null)
+            maxInterstitialAd?.setLocalExtraParameter(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, null)
         } else {
             Log.d(TAG, "Without removing.")
         }

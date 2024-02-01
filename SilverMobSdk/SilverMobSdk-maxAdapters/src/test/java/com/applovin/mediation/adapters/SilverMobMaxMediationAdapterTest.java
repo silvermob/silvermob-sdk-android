@@ -6,7 +6,7 @@ import com.silvermob.sdk.Util;
 
 import static org.junit.Assert.assertEquals;
 
-public class PrebidMaxMediationAdapterTest {
+public class SilverMobMaxMediationAdapterTest {
 
     @Before
     public void setUp() throws Exception {
@@ -14,12 +14,12 @@ public class PrebidMaxMediationAdapterTest {
 
     @Test
     public void compareAdapterResponseKeyWithUtilsKey() {
-        assertEquals(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, Util.APPLOVIN_MAX_RESPONSE_ID_KEY);
+        assertEquals(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, Util.APPLOVIN_MAX_RESPONSE_ID_KEY);
     }
 
     @Test
     public void compareAdapterKeywordsKeyWithUtilsKey() {
-        assertEquals(PrebidMaxMediationAdapter.EXTRA_KEYWORDS_ID, Util.APPLOVIN_MAX_KEYWORDS_KEY);
+        assertEquals(SilverMobMaxMediationAdapter.EXTRA_KEYWORDS_ID, Util.APPLOVIN_MAX_KEYWORDS_KEY);
     }
 
 }

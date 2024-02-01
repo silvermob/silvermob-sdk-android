@@ -8,7 +8,7 @@ android {
         targetSdkVersion 33
         versionCode 1
         versionName "1.0.0"
-        applicationId "org.prebid.mobile.javademo"
+        applicationId "com.silvermob.sdk.javademo"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }

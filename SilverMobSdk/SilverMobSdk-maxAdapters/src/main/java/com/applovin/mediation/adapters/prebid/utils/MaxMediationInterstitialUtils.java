@@ -1,7 +1,7 @@
 package com.applovin.mediation.adapters.prebid.utils;
 
 import androidx.annotation.Nullable;
-import com.applovin.mediation.adapters.PrebidMaxMediationAdapter;
+import com.applovin.mediation.adapters.SilverMobMaxMediationAdapter;
 import com.applovin.mediation.ads.MaxInterstitialAd;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
@@ -23,7 +23,7 @@ public class MaxMediationInterstitialUtils implements PrebidMediationDelegate {
                 responseId = response.getId();
             } else {
                 responseId = null;
-            } interstitialAd.setLocalExtraParameter(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
+            } interstitialAd.setLocalExtraParameter(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
         }
     }
 

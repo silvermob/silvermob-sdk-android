@@ -1,7 +1,7 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.max
 
 import android.util.Log
-import com.applovin.mediation.adapters.PrebidMaxMediationAdapter
+import com.applovin.mediation.adapters.SilverMobMaxMediationAdapter
 import kotlin.random.Random
 
 class MaxBannerFragmentRandom : MaxBannerFragment() {
@@ -20,7 +20,7 @@ class MaxBannerFragmentRandom : MaxBannerFragment() {
         val doRemove = randomValue == 1
         if (doRemove) {
             Log.d("RandomAdMobBanner", "Random removing response id!")
-            adView?.setLocalExtraParameter(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, "")
+            adView?.setLocalExtraParameter(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, "")
         } else {
             Log.d("RandomAdMobBanner", "Without removing.")
         }

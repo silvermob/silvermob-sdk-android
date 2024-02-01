@@ -19,14 +19,13 @@ import com.applovin.mediation.adapters.prebid.managers.MaxBannerManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxInterstitialManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxNativeManager;
 import com.applovin.sdk.AppLovinSdk;
-import com.silvermob.sdk.api.data.InitializationStatus;
 
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.TargetingParams;
 
-public class PrebidMaxMediationAdapter extends MediationAdapterBase implements MaxAdViewAdapter, MaxInterstitialAdapter, MaxRewardedAdapter, MaxNativeAdAdapter {
+public class SilverMobMaxMediationAdapter extends MediationAdapterBase implements MaxAdViewAdapter, MaxInterstitialAdapter, MaxRewardedAdapter, MaxNativeAdAdapter {
 
-    public static final String TAG = PrebidMaxMediationAdapter.class.getSimpleName();
+    public static final String TAG = SilverMobMaxMediationAdapter.class.getSimpleName();
     public static final String EXTRA_RESPONSE_ID = TAG + "ExtraResponseId";
     public static final String EXTRA_KEYWORDS_ID = TAG + "ExtraKeywordsId";
 
@@ -34,7 +33,7 @@ public class PrebidMaxMediationAdapter extends MediationAdapterBase implements M
     private MaxInterstitialManager maxInterstitialManager;
     private MaxNativeManager maxNativeManager;
 
-    public PrebidMaxMediationAdapter(AppLovinSdk appLovinSdk) {
+    public SilverMobMaxMediationAdapter(AppLovinSdk appLovinSdk) {
         super(appLovinSdk);
     }
 

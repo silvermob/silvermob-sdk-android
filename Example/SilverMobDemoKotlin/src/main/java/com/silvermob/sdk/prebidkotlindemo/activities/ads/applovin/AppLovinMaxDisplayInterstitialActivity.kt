@@ -29,8 +29,8 @@ import java.util.*
 class AppLovinMaxDisplayInterstitialActivity : BaseAdActivity() {
 
     companion object {
-        const val AD_UNIT_ID = "393697e649678807"
-        const val CONFIG_ID = "prebid-demo-display-interstitial-320-480"
+        const val AD_UNIT_ID = "df7ef64649dec96c"
+        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
     }
 
     private var maxInterstitialAd: MaxInterstitialAd? = null

@@ -1,1 +1,1 @@
--keep class com.applovin.mediation.adapters.PrebidMaxMediationAdapter
+-keep class com.applovin.mediation.adapters.SilverMobMaxMediationAdapter

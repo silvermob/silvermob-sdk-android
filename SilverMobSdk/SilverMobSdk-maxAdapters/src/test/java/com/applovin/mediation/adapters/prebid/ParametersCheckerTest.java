@@ -2,7 +2,7 @@ package com.applovin.mediation.adapters.prebid;
 
 import android.os.Bundle;
 import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
-import com.applovin.mediation.adapters.PrebidMaxMediationAdapter;
+import com.applovin.mediation.adapters.SilverMobMaxMediationAdapter;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -78,7 +78,7 @@ public class ParametersCheckerTest {
     @Test
     public void getResponseIdAndCheckKeywords_emptyCustomParameters_returnNull() {
         Map<String, Object> extras = new HashMap<>();
-        extras.put(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, "test");
+        extras.put(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, "test");
         when(parameters.getLocalExtraParameters()).thenReturn(extras);
 
         Bundle customParameters = new Bundle();
@@ -95,7 +95,7 @@ public class ParametersCheckerTest {
         setBidResponseCache();
 
         Map<String, Object> extras = new HashMap<>();
-        extras.put(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
+        extras.put(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
         when(parameters.getLocalExtraParameters()).thenReturn(extras);
 
         Bundle customParameters = new Bundle();
@@ -129,7 +129,7 @@ public class ParametersCheckerTest {
     @Test
     public void getNativeAd_localExtraParametersWithoutKeywords_returnNull() {
         Map<String, Object> extras = new HashMap<>();
-        extras.put(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
+        extras.put(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
         when(parameters.getLocalExtraParameters()).thenReturn(extras);
 
         Bundle customParameters = new Bundle();
@@ -148,8 +148,8 @@ public class ParametersCheckerTest {
         keywords.put("hb_pb", "0.10");
 
         Map<String, Object> extras = new HashMap<>();
-        extras.put(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
-        extras.put(PrebidMaxMediationAdapter.EXTRA_KEYWORDS_ID, keywords);
+        extras.put(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
+        extras.put(SilverMobMaxMediationAdapter.EXTRA_KEYWORDS_ID, keywords);
         when(parameters.getLocalExtraParameters()).thenReturn(extras);
 
         Bundle customParameters = new Bundle();
@@ -168,8 +168,8 @@ public class ParametersCheckerTest {
         keywords.put("hb_pb", "0.10");
 
         Map<String, Object> extras = new HashMap<>();
-        extras.put(PrebidMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
-        extras.put(PrebidMaxMediationAdapter.EXTRA_KEYWORDS_ID, keywords);
+        extras.put(SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID, responseId);
+        extras.put(SilverMobMaxMediationAdapter.EXTRA_KEYWORDS_ID, keywords);
         when(parameters.getLocalExtraParameters()).thenReturn(extras);
 
         Bundle customParameters = new Bundle();

@@ -33,8 +33,8 @@ import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 class AppLovinMaxDisplayBanner300x250Activity : BaseAdActivity() {
 
     companion object {
-        const val AD_UNIT_ID = "550e6c2fe979a641"
-        const val CONFIG_ID = "prebid-demo-banner-300-250"
+        const val AD_UNIT_ID = "8e0cdef8ddcc5fa8"
+        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
         const val WIDTH = 300
         const val HEIGHT = 250
     }

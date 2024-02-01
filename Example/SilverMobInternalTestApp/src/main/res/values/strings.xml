@@ -328,7 +328,7 @@
     <string name="admob_native_bidding_ad_unit_id_adapter">ca-app-pub-1875909575462531/9720985924</string>
 
     <!-- Applovin MAX AdUnits -->
-    <string name="max_banner_ad_unit_id">2712409601eb0b64</string>
+    <string name="max_banner_ad_unit_id">57b7681a14dda241</string>
     <string name="max_interstitial_ad_unit_id">3c61bf5180526594</string>
     <string name="max_rewarded_ad_unit_id">4adc922f52679355</string>
     <string name="max_native_ad_unit_id">fa4a9d137e6f3dff</string>

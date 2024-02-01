@@ -28,8 +28,8 @@ import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 class AppLovinMaxVideoRewardedActivity : BaseAdActivity() {
 
     companion object {
-        const val AD_UNIT_ID = "897f2fc59d617715"
-        const val CONFIG_ID = "prebid-demo-video-rewarded-320-480"
+        const val AD_UNIT_ID = "6a91bd61a5ea4992"
+        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
     }
 
     private var maxRewardedAd: MaxRewardedAd? = null
