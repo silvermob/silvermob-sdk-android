@@ -40,7 +40,7 @@ val mediationUtils = MaxMediationBannerUtils(adView)
 // 3. Create MediationBannerAdUnit
 adUnit = MediationBannerAdUnit(
         requireContext(),
-        configId,
+        SILVERMOB_SDK_AD_UNIT,
         AdSize(width, height),
         mediationUtils
 )
@@ -64,7 +64,7 @@ val mediationUtils = MaxMediationInterstitialUtils(maxInterstitialAd)
 // 3. Create MediationInterstitialAdUnit
 adUnit = MediationInterstitialAdUnit(
             activity,
-            configId,
+            SILVERMOB_SDK_AD_UNIT,
             EnumSet.of(AdUnitFormat.BANNER),
             mediationUtils
         )
@@ -80,7 +80,7 @@ The default ad format for interstitial is **DISPLAY**. In order to make a `multi
 ```kotlin
 adUnit = MediationInterstitialAdUnit(
             activity,
-            configId,
+            SILVERMOB_SDK_AD_UNIT,
             EnumSet.of(AdUnitFormat.BANNER, AdUnitFormat.VIDEO),
             mediationUtils
         )
@@ -97,7 +97,7 @@ val mediationUtils = MaxMediationRewardedUtils(maxRewardedAd)
 // 3. Create MediationRewardedVideoAdUnit
 adUnit = MediationRewardedVideoAdUnit(
             activity,
-            configId,
+            SILVERMOB_SDK_AD_UNIT,
             mediationUtils
         )
         
@@ -114,11 +114,15 @@ adUnit?.fetchDemand {
 
 1. In your Applovin dashboard open [MAX > Manage > Networks](https://dash.applovin.com/o/mediation/networks/) and scroll to the bottom of the page. 
 Select "Click here to add a Custom Network".
-[!networks list]()
+![networks list](https://files.silvermob.com/img/2024-02-02_14-37-57.png)
+
+
 2. Fill out network data as shown on the screenshot.
-[!custom network settings]()
+![custom network settings](https://files.silvermob.com/img/2024-02-02_14-38-35.png)
 Custom Network Name `SilverMob`, iOS Adapter Class Name `SilverMobMaxMediationAdapter`, Android Adapter Class Name `com.applovin.mediation.adapters.SilverMobMaxMediationAdapter`.
 *Note: don't leave iOS adapter name empty or adapter integration might not work.*
-3. Enable SilverMob network for your Ad Units: go to ad unit waterfall settings, scroll to "Custom Networks", enable SilverMob and adjust settings accordingly.
-[!ad unit settings]()
-*Note: mediation adapters don't work in Test Mode, be sure to disable it for testing mediation*
+
+
+3. Enable SilverMob network for your Ad Units: go to ad unit waterfall settings, scroll to **"Custom Networks"**, enable **SilverMob** and adjust settings accordingly. Wait around 60 minutes for Applovin to update Ad Unit and Network changes.
+![ad unit settings](https://files.silvermob.com/img/2024-02-02_14-39-29.png)
+*Note: mediation adapters don't work in Test Mode, be sure to disable it for testing mediation.*
