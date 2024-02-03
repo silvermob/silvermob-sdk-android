@@ -354,6 +354,7 @@ public class VideoCreative extends VideoCreativeProtocol
             final AdUnitConfiguration adConfiguration = model.getAdConfiguration();
             videoCreativeView = new VideoCreativeView(context, this);
             videoCreativeView.setBroadcastId(adConfiguration.getBroadcastId());
+            videoCreativeView.enableVideoPlayerClick();//slvrmb: clickable video in rewarded
 
             // Get the preloaded video from device file storage
             videoUri = Uri.fromFile(new File(context.getFilesDir() + (model.getMediaUrl())));

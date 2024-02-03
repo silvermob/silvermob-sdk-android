@@ -181,6 +181,10 @@ public class CreativeModelsMakerVast extends CreativeModelsMaker {
                                                                                                .get(0)
                                                                                                .getInline());
             if (companionAd != null) {
+                String clickThroughValue =
+                        companionAd.getCompanionClickThrough()!=null? companionAd.getCompanionClickThrough().getValue() :
+                               vastClickThroughUrl!=null? vastClickThroughUrl : ""; //slvrmb: if no companion clickthrough, use video clickthrough
+
                 switch (AdResponseParserVast.getCompanionResourceFormat(companionAd)) {
                     case RESOURCE_FORMAT_HTML:
                         endCardModel.setHtml(companionAd.getHtmlResource().getValue());
@@ -193,7 +197,7 @@ public class CreativeModelsMakerVast extends CreativeModelsMaker {
                                                            + "<a href=\"%s\">\n"
                                                            + "<img src=\"%s\"></a>\n"
                                                            + "</div>",
-                                                           companionAd.getCompanionClickThrough().getValue(),
+                                                           clickThroughValue,
                                                            companionAd.getStaticResource().getValue()));
                         break;
                 }
