@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.silvermob</groupId>
-    <artifactId>prebid-mobile-sdk</artifactId>
-    <version>2.2.0</version>
-    <packaging>jar</packaging>
+    <artifactId>silvermob-sdk-open-measurement</artifactId>
+    <version>1.4.1</version>
 
-    <name>Prebid Mobile Android SDK</name>
-    <description>Prebid Mobile</description>
-    <url>https://www.prebid.org</url>
+    <packaging>jar</packaging>
+    <name>SilverMob Android SDK</name>
+    <description>SilverMob SDK</description>
+    <url>https://www.silvermob.com</url>
 
     <scm>
-        <connection>scm:git:git@github.com:prebid/prebid-mobile-android.git</connection>
-        <developerConnection>scm:git:git@github.com:prebid/prebid-mobile-android.git</developerConnection>
-        <url>git@github.com:prebid/prebid-mobile-android.git</url>
+        <connection>scm:git:git@github.com:silvermob/silvermob-sdk-android.git</connection>
+        <developerConnection>scm:git:git@github.com:silvermob/silvermob-sdk-android.git</developerConnection>
+        <url>git@github.com:silvermob/silvermob-sdk-android.git</url>
     </scm>
 
     <licenses>
@@ -46,14 +46,12 @@
             <organization>Postindustria LTD</organization>
             <organizationUrl>https://postindustria.com/</organizationUrl>
         </developer>
-    </developers>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.silvermob</groupId>
-            <artifactId>prebid-mobile-sdk-core</artifactId>
-            <version>2.2.0</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+        <developer>
+            <name>SilverMob Team</name>
+            <email>contact@silvermob.com</email>
+            <organization>ArtChaos s.r.o.</organization>
+            <organizationUrl>http://www.silvermob.com</organizationUrl>
+        </developer>
+    </developers>
 </project>

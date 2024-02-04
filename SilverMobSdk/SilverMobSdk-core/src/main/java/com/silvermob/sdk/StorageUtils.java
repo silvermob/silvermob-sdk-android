@@ -131,7 +131,7 @@ final class StorageUtils {
         Context context = SilverMob.getApplicationContext();
 
         if (context == null) {
-            LogUtil.error(TAG, "You can't manage external user ids before calling PrebidMobile.initializeSdk().");
+            LogUtil.error(TAG, "You can't manage external user ids before calling SilverMob.initializeSdk().");
             return null;
         }
 

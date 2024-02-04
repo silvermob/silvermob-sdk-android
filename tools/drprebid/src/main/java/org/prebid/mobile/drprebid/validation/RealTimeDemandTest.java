@@ -59,23 +59,23 @@ public class RealTimeDemandTest {
         String hostUrl;
         switch (prebidServerSettings.getPrebidServer()) {
             case APPNEXUS:
-                PrebidMobile.setPrebidServerHost(Host.APPNEXUS);
+                SilverMob.setPrebidServerHost(Host.APPNEXUS);
                 hostUrl = Constants.EndpointUrls.APPNEXUS_PREBID_SERVER;
                 break;
             case RUBICON:
-                PrebidMobile.setPrebidServerHost(Host.RUBICON);
+                SilverMob.setPrebidServerHost(Host.RUBICON);
                 hostUrl = Constants.EndpointUrls.RUBICON_PREBID_SERVER;
                 break;
             case CUSTOM:
-                PrebidMobile.setPrebidServerHost(Host.CUSTOM);
+                SilverMob.setPrebidServerHost(Host.CUSTOM);
                 hostUrl = buildCustomServerEndpoint(prebidServerSettings.getCustomPrebidServerUrl());
                 Host.CUSTOM.setHostUrl(hostUrl);
                 break;
             default:
-                PrebidMobile.setPrebidServerHost(Host.APPNEXUS);
+                SilverMob.setPrebidServerHost(Host.APPNEXUS);
                 hostUrl = Constants.EndpointUrls.APPNEXUS_PREBID_SERVER;
         }
-        PrebidMobile.initializeSdk(context, null);
+        SilverMob.initializeSdk(context, null);
 
         DemandRequestBuilder builder = new DemandRequestBuilder(
                 context,

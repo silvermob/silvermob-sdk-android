@@ -52,7 +52,7 @@ jobs:
       # And finally run the release build
       - run:
           name: Test Frameworks
-          command: scripts/testPrebidMobile.sh
+          command: scripts/testSilverMob.sh
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -68,7 +68,7 @@ workflows:
           buildCommand: ./gradlew SilverMobInternalTestApp:assembleDebug
       - build:
          name: Build PrebidMobile Frameworks
-         buildCommand: scripts/buildPrebidMobile.sh -nojar
+         buildCommand: scripts/buildSilverMob.sh -nojar
       - test:
           name: Run Unit Tests - Prebid Mobile
       - android-test:

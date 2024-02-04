@@ -10,7 +10,7 @@ set -e
 cd ..
 
 function echoX {
-echo -e "✅ PREBID TESTLOG: $@"
+echo -e "✅ SILVERMOB TESTLOG: $@"
 }
 
 echoX "clean previous build"

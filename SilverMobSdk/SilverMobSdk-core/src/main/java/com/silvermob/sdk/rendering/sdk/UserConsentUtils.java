@@ -78,7 +78,7 @@ public class UserConsentUtils {
         if (manager != null) {
             setter.set(manager);
         } else {
-            LogUtil.error(TAG, "You can't call " + method + "() before PrebidMobile.initializeSdk().");
+            LogUtil.error(TAG, "You can't call " + method + "() before SilverMob.initializeSdk().");
         }
     }
 
@@ -90,7 +90,7 @@ public class UserConsentUtils {
         if (manager != null) {
             return getter.get(manager);
         } else {
-            LogUtil.error(TAG, "You can't call " + method + "() before PrebidMobile.initializeSdk().");
+            LogUtil.error(TAG, "You can't call " + method + "() before SilverMob.initializeSdk().");
         }
         return null;
     }

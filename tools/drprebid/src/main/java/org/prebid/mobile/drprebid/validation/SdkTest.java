@@ -77,21 +77,21 @@ public class SdkTest {
             adUnit = new InterstitialAdUnit(prebidServerSettings.getConfigId());
         }
 
-        PrebidMobile.setPrebidServerAccountId(prebidServerSettings.getAccountId());
+        SilverMob.setPrebidServerAccountId(prebidServerSettings.getAccountId());
 
         switch (prebidServerSettings.getPrebidServer()) {
             case APPNEXUS:
-                PrebidMobile.setPrebidServerHost(Host.APPNEXUS);
+                SilverMob.setPrebidServerHost(Host.APPNEXUS);
                 break;
             case RUBICON:
-                PrebidMobile.setPrebidServerHost(Host.RUBICON);
+                SilverMob.setPrebidServerHost(Host.RUBICON);
                 break;
             case CUSTOM:
-                PrebidMobile.setPrebidServerHost(Host.CUSTOM);
+                SilverMob.setPrebidServerHost(Host.CUSTOM);
                 Host.CUSTOM.setHostUrl(buildCustomServerEndpoint(prebidServerSettings.getCustomPrebidServerUrl()));
                 break;
         }
-        PrebidMobile.initializeSdk(context, null);
+        SilverMob.initializeSdk(context, null);
 
         if (listener != null) {
             listener.onAdUnitRegistered();
@@ -112,7 +112,7 @@ public class SdkTest {
 
     private void setPrebidTargetingParams() {
         TargetingParams.setGender(TargetingParams.GENDER.FEMALE);
-        PrebidMobile.setShareGeoLocation(true);
+        SilverMob.setShareGeoLocation(true);
     }
 
 

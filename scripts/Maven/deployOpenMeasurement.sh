@@ -6,7 +6,7 @@
 #################################
 
 function echoX() {
-  echo -e "PREBID DEPLOY-LOG: $@"
+  echo -e "SILVERMOB DEPLOY-LOG: $@"
 }
 
 # $1 - absolute pom path, $2 - absolute aar path, $3 - absolute source path, $4 - absolute javadoc path
@@ -29,9 +29,9 @@ rm -r "$DEPLOY_DIR_ABSOLUTE" || true
 mkdir "$DEPLOY_DIR_ABSOLUTE"
 
 cd ..
-bash ./buildPrebidMobile.sh
+bash ./buildSilverMob.sh
 cp -r ../generated/* "$DEPLOY_DIR_ABSOLUTE" || true
 
-mavenDeploy $"$BASE_DIR/PrebidMobile-open-measurement-pom.xml" $"$DEPLOY_DIR_ABSOLUTE/omsdk.jar" $"$BASE_DIR/stub.jar" $"$BASE_DIR/stub.jar"
+mavenDeploy $"$BASE_DIR/SilverMob-open-measurement-pom.xml" $"$DEPLOY_DIR_ABSOLUTE/omsdk.jar" $"$BASE_DIR/stub.jar" $"$BASE_DIR/stub.jar"
 
 echoX "End Script"

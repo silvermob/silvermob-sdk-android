@@ -12,7 +12,7 @@ fi
 set -e
 
 function echoX() {
-  echo -e "PREBID DEPLOY-LOG: $@"
+  echo -e "SILVERMOB DEPLOY-LOG: $@"
 }
 
 # $1 - absolute pom path, $2 - absolute aar path, $3 - absolute source path, $4 - absolute javadoc path
@@ -36,11 +36,11 @@ rm -r "$DEPLOY_DIR_ABSOLUTE" || true
 mkdir "$DEPLOY_DIR_ABSOLUTE"
 
 cd ..
-bash ./buildPrebidMobile.sh
+bash ./buildSilverMob.sh
 
 cp -r ../generated/* "$DEPLOY_DIR_ABSOLUTE" || true
 
-modules=("PrebidMobile" "PrebidMobile-core" "PrebidMobile-gamEventHandlers" "PrebidMobile-admobAdapters" "PrebidMobile-maxAdapters")
+modules=("SilverMob" "SilverMob-core" "SilverMob-gamEventHandlers" "SilverMob-admobAdapters" "SilverMob-maxAdapters")
 extensions=("jar" "aar" "jar" "jar" "jar")
 for n in ${!modules[@]}; do
   echo -e "\n"

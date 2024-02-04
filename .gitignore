@@ -1,8 +1,8 @@
 # Maven
 *.asc
-Maven/PrebidMobile-javadoc.jar 
-Maven/PrebidMobile-sources.jar 
-Maven/PrebidMobile.jar
+Maven/SilverMob-javadoc.jar
+Maven/SilverMob-sources.jar
+Maven/SilverMob.jar
 Maven/Javadoc/
 
 # Calabash Test
@@ -28,9 +28,9 @@ gen/
 out/
 generated/
 scripts/Maven/*
-!scripts/Maven/deployPrebidMobile.sh
-!scripts/Maven/PrebidMobile-core-pom.xml
-!scripts/Maven/PrebidMobile-pom.xml
+!scripts/Maven/deploySilverMob.sh
+!scripts/Maven/SilverMob-core-pom.xml
+!scripts/Maven/SilverMob-pom.xml
 
 # Gradle files
 .gradle/

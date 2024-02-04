@@ -25,7 +25,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 function echoX() {
-  echo -e "PREBID BUILDLOG: $@"
+  echo -e "SILVERMOB BUILDLOG: $@"
 }
 
 die() {
@@ -47,7 +47,7 @@ AARPATH=build/outputs/aar
 BUILD_LIBS_PATH=build/libs
 TEMPDIR=$OUTDIR/temp
 LIBDIR=$BASEDIR
-PREBIDCORE=PrebidMobile
+PREBIDCORE=SilverMob
 
 echoX "$BASEDIR"
 
@@ -60,7 +60,7 @@ while read -r line; do
   fi
 done <$LIBDIR/build.gradle
 
-echoX "Start building Prebid Mobile version $RELEASE_VERSION"
+echoX "Start building SilverMob Sdk version $RELEASE_VERSION"
 
 ###########################
 # Prepare
@@ -78,19 +78,19 @@ cd $LIBDIR
 ###########################
 
 modules=(
-  "PrebidMobile"
-  "PrebidMobile-core"
-  "PrebidMobile-gamEventHandlers"
-  "PrebidMobile-admobAdapters"
-  "PrebidMobile-maxAdapters"
+  "SilverMob"
+  "SilverMob-core"
+  "SilverMob-gamEventHandlers"
+  "SilverMob-admobAdapters"
+  "SilverMob-maxAdapters"
 )
 
 projectPaths=(
-  "$BASEDIR/PrebidMobile"
-  "$BASEDIR/PrebidMobile/PrebidMobile-core"
-  "$BASEDIR/PrebidMobile/PrebidMobile-gamEventHandlers"
-  "$BASEDIR/PrebidMobile/PrebidMobile-admobAdapters"
-  "$BASEDIR/PrebidMobile/PrebidMobile-maxAdapters"
+  "$BASEDIR/SilverMob"
+  "$BASEDIR/SilverMob/SilverMob-core"
+  "$BASEDIR/SilverMob/SilverMob-gamEventHandlers"
+  "$BASEDIR/SilverMob/SilverMob-admobAdapters"
+  "$BASEDIR/SilverMob/SilverMob-maxAdapters"
 )
 
 mkdir "$OUTDIR/aar"
@@ -132,9 +132,9 @@ for n in ${!modules[@]}; do
     rm -r $TEMPDIR/output/META-INF/com
 
     # Creating a JAR File
-    if [ "${modules[$n]}" == "PrebidMobile-maxAdapters" ]; then
+    if [ "${modules[$n]}" == "SilverMob-maxAdapters" ]; then
       jar cf ${modules[$n]}.jar org* com* META-INF*
-    elif [ "${modules[$n]}" == "PrebidMobile" ]; then
+    elif [ "${modules[$n]}" == "SilverMob" ]; then
       jar cf ${modules[$n]}.jar META-INF*
     else
       jar cf ${modules[$n]}.jar org* META-INF*
@@ -171,7 +171,7 @@ if [ "$1" != "-nojar" ]; then
   cd $TEMPDIR
   mkdir output
   cd output
-  cp -a "$BASEDIR/PrebidMobile/omsdk-android/omsdk-android-1.4.1.aar" "$TEMPDIR/output"
+  cp -a "$BASEDIR/SilverMob/omsdk-android/omsdk-android-1.4.1.aar" "$TEMPDIR/output"
   unzip -q -o omsdk-android-1.4.1.aar
   # Delete all files instead classes.jar
   find . ! -name 'classes.jar' -type f -exec rm -f {} +
@@ -187,5 +187,5 @@ fi
 #######
 # End
 #######
-echoX "Please find Prebid Mobile product in $OUTDIR"
+echoX "Please find SilverMob Sdk product in $OUTDIR"
 echo -e "\n${GREEN}Done!${NC} \n"

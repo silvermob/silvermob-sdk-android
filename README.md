@@ -1,5 +1,3 @@
-[![Build Status](https://api.travis-ci.org/prebid/prebid-mobile-android.svg?branch=master)](https://travis-ci.org/prebid/prebid-mobile-android)
-
 # SilverMob Android SDK
 
 Easily include the SilverMob SDK using Maven. Simply add this line to your gradle dependencies:
@@ -126,3 +124,7 @@ Custom Network Name `SilverMob`, iOS Adapter Class Name `SilverMobMaxMediationAd
 3. Enable SilverMob network for your Ad Units: go to ad unit waterfall settings, scroll to **"Custom Networks"**, enable **SilverMob** and adjust settings accordingly. Wait around 60 minutes for Applovin to update Ad Unit and Network changes.
 ![ad unit settings](https://files.silvermob.com/img/2024-02-02_14-39-29.png)
 *Note: mediation adapters don't work in Test Mode, be sure to disable it for testing mediation.*
+
+## Acknowledgments
+
+This project is based on a fork of [Prebid Mobile Android SDK](https://github.com/prebid/prebid-mobile-android), licensed under the Apache License 2.0. We are grateful to the original authors for their work and contributions to the open-source community.

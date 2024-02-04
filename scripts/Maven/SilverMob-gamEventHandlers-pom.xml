@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.silvermob</groupId>
+    <artifactId>silvermob-sdk-gam-event-handlers</artifactId>
+    <version>2.2.0</version>
+
+    <packaging>jar</packaging>
+    <name>SilverMob Android SDK</name>
+    <description>SilverMob SDK</description>
+    <url>https://www.silvermob.com</url>
+
+    <scm>
+        <connection>scm:git:git@github.com:silvermob/silvermob-sdk-android.git</connection>
+        <developerConnection>scm:git:git@github.com:silvermob/silvermob-sdk-android.git</developerConnection>
+        <url>git@github.com:silvermob/silvermob-sdk-android.git</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>AppNexus Mobile Team</name>
+            <email>sdk@appnexus.com</email>
+            <organization>AppNexus, Inc.</organization>
+            <organizationUrl>http://www.appnexus.com</organizationUrl>
+        </developer>
+
+        <developer>
+            <name>RubiconProject Mobile Team</name>
+            <email>sdk@https://rubiconproject.com/</email>
+            <organization>The Rubicon Project, Inc.</organization>
+            <organizationUrl>https://rubiconproject.com</organizationUrl>
+        </developer>
+
+        <developer>
+            <name>Postindustria AdTech Team</name>
+            <email>hello@postindustria.com </email>
+            <organization>Postindustria LTD</organization>
+            <organizationUrl>https://postindustria.com/</organizationUrl>
+        </developer>
+
+        <developer>
+            <name>SilverMob Team</name>
+            <email>contact@silvermob.com</email>
+            <organization>ArtChaos s.r.o.</organization>
+            <organizationUrl>http://www.silvermob.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.silvermob</groupId>
+            <artifactId>silvermob-sdk</artifactId>
+            <version>2.2.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android.gms</groupId>
+            <artifactId>play-services-ads</artifactId>
+            <version>22.6.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
