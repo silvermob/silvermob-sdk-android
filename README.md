@@ -3,7 +3,7 @@
 Easily include the SilverMob SDK using Maven. Simply add this line to your gradle dependencies:
 
 ```groovy
-implementation 'com.silvermob:silbvermob-sdk:2.2.0'
+implementation 'com.silvermob:silvermob-sdk:2.2.0'
 ```
 
 ## Integrate SilverMob SDK with your existing Applovin MAX SDK
