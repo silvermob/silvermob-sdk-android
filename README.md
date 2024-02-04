@@ -22,7 +22,7 @@ allprojects {
 ```
 App module build.gradle:
 ```groovy
-implementation('com.silvermob:silbermob-sdk-max-adapters:x.x.x')
+implementation('com.silvermob:silvermob-sdk-max-adapters:x.x.x')
 ```
 ### Adjust banner integration
 **Code for the small banner integration:**
