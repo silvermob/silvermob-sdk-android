@@ -24,6 +24,18 @@ App module build.gradle:
 ```groovy
 implementation('com.silvermob:silvermob-sdk-max-adapters:x.x.x')
 ```
+### Initialize SDK in your app initialization code
+```kotlin
+        SilverMob.setServerAccountId("YOUR_ACCOUNT_ID")
+        SilverMob.initializeSdk(applicationContext) { status ->
+            if (status == InitializationStatus.SUCCEEDED) {
+                Log.d(TAG, "SDK initialized successfully!")
+            } else {
+                Log.e(TAG, "SDK initialization error: $status\n${status.description}")
+            }
+        }
+```
+
 ### Adjust banner integration
 **Code for the small banner integration:**
 ```kotlin

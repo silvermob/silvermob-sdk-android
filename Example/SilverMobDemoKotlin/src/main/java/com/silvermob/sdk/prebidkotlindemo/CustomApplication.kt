@@ -40,15 +40,15 @@ class CustomApplication : Application() {
     }
 
     private fun initSilverMobSdk() {
-        com.silvermob.sdk.SilverMob.setServerAccountId("13c4f9d0-6d7d-4398-8e39-f08052acbc70")
-        com.silvermob.sdk.SilverMob.initializeSdk(applicationContext) { status ->
-            if (status == com.silvermob.sdk.api.data.InitializationStatus.SUCCEEDED) {
+        SilverMob.setServerAccountId("13c4f9d0-6d7d-4398-8e39-f08052acbc70")
+        SilverMob.initializeSdk(applicationContext) { status ->
+            if (status == InitializationStatus.SUCCEEDED) {
                 Log.d(TAG, "SDK initialized successfully!")
             } else {
                 Log.e(TAG, "SDK initialization error: $status\n${status.description}")
             }
         }
-        com.silvermob.sdk.SilverMob.setShareGeoLocation(true)
+        SilverMob.setShareGeoLocation(true)
     }
 
     private fun initAdMob() {
