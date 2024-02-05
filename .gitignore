@@ -1,8 +1,8 @@
 # Maven
 *.asc
-Maven/SilverMob-javadoc.jar
-Maven/SilverMob-sources.jar
-Maven/SilverMob.jar
+Maven/SilverMobSdk-javadoc.jar
+Maven/SilverMobSdk-sources.jar
+Maven/SilverMobSdk.jar
 Maven/Javadoc/
 
 # Calabash Test
@@ -29,8 +29,8 @@ out/
 generated/
 scripts/Maven/*
 !scripts/Maven/deploySilverMob.sh
-!scripts/Maven/SilverMob-core-pom.xml
-!scripts/Maven/SilverMob-pom.xml
+!scripts/Maven/SilverMobSdk-core-pom.xml
+!scripts/Maven/SilverMobSdk-pom.xml
 
 # Gradle files
 .gradle/

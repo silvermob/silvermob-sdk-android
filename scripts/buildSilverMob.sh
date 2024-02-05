@@ -78,19 +78,19 @@ cd $LIBDIR
 ###########################
 
 modules=(
-  "SilverMob"
-  "SilverMob-core"
-  "SilverMob-gamEventHandlers"
-  "SilverMob-admobAdapters"
-  "SilverMob-maxAdapters"
+  "SilverMobSdk"
+  "SilverMobSdk-core"
+  "SilverMobSdk-gamEventHandlers"
+  "SilverMobSdk-admobAdapters"
+  "SilverMobSdk-maxAdapters"
 )
 
 projectPaths=(
-  "$BASEDIR/SilverMob"
-  "$BASEDIR/SilverMob/SilverMob-core"
-  "$BASEDIR/SilverMob/SilverMob-gamEventHandlers"
-  "$BASEDIR/SilverMob/SilverMob-admobAdapters"
-  "$BASEDIR/SilverMob/SilverMob-maxAdapters"
+  "$BASEDIR/SilverMobSdk"
+  "$BASEDIR/SilverMobSdk/SilverMobSdk-core"
+  "$BASEDIR/SilverMobSdk/SilverMobSdk-gamEventHandlers"
+  "$BASEDIR/SilverMobSdk/SilverMobSdk-admobAdapters"
+  "$BASEDIR/SilverMobSdk/SilverMobSdk-maxAdapters"
 )
 
 mkdir "$OUTDIR/aar"
@@ -133,11 +133,11 @@ for n in ${!modules[@]}; do
 
     # Creating a JAR File
     if [ "${modules[$n]}" == "SilverMob-maxAdapters" ]; then
-      jar cf ${modules[$n]}.jar org* com* META-INF*
+      jar cf ${modules[$n]}.jar com* META-INF*
     elif [ "${modules[$n]}" == "SilverMob" ]; then
       jar cf ${modules[$n]}.jar META-INF*
     else
-      jar cf ${modules[$n]}.jar org* META-INF*
+      jar cf ${modules[$n]}.jar META-INF*
     fi
 
     # move jar into a result direcotory
@@ -171,7 +171,7 @@ if [ "$1" != "-nojar" ]; then
   cd $TEMPDIR
   mkdir output
   cd output
-  cp -a "$BASEDIR/SilverMob/omsdk-android/omsdk-android-1.4.1.aar" "$TEMPDIR/output"
+  cp -a "$BASEDIR/SilverMobSdk/omsdk-android/omsdk-android-1.4.1.aar" "$TEMPDIR/output"
   unzip -q -o omsdk-android-1.4.1.aar
   # Delete all files instead classes.jar
   find . ! -name 'classes.jar' -type f -exec rm -f {} +

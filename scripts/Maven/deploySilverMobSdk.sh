@@ -12,7 +12,7 @@ fi
 set -e
 
 function echoX() {
-  echo -e "SILVERMOB DEPLOY-LOG: $@"
+  echo -e "SilverMobSdk DEPLOY-LOG: $@"
 }
 
 # $1 - absolute pom path, $2 - absolute aar path, $3 - absolute source path, $4 - absolute javadoc path
@@ -40,7 +40,7 @@ bash ./buildSilverMob.sh
 
 cp -r ../generated/* "$DEPLOY_DIR_ABSOLUTE" || true
 
-modules=("SilverMob" "SilverMob-core" "SilverMob-gamEventHandlers" "SilverMob-admobAdapters" "SilverMob-maxAdapters")
+modules=("SilverMobSdk" "SilverMobSdk-core" "SilverMobSdk-gamEventHandlers" "SilverMobSdk-admobAdapters" "SilverMobSdk-maxAdapters")
 extensions=("jar" "aar" "jar" "jar" "jar")
 for n in ${!modules[@]}; do
   echo -e "\n"
