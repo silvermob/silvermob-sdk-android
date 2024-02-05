@@ -58,8 +58,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.silvermob</groupId>
-            <artifactId>silvermob-sdk-open-measurement</artifactId>
+            <groupId>org.prebid</groupId>
+            <artifactId>prebid-mobile-sdk-open-measurement</artifactId>
             <version>1.4.1</version>
             <scope>compile</scope>
         </dependency>
