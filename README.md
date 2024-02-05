@@ -1,10 +1,7 @@
 # SilverMob Android SDK
 
-Easily include the SilverMob SDK using Maven. Simply add this line to your gradle dependencies:
+SilverMob Android SDK allows you to display SilverMob advertisement in your app.
 
-```groovy
-implementation 'com.silvermob:silvermob-sdk:2.2.1'
-```
 
 ## Integrate SilverMob SDK with your existing Applovin MAX SDK
 This guide assumes you already have [Applovin MAX SDK](https://dash.applovin.com/documentation/mediation/android/getting-started/integration) correctly integrated. 
@@ -22,7 +19,8 @@ allprojects {
 ```
 App module build.gradle:
 ```groovy
-implementation('com.silvermob:silvermob-sdk-max-adapters:x.x.x')
+implementation("com.silvermob:silvermob-sdk:2.2.1")
+implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.1")
 ```
 ### Initialize SDK in your app initialization code
 ```kotlin
