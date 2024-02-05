@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #################################
-# Update Maven Release folder
+# Generate Artifacts with Signatures and Checksums
 #################################
 
 # Merge Script
@@ -15,47 +15,51 @@ function echoX() {
   echo -e "SilverMobSdk DEPLOY-LOG: $@"
 }
 
-# $1 - absolute pom path, $2 - absolute aar path, $3 - absolute source path, $4 - absolute javadoc path
-function mavenDeploy() {
-  echoX "Deploying ${2} on Maven..."
-
-    mvn gpg:sign-and-deploy-file "-DpomFile=${1}" "-Dfile=${2}" "-DrepositoryId=ossrh" "-Durl=https://oss.sonatype.org/service/local/staging/deploy/maven2/" "-DstagingRepositoryId=ossrh" "-Dsources=${3}" "-Djavadoc=${4}" || {
-      echoX "Deploy failed!"
-      echoX "End Script"
-      exit 1
-    }
-
-  echoX "Please complete the release process by promoting the jar at https://oss.sonatype.org/#stagingRepositories"
-}
-
+VERSION="2.2.0"
 BASE_DIR="$PWD"
 DEPLOY_DIR_NAME="filesToDeploy"
 DEPLOY_DIR_ABSOLUTE="$BASE_DIR/$DEPLOY_DIR_NAME"
 
-rm -r "$DEPLOY_DIR_ABSOLUTE" || true
-mkdir "$DEPLOY_DIR_ABSOLUTE"
+# Cleanup previous deployment folder if exists
+rm -rf "$DEPLOY_DIR_ABSOLUTE" || true
+mkdir -p "$DEPLOY_DIR_ABSOLUTE"
 
 cd ..
 bash ./buildSilverMob.sh
 
+# Copy generated artifacts
 cp -r ../generated/* "$DEPLOY_DIR_ABSOLUTE" || true
 
 modules=("SilverMobSdk" "SilverMobSdk-core" "SilverMobSdk-gamEventHandlers" "SilverMobSdk-admobAdapters" "SilverMobSdk-maxAdapters")
+artifactNames=("silvermob-sdk" "silvermob-sdk-core" "silvermob-sdk-gam-event-handlers" "silvermob-sdk-admob-adapters" "silvermob-sdk-max-adapters")
 extensions=("jar" "aar" "jar" "jar" "jar")
+
 for n in ${!modules[@]}; do
-  echo -e "\n"
-  echoX "Deploying ${modules[$n]} on Maven..."
-
-  extension="${extensions[$n]}"
   module="${modules[$n]}"
-  if [ "$extension" == "aar" ]; then
-    compiledPath=$"$DEPLOY_DIR_ABSOLUTE/aar/${module}-release.aar"
-  else
-    compiledPath=$"$DEPLOY_DIR_ABSOLUTE/${module}.jar"
-  fi
-  mavenDeploy $"$BASE_DIR/${module}-pom.xml" "$compiledPath" $"$DEPLOY_DIR_ABSOLUTE/${module}-sources.jar" $"$DEPLOY_DIR_ABSOLUTE/${module}-javadoc.jar"
+  artifact="${artifactNames[$n]}"
+  extension="${extensions[$n]}"
+  targetDir="$DEPLOY_DIR_ABSOLUTE/com/silvermob/${artifact}/$VERSION"
+  mkdir -p "$targetDir"
 
-  echoX "Please complete the release process by promoting the jar at https://oss.sonatype.org/#stagingRepositories"
+  # Copy artifacts to the new structure
+  if [ "$extension" == "aar" ]; then
+    compiledPath="../generated/aar/${module}-release.aar"
+  else
+    compiledPath="../generated/${module}.jar"
+  fi
+  cp "$compiledPath" "$targetDir/${artifact}-$VERSION.$extension"
+  cp "../generated/${module}-sources.jar" "$targetDir/${artifact}-$VERSION-sources.jar"
+  cp "../generated/${module}-javadoc.jar" "$targetDir/${artifact}-$VERSION-javadoc.jar"
+  cp "$BASE_DIR/${module}-pom.xml" "$targetDir/${artifact}-$VERSION.pom"
+
+  # Generate signatures and checksums
+  for file in "$targetDir"/*; do
+    gpg --batch --yes --detach-sign --armor "$file"
+    md5sum "$file" | cut -d' ' -f1 > "$file.md5"
+    sha1sum "$file" | cut -d' ' -f1 > "$file.sha1"
+  done
+
+  echoX "Artifacts prepared for ${module}"
 done
 
-echoX "End Script"
+echoX "Artifacts generation complete"
