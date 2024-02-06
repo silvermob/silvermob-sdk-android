@@ -15,7 +15,7 @@ function echoX() {
   echo -e "SilverMobSdk DEPLOY-LOG: $@"
 }
 
-VERSION="2.2.2"
+VERSION="2.2.3"
 BASE_DIR="$PWD"
 DEPLOY_DIR_NAME="filesToDeploy"
 DEPLOY_DIR_ABSOLUTE="$BASE_DIR/$DEPLOY_DIR_NAME"
@@ -32,7 +32,7 @@ cp -r ../generated/* "$DEPLOY_DIR_ABSOLUTE" || true
 
 modules=("SilverMobSdk" "SilverMobSdk-core" "SilverMobSdk-gamEventHandlers" "SilverMobSdk-admobAdapters" "SilverMobSdk-maxAdapters")
 artifactNames=("silvermob-sdk" "silvermob-sdk-core" "silvermob-sdk-gam-event-handlers" "silvermob-sdk-admob-adapters" "silvermob-sdk-max-adapters")
-extensions=("jar" "aar" "jar" "jar" "jar")
+extensions=("jar" "aar" "aar" "aar" "aar")
 
 for n in ${!modules[@]}; do
   module="${modules[$n]}"
