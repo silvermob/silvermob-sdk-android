@@ -19,8 +19,8 @@ allprojects {
 ```
 App module build.gradle:
 ```groovy
-implementation("com.silvermob:silvermob-sdk:2.2.3")
-implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.3")
+implementation("com.silvermob:silvermob-sdk:2.2.4")
+implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.4")
 ```
 ### Initialize SDK in your app initialization code
 ```kotlin

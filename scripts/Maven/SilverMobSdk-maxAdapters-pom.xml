@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.silvermob</groupId>
     <artifactId>silvermob-sdk-max-adapters</artifactId>
-    <version>2.2.3</version>
+    <version>2.2.4</version>
 
-    <packaging>jar</packaging>
+    <packaging>aar</packaging>
     <name>SilverMob Android SDK</name>
     <description>SilverMob SDK</description>
     <url>https://www.silvermob.com</url>
@@ -59,7 +59,7 @@
         <dependency>
             <groupId>com.silvermob</groupId>
             <artifactId>silvermob-sdk</artifactId>
-            <version>2.2.3</version>
+            <version>2.2.4</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
