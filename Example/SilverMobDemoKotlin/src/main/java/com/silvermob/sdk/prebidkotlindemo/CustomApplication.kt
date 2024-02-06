@@ -49,7 +49,7 @@ class CustomApplication : Application() {
             }
         }
         SilverMob.setShareGeoLocation(true)
-        SilverMob.setPbsDebug(true)
+        SilverMob.setPbsDebug(true)//Test mode for SilverMob test banners, disable in production
     }
 
     private fun initAdMob() {
