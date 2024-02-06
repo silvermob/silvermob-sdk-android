@@ -33,10 +33,10 @@ dependencies {
     implementation project(':SilverMobSdk-maxAdapters')
 
     // For testing staging releases
-//    implementation "org.prebid:prebid-mobile-sdk:$prebidSdkVersionName"
-//    implementation "org.prebid:prebid-mobile-sdk-gam-event-handlers:$prebidSdkVersionName"
-//    implementation "org.prebid:prebid-mobile-sdk-admob-adapters:$prebidSdkVersionName"
-//    implementation "org.prebid:prebid-mobile-sdk-max-adapters:$prebidSdkVersionName"
+//    implementation "com.silvermob:silvermob-sdk:$prebidSdkVersionName"
+//    implementation "com.silvermob:silvermob-sdk-gam-event-handlers:$prebidSdkVersionName"
+//    implementation "com.silvermob:silvermob-sdk-admob-adapters:$prebidSdkVersionName"
+//    implementation "com.silvermob:silvermob-sdk-max-adapters:$prebidSdkVersionName"
 
     // Standard libraries
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

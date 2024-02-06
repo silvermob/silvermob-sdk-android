@@ -49,6 +49,7 @@ class CustomApplication : Application() {
             }
         }
         SilverMob.setShareGeoLocation(true)
+        SilverMob.setPbsDebug(true)
     }
 
     private fun initAdMob() {

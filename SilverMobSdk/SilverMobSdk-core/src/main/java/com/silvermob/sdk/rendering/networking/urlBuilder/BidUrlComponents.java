@@ -34,9 +34,6 @@ public class BidUrlComponents extends URLComponents {
         String openrtb = "";
         try {
             JSONObject bidRequestJson = adRequestInput.getBidRequest().getJsonObject();
-
-            //TODO slvrmb: constant for test mode
-            //bidRequestJson.put("test",1);
             if (bidRequestJson.length() > 0) {
                 openrtb = bidRequestJson.toString();
             }
