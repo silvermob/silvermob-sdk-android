@@ -15,7 +15,7 @@ function echoX() {
   echo -e "SilverMobSdk DEPLOY-LOG: $@"
 }
 
-VERSION="2.2.2"
+VERSION="2.2.3"
 BASE_DIR="$PWD"
 DEPLOY_DIR_NAME="filesToDeploy"
 DEPLOY_DIR_ABSOLUTE="$BASE_DIR/$DEPLOY_DIR_NAME"
