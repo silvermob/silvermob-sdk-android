@@ -16,6 +16,7 @@
 package com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp
 
 import android.os.Bundle
+import com.silvermob.sdk.AdSize
 import com.silvermob.sdk.api.data.AdUnitFormat
 import com.silvermob.sdk.api.exceptions.AdException
 import com.silvermob.sdk.api.rendering.InterstitialAdUnit
@@ -26,10 +27,10 @@ import java.util.*
 class InAppDisplayInterstitialActivity : BaseAdActivity() {
 
     companion object {
-        const val CONFIG_ID = "prebid-demo-display-interstitial-320-480"
+        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
     }
 
-    private var adUnit: com.silvermob.sdk.api.rendering.InterstitialAdUnit? = null
+    private var adUnit: InterstitialAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,16 +40,17 @@ class InAppDisplayInterstitialActivity : BaseAdActivity() {
     }
 
     private fun createAd() {
-        adUnit = com.silvermob.sdk.api.rendering.InterstitialAdUnit(this, CONFIG_ID, EnumSet.of(AdUnitFormat.BANNER))
-        adUnit?.setInterstitialAdUnitListener(object : com.silvermob.sdk.api.rendering.listeners.InterstitialAdUnitListener {
-            override fun onAdLoaded(interstitialAdUnit: com.silvermob.sdk.api.rendering.InterstitialAdUnit?) {
+        adUnit = InterstitialAdUnit(this, CONFIG_ID, EnumSet.of(AdUnitFormat.BANNER,AdUnitFormat.VIDEO))
+        adUnit?.setMinSizePercentage(AdSize(50,50))
+        adUnit?.setInterstitialAdUnitListener(object : InterstitialAdUnitListener {
+            override fun onAdLoaded(interstitialAdUnit: InterstitialAdUnit?) {
                 adUnit?.show()
             }
 
-            override fun onAdDisplayed(interstitialAdUnit: com.silvermob.sdk.api.rendering.InterstitialAdUnit?) {}
-            override fun onAdFailed(interstitialAdUnit: com.silvermob.sdk.api.rendering.InterstitialAdUnit?, e: com.silvermob.sdk.api.exceptions.AdException?) {}
-            override fun onAdClicked(interstitialAdUnit: com.silvermob.sdk.api.rendering.InterstitialAdUnit?) {}
-            override fun onAdClosed(interstitialAdUnit: com.silvermob.sdk.api.rendering.InterstitialAdUnit?) {}
+            override fun onAdDisplayed(interstitialAdUnit: InterstitialAdUnit?) {}
+            override fun onAdFailed(interstitialAdUnit: InterstitialAdUnit?, e: AdException?) {}
+            override fun onAdClicked(interstitialAdUnit: InterstitialAdUnit?) {}
+            override fun onAdClosed(interstitialAdUnit: InterstitialAdUnit?) {}
         })
         adUnit?.loadAd()
     }

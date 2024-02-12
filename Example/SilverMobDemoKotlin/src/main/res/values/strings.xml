@@ -32,18 +32,18 @@
     <string name="gam_rendering_video_rewarded">GAM (Rendering API) Video Rewarded</string>
     <string name="gam_rendering_native">GAM (Rendering API) Native</string>
 
-    <string name="in_app_display_banner_320x50">In-App Display Banner 320x50</string>
-    <string name="in_app_display_banner_multi_size">In-App Display Banner Multi-size</string>
-    <string name="in_app_display_banner_mraid_resize">In-App Display Banner 320x50 MRAID Resize</string>
-    <string name="in_app_display_banner_mraid_expand">In-App Display Banner 320x50 MRAID Expand 1-Part</string>
-    <string name="in_app_display_banner_mraid_resize_errors">In-App Display Banner 320x50 MRAID Resize With Errors</string>
-    <string name="in_app_video_banner">In-App Video Banner</string>
-    <string name="in_app_display_interstitial">In-App Display Interstitial</string>
-    <string name="in_app_video_interstitial">In-App Video Interstitial</string>
-    <string name="in_app_video_interstitial_end_card">In-App Video Interstitial With End Card</string>
-    <string name="in_app_video_interstitial_multi_format">In-App Video Interstitial Multi-Format</string>
-    <string name="in_app_video_rewarded">In-App Video Rewarded</string>
-    <string name="in_app_native">In-App Native</string>
+    <string name="in_app_display_banner_320x50">Standalone Display Banner 320x50</string>
+    <string name="in_app_display_banner_multi_size">Standalone Display Banner Multi-size</string>
+    <string name="in_app_display_banner_mraid_resize">Standalone Display Banner 320x50 MRAID Resize</string>
+    <string name="in_app_display_banner_mraid_expand">Standalone Display Banner 320x50 MRAID Expand 1-Part</string>
+    <string name="in_app_display_banner_mraid_resize_errors">Standalone Display Banner 320x50 MRAID Resize With Errors</string>
+    <string name="in_app_video_banner">Standalone MREC Banner</string>
+    <string name="in_app_display_interstitial">Standalone Display Interstitial</string>
+    <string name="in_app_video_interstitial">Standalone Video Interstitial</string>
+    <string name="in_app_video_interstitial_end_card">Standalone Video Interstitial With End Card</string>
+    <string name="in_app_video_interstitial_multi_format">Standalone Video Interstitial Multi-Format</string>
+    <string name="in_app_video_rewarded">Standalone Video Rewarded</string>
+    <string name="in_app_native">Standalone Native</string>
 
     <string name="ad_mob_display_banner_320x50">AdMob Display Banner 320x50</string>
     <string name="ad_mob_display_interstitial">AdMob Display Interstitial</string>

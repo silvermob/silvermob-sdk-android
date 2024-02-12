@@ -6,7 +6,7 @@ enum class IntegrationKind(
 
     GAM_ORIGINAL("GAM (Original API)"),
     GAM_RENDERING("GAM (Rendering API)"),
-    NO_AD_SERVER("In-App (No Ad Server)"),
+    STANDALONE("Standalone"),
     ADMOB("AdMob"),
     MAX("AppLovin MAX");
 

@@ -18,21 +18,23 @@ package com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp
 import android.os.Bundle
 import android.util.Log
 import com.silvermob.sdk.AdSize
+import com.silvermob.sdk.api.data.AdUnitFormat
 import com.silvermob.sdk.api.data.VideoPlacementType
 import com.silvermob.sdk.api.exceptions.AdException
 import com.silvermob.sdk.api.rendering.BannerView
 import com.silvermob.sdk.api.rendering.listeners.BannerViewListener
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
+import java.util.EnumSet
 
 class InAppVideoBannerActivity : BaseAdActivity() {
 
     companion object {
-        const val CONFIG_ID = "prebid-demo-video-outstream"
+        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
         const val WIDTH = 300
         const val HEIGHT = 250
     }
 
-    private var bannerView: com.silvermob.sdk.api.rendering.BannerView? = null
+    private var bannerView: BannerView? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,22 +44,22 @@ class InAppVideoBannerActivity : BaseAdActivity() {
     }
 
     private fun createAd() {
-        bannerView = com.silvermob.sdk.api.rendering.BannerView(
+        bannerView = BannerView(
                 this,
                 CONFIG_ID,
-                com.silvermob.sdk.AdSize(WIDTH, HEIGHT)
+                AdSize(WIDTH, HEIGHT),
         )
 
-        bannerView?.videoPlacementType = com.silvermob.sdk.api.data.VideoPlacementType.IN_BANNER
-        bannerView?.setBannerListener(object : com.silvermob.sdk.api.rendering.listeners.BannerViewListener {
-            override fun onAdFailed(bannerView: com.silvermob.sdk.api.rendering.BannerView?, exception: com.silvermob.sdk.api.exceptions.AdException?) {
+        //bannerView?.videoPlacementType = VideoPlacementType.IN_BANNER
+        bannerView?.setBannerListener(object : BannerViewListener {
+            override fun onAdFailed(bannerView: BannerView?, exception: AdException?) {
                 Log.e("InAppVideoBanner", "Ad failed: ${exception?.message}")
             }
 
-            override fun onAdLoaded(bannerView: com.silvermob.sdk.api.rendering.BannerView?) {}
-            override fun onAdClicked(bannerView: com.silvermob.sdk.api.rendering.BannerView?) {}
-            override fun onAdDisplayed(bannerView: com.silvermob.sdk.api.rendering.BannerView?) {}
-            override fun onAdClosed(bannerView: com.silvermob.sdk.api.rendering.BannerView?) {}
+            override fun onAdLoaded(bannerView: BannerView?) {}
+            override fun onAdClicked(bannerView: BannerView?) {}
+            override fun onAdDisplayed(bannerView: BannerView?) {}
+            override fun onAdClosed(bannerView: BannerView?) {}
         })
         bannerView?.loadAd()
 

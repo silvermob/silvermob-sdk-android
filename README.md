@@ -2,11 +2,21 @@
 
 SilverMob Android SDK allows you to display SilverMob advertisement in your app.
 
+**Contents:**
+- [Add SDK to your project and initialize it](#add-sdk-to-your-project-and-initialize-it)
+    * [Integrate SilverMob](#integrate-silvermob)
+    * [Initialize SDK in your app initialization code](#initialize-sdk-in-your-app-initialization-code)
+- [Use SilverMob SDK standalone to display ads in your app](#use-silvermob-sdk-standalone-to-display-ads-in-your-app)
+- [Integrate SilverMob SDK with your existing Applovin MAX SDK](#integrate-silvermob-sdk-with-your-existing-applovin-max-sdk)
+    * [Integrate SilverMob Adapters](#integrate-silvermob-adapters)
+    * [Adjust banner integration](#adjust-banner-integration)
+    * [Setup SilverMob SDK adapter in your Applovin account](#setup-silvermob-sdk-adapter-in-your-applovin-account)
+- [Acknowledgments](#acknowledgments)
 
-## Integrate SilverMob SDK with your existing Applovin MAX SDK
-This guide assumes you already have [Applovin MAX SDK](https://dash.applovin.com/documentation/mediation/android/getting-started/integration) correctly integrated. 
 
-### Integrate SilverMob Adapters
+## Add SDK to your project and initialize it
+These steps are common for every integration.
+### Integrate SilverMob
 Root build.gradle
 ```groovy
 allprojects {
@@ -20,7 +30,6 @@ allprojects {
 App module build.gradle:
 ```groovy
 implementation("com.silvermob:silvermob-sdk:2.2.4")
-implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.4")
 ```
 ### Initialize SDK in your app initialization code
 ```kotlin
@@ -32,6 +41,73 @@ implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.4")
                 Log.e(TAG, "SDK initialization error: $status\n${status.description}")
             }
         }
+```
+
+## Use SilverMob SDK standalone to display ads in your app
+**Code for the small banner integration:**
+```kotlin
+// 1. Create an Ad View
+bannerView = BannerView(requireContext(), SILVERMOB_SDK_AD_UNIT, AdSize(WIDTH, HEIGHT))
+bannerView?.setBannerListener(this)
+
+// Add view to viewContainer
+viewContainer?.addView(bannerView)
+adView?.setAutoRefreshDelay(refreshTimeSeconds)
+
+// 2. Load ad
+bannerView?.loadAd()
+```
+**Code for interstitial integration:**
+```kotlin
+// 1. Create an Interstitial Ad Unit
+interstitialAdUnit = InterstitialAdUnit(this, SILVERMOB_SDK_AD_UNIT, EnumSet.of(AdUnitFormat.BANNER,AdUnitFormat.VIDEO))
+interstitialAdUnit?.setMinSizePercentage(AdSize(50,50)) //Set minimum % of screen ad should occupy
+//2. Set load listener 
+interstitialAdUnit?.setInterstitialAdUnitListener(object : InterstitialAdUnitListener {
+    override fun onAdLoaded(interstitialAdUnit: InterstitialAdUnit?) {
+        interstitialAdUnit?.show() //Show the ad
+    }
+
+    override fun onAdDisplayed(interstitialAdUnit: InterstitialAdUnit?) {}
+    override fun onAdFailed(interstitialAdUnit: InterstitialAdUnit?, e: AdException?) {}
+    override fun onAdClicked(interstitialAdUnit: InterstitialAdUnit?) {}
+    override fun onAdClosed(interstitialAdUnit: InterstitialAdUnit?) {}
+})
+
+// 3. Load Ad
+interstitialAdUnit?.loadAd()
+```
+_Note: Pay attention that the loadAd() should be called on the main thread._
+
+**Code for rewarded video integration:**
+```kotlin
+// 1. Create an Ad Unit
+adUnit = RewardedAdUnit(this, SILVERMOB_SDK_AD_UNIT)
+//2. Set load listener 
+val rewardedAdUnitListener = adUnit?.setRewardedAdUnitListener(object :
+    RewardedAdUnitListener {
+    override fun onAdLoaded(rewardedAdUnit: RewardedAdUnit?) {
+        adUnit?.show()
+    }
+
+    override fun onAdDisplayed(rewardedAdUnit: RewardedAdUnit?) {}
+    override fun onAdFailed(rewardedAdUnit: RewardedAdUnit?,exception: AdException?) {}
+    override fun onAdClicked(rewardedAdUnit: RewardedAdUnit?) {}
+    override fun onAdClosed(rewardedAdUnit: RewardedAdUnit?) {}
+    override fun onUserEarnedReward(rewardedAdUnit: RewardedAdUnit?) {}
+})
+// 3. Load Ad
+adUnit?.loadAd()
+```
+
+
+## Integrate SilverMob SDK with your existing Applovin MAX SDK
+This guide assumes you already have [Applovin MAX SDK](https://dash.applovin.com/documentation/mediation/android/getting-started/integration) correctly integrated. 
+
+### Integrate SilverMob Adapters
+
+```groovy
+implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.4")
 ```
 
 ### Adjust banner integration
@@ -76,11 +152,11 @@ adUnit = MediationInterstitialAdUnit(
             EnumSet.of(AdUnitFormat.BANNER),
             mediationUtils
         )
-        
-// 4. Make a bid request
+adUnit?.setMinSizePercentage(50,50) //Set minimum % of screen ad should occupy       
+// 5. Make a bid request
 adUnit?.fetchDemand {
  
-    // 5. Make an ad request to MAX
+    // 6. Make an ad request to MAX
     maxInterstitialAd?.loadAd()
 }
 ```
@@ -134,7 +210,6 @@ Custom Network Name `SilverMob`, iOS Adapter Class Name `SilverMobMaxMediationAd
 3. Enable SilverMob network for your Ad Units: go to ad unit waterfall settings, scroll to **"Custom Networks"**, enable **SilverMob** and adjust settings accordingly. Wait around 60 minutes for Applovin to update Ad Unit and Network changes.
 ![ad unit settings](https://files.silvermob.com/img/2024-02-02_14-39-29.png)
 *Note: mediation adapters don't work in Test Mode, be sure to disable it for testing mediation.*
-
 ## Acknowledgments
 
 This project is based on a fork of [Prebid Mobile Android SDK](https://github.com/prebid/prebid-mobile-android), licensed under the Apache License 2.0. We are grateful to the original authors for their work and contributions to the open-source community.

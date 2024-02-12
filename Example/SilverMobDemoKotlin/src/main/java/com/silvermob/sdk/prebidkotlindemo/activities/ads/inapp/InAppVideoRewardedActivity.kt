@@ -24,10 +24,10 @@ import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 class InAppVideoRewardedActivity : BaseAdActivity() {
 
     companion object {
-        const val CONFIG_ID = "prebid-demo-video-rewarded-320-480"
+        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-2"
     }
 
-    private var adUnit: com.silvermob.sdk.api.rendering.RewardedAdUnit? = null
+    private var adUnit: RewardedAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,17 +37,23 @@ class InAppVideoRewardedActivity : BaseAdActivity() {
     }
 
     private fun createAd() {
-        adUnit = com.silvermob.sdk.api.rendering.RewardedAdUnit(this, CONFIG_ID)
-        adUnit?.setRewardedAdUnitListener(object : com.silvermob.sdk.api.rendering.listeners.RewardedAdUnitListener {
-            override fun onAdLoaded(rewardedAdUnit: com.silvermob.sdk.api.rendering.RewardedAdUnit?) {
+        adUnit = RewardedAdUnit(this, CONFIG_ID)
+        val rewardedAdUnitListener = adUnit?.setRewardedAdUnitListener(object :
+            RewardedAdUnitListener {
+            override fun onAdLoaded(rewardedAdUnit: RewardedAdUnit?) {
                 adUnit?.show()
             }
 
-            override fun onAdDisplayed(rewardedAdUnit: com.silvermob.sdk.api.rendering.RewardedAdUnit?) {}
-            override fun onAdFailed(rewardedAdUnit: com.silvermob.sdk.api.rendering.RewardedAdUnit?, exception: com.silvermob.sdk.api.exceptions.AdException?) {}
-            override fun onAdClicked(rewardedAdUnit: com.silvermob.sdk.api.rendering.RewardedAdUnit?) {}
-            override fun onAdClosed(rewardedAdUnit: com.silvermob.sdk.api.rendering.RewardedAdUnit?) {}
-            override fun onUserEarnedReward(rewardedAdUnit: com.silvermob.sdk.api.rendering.RewardedAdUnit?) {}
+            override fun onAdDisplayed(rewardedAdUnit: RewardedAdUnit?) {}
+            override fun onAdFailed(
+                rewardedAdUnit: RewardedAdUnit?,
+                exception: AdException?
+            ) {
+            }
+
+            override fun onAdClicked(rewardedAdUnit: RewardedAdUnit?) {}
+            override fun onAdClosed(rewardedAdUnit: RewardedAdUnit?) {}
+            override fun onUserEarnedReward(rewardedAdUnit: RewardedAdUnit?) {}
         })
         adUnit?.loadAd()
     }

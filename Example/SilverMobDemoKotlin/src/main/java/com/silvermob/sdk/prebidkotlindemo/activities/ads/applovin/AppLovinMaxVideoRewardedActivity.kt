@@ -33,7 +33,7 @@ class AppLovinMaxVideoRewardedActivity : BaseAdActivity() {
     }
 
     private var maxRewardedAd: MaxRewardedAd? = null
-    private var adUnit: com.silvermob.sdk.api.mediation.MediationRewardedVideoAdUnit? = null
+    private var adUnit: MediationRewardedVideoAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,7 +60,7 @@ class AppLovinMaxVideoRewardedActivity : BaseAdActivity() {
         })
 
         val mediationUtils = MaxMediationRewardedUtils(maxRewardedAd)
-        adUnit = com.silvermob.sdk.api.mediation.MediationRewardedVideoAdUnit(
+        adUnit = MediationRewardedVideoAdUnit(
                 this,
                 CONFIG_ID,
                 mediationUtils

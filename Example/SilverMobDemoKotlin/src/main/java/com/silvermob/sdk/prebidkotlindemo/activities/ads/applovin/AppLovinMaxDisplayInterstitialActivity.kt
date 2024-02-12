@@ -34,7 +34,7 @@ class AppLovinMaxDisplayInterstitialActivity : BaseAdActivity() {
     }
 
     private var maxInterstitialAd: MaxInterstitialAd? = null
-    private var adUnit: com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit? = null
+    private var adUnit: MediationInterstitialAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,12 +58,13 @@ class AppLovinMaxDisplayInterstitialActivity : BaseAdActivity() {
         })
 
         val mediationUtils = MaxMediationInterstitialUtils(maxInterstitialAd)
-        adUnit = com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit(
+        adUnit = MediationInterstitialAdUnit(
                 this,
                 CONFIG_ID,
-                EnumSet.of(AdUnitFormat.BANNER),
+                EnumSet.of(AdUnitFormat.BANNER,AdUnitFormat.VIDEO),
                 mediationUtils
         )
+        adUnit?.setMinSizePercentage(50,50)
         adUnit?.fetchDemand {
             maxInterstitialAd?.loadAd()
         }

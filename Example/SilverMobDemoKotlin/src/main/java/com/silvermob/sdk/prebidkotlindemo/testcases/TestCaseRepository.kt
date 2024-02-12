@@ -140,76 +140,76 @@ object TestCaseRepository {
         TestCase(
             R.string.in_app_display_banner_320x50,
             AdFormat.DISPLAY_BANNER,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppDisplayBanner320x50Activity::class.java,
         ),
-        TestCase(
+/*        TestCase(
             R.string.in_app_display_banner_multi_size,
             AdFormat.DISPLAY_BANNER,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppDisplayBannerMultiSizeActivity::class.java,
         ),
         TestCase(
             R.string.in_app_display_banner_mraid_resize,
             AdFormat.DISPLAY_BANNER,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppDisplayBannerMraidResizeActivity::class.java,
         ),
         TestCase(
             R.string.in_app_display_banner_mraid_expand,
             AdFormat.DISPLAY_BANNER,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppDisplayBannerMraidExpandActivity::class.java,
         ),
         TestCase(
             R.string.in_app_display_banner_mraid_resize_errors,
             AdFormat.DISPLAY_BANNER,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppDisplayBannerMraidResizeWithErrorsActivity::class.java,
-        ),
+        ),*/
         TestCase(
             R.string.in_app_video_banner,
             AdFormat.VIDEO_BANNER,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppVideoBannerActivity::class.java,
         ),
         TestCase(
             R.string.in_app_display_interstitial,
             AdFormat.DISPLAY_INTERSTITIAL,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppDisplayInterstitialActivity::class.java,
         ),
         TestCase(
             R.string.in_app_video_interstitial,
             AdFormat.VIDEO_INTERSTITIAL,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppVideoInterstitialActivity::class.java,
         ),
-        TestCase(
+        /*TestCase(
             R.string.in_app_video_interstitial_end_card,
             AdFormat.VIDEO_INTERSTITIAL,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppVideoInterstitialWithEndCardActivity::class.java,
         ),
         TestCase(
             R.string.in_app_video_interstitial_multi_format,
             AdFormat.MULTIFORMAT,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppVideoInterstitialMultiFormatActivity::class.java,
-        ),
+        ),*/
         TestCase(
             R.string.in_app_video_rewarded,
             AdFormat.VIDEO_REWARDED,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppVideoRewardedActivity::class.java,
         ),
-        TestCase(
+        /*TestCase(
             R.string.in_app_native,
             AdFormat.NATIVE,
-            IntegrationKind.NO_AD_SERVER,
+            IntegrationKind.STANDALONE,
             InAppNativeActivity::class.java,
         ),
-
+*/
         /* AdMob */
         TestCase(
             R.string.ad_mob_display_banner_320x50,

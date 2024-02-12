@@ -23,12 +23,12 @@ import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 class InAppDisplayBanner320x50Activity : BaseAdActivity() {
 
     companion object {
-        const val CONFIG_ID = "prebid-demo-banner-320-50"
+        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
         const val WIDTH = 320
         const val HEIGHT = 50
     }
 
-    private var adView: com.silvermob.sdk.api.rendering.BannerView? = null
+    private var adView: BannerView? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,10 +38,10 @@ class InAppDisplayBanner320x50Activity : BaseAdActivity() {
     }
 
     private fun createAd() {
-        adView = com.silvermob.sdk.api.rendering.BannerView(
+        adView = BannerView(
                 this,
                 CONFIG_ID,
-                com.silvermob.sdk.AdSize(WIDTH, HEIGHT)
+                AdSize(WIDTH, HEIGHT)
         )
 
         adWrapperView.addView(adView)
