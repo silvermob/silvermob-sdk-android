@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.silvermob</groupId>
     <artifactId>silvermob-sdk</artifactId>
-    <version>2.2.4</version>
+    <version>2.2.5</version>
     <packaging>jar</packaging>
 
     <name>SilverMob Android SDK</name>
@@ -59,7 +59,7 @@
         <dependency>
             <groupId>com.silvermob</groupId>
             <artifactId>silvermob-sdk-core</artifactId>
-            <version>2.2.4</version>
+            <version>2.2.5</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
