@@ -34,6 +34,8 @@ implementation("com.silvermob:silvermob-sdk:2.2.4")
 ### Initialize SDK in your app initialization code
 ```kotlin
         SilverMob.setServerAccountId("YOUR_ACCOUNT_ID")
+        SilverMob.setShareGeoLocation(true)
+        SilverMob.setPbsDebug(true)//WARNING: Test mode for SilverMob test banners, disable in production
         SilverMob.initializeSdk(applicationContext) { status ->
             if (status == InitializationStatus.SUCCEEDED) {
                 Log.d(TAG, "SDK initialized successfully!")
