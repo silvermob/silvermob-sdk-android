@@ -16,14 +16,15 @@
 
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
-import static org.junit.Assert.assertEquals;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Banner;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Pmp;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Video;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Banner;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Pmp;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Video;
+
+import static org.junit.Assert.assertEquals;
 
 public class ImpTest {
 

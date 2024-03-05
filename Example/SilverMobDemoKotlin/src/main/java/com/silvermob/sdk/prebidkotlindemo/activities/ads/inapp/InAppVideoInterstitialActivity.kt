@@ -21,7 +21,7 @@ import com.silvermob.sdk.api.exceptions.AdException
 import com.silvermob.sdk.api.rendering.InterstitialAdUnit
 import com.silvermob.sdk.api.rendering.listeners.InterstitialAdUnitListener
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
-import java.util.*
+import java.util.EnumSet
 
 class InAppVideoInterstitialActivity : BaseAdActivity() {
 

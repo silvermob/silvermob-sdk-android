@@ -16,9 +16,6 @@
 
 package com.silvermob.sdk.rendering.mraid.methods;
 
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBanner;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.HTMLCreative;
 import com.silvermob.sdk.rendering.models.internal.MraidEvent;

@@ -16,17 +16,6 @@
 
 package com.silvermob.sdk.rendering.networking.parameters;
 
-import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.ContentObject;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.TargetingParams;
@@ -37,7 +26,16 @@ import com.silvermob.sdk.rendering.models.openrtb.bidRequests.App;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 public class AppInfoParameterBuilderTest {

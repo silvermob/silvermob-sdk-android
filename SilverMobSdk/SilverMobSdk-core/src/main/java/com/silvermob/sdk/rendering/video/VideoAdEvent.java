@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.video;
 
 import com.silvermob.sdk.rendering.models.TrackingEvent;
-import com.silvermob.sdk.rendering.models.TrackingEvent;
 
 public class VideoAdEvent extends TrackingEvent {
 

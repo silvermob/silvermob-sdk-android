@@ -16,16 +16,20 @@
 
 package com.silvermob.sdk.rendering.video;
 
+import com.silvermob.sdk.rendering.models.TrackingEvent;
+import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
+import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import com.silvermob.sdk.rendering.models.TrackingEvent;
-import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
-import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 import org.robolectric.annotation.Config;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 @RunWith(JUnit4.class)
 @Config(sdk = 19)

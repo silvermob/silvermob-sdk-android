@@ -20,6 +20,10 @@ import android.os.Build;
 import android.os.RemoteException;
 import android.view.KeyEvent;
 
+import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.WebViewLocator;
+
+import java.util.concurrent.TimeUnit;
+
 import androidx.test.uiautomator.By;
 import androidx.test.uiautomator.BySelector;
 import androidx.test.uiautomator.UiDevice;
@@ -28,10 +32,6 @@ import androidx.test.uiautomator.UiObject2;
 import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
 import androidx.test.uiautomator.Until;
-
-import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.WebViewLocator;
-
-import java.util.concurrent.TimeUnit;
 
 import static androidx.test.espresso.web.assertion.WebViewAssertions.webContent;
 import static androidx.test.espresso.web.matcher.DomMatchers.hasElementWithId;

@@ -18,24 +18,33 @@ package com.silvermob.sdk.eventhandlers;
 
 import android.app.Activity;
 import android.os.Handler;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;
 import com.silvermob.sdk.rendering.bidding.listeners.RewardedVideoEventListener;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.HashMap;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 21)

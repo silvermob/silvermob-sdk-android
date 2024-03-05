@@ -2,13 +2,9 @@ package com.silvermob.sdk.javademo.activities.ads.gam.original;
 
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.admanager.AdManagerAdRequest;
 import com.google.android.gms.ads.admanager.AdManagerAdView;
-import com.silvermob.sdk.javademo.activities.BaseAdActivity;
-
 import com.silvermob.sdk.NativeAdUnit;
 import com.silvermob.sdk.NativeDataAsset;
 import com.silvermob.sdk.NativeEventTracker;
@@ -17,6 +13,8 @@ import com.silvermob.sdk.NativeTitleAsset;
 import com.silvermob.sdk.javademo.activities.BaseAdActivity;
 
 import java.util.ArrayList;
+
+import androidx.annotation.Nullable;
 
 public class GamOriginalApiNativeStyles extends BaseAdActivity {
 

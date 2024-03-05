@@ -17,10 +17,6 @@
 package com.silvermob.sdk.api.rendering.pluginrenderer;
 
 import com.silvermob.sdk.LogUtil;
-
-import androidx.annotation.VisibleForTesting;
-
-import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 
@@ -28,6 +24,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.VisibleForTesting;
 
 public class PrebidMobilePluginRegister {
 

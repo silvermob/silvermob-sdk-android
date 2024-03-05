@@ -25,8 +25,6 @@ import android.webkit.WebSettings.LayoutAlgorithm;
 import android.webkit.WebView;
 
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.webview.AdWebViewClient.AdAssetsLoadedListener;
 import com.silvermob.sdk.rendering.views.webview.mraid.MraidWebViewClient;
 
 public class AdWebView extends WebView {

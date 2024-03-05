@@ -11,8 +11,6 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
-import com.silvermob.sdk.admob.PrebidNativeAdapter
-import com.silvermob.sdk.api.mediation.MediationNativeAdUnit
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentAdmobNativeBinding

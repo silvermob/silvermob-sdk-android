@@ -4,11 +4,6 @@ import android.app.Application;
 import android.content.Context;
 import android.util.Log;
 
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.LogUtil.PrebidLogger;
 import com.silvermob.sdk.SilverMob;
@@ -21,6 +16,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 public class SdkInitializer {
 

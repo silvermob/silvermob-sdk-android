@@ -2,15 +2,12 @@ package com.silvermob.sdk.reflection.sdk;
 
 import android.content.Context;
 
+import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.reflection.Reflection;
 import com.silvermob.sdk.rendering.sdk.InitializationNotifier;
 import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
 
 import org.mockito.Mockito;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.reflection.Reflection;
-import com.silvermob.sdk.rendering.sdk.InitializationNotifier;
-import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
 
 public class PrebidMobileReflection {
 

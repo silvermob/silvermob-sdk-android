@@ -16,18 +16,7 @@
 
 package com.silvermob.sdk.api.rendering;
 
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_FOR_LOAD;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_GAM;
-
 import android.content.Context;
-
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdUnitFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.LogUtil;
@@ -43,6 +32,12 @@ import com.silvermob.sdk.rendering.bidding.interfaces.StandaloneInterstitialEven
 import com.silvermob.sdk.rendering.bidding.listeners.InterstitialEventListener;
 
 import java.util.EnumSet;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_FOR_LOAD;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_GAM;
 
 public class InterstitialAdUnit extends BaseInterstitialAdUnit {
 

@@ -17,16 +17,20 @@
 package com.silvermob.sdk.rendering.interstitial;
 
 import android.content.pm.ActivityInfo;
+
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

@@ -16,9 +16,6 @@
 
 package com.silvermob.sdk.renderingtestapp.utils
 
-import com.silvermob.sdk.Host
-import com.silvermob.sdk.SilverMob
-
 object SourcePicker {
 
 

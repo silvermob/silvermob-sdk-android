@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
+import com.silvermob.sdk.rendering.mraid.methods.network.RedirectUrlListener;
 import com.silvermob.sdk.rendering.utils.url.UrlHandler;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
@@ -28,17 +29,19 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
-
-import com.silvermob.sdk.rendering.mraid.methods.network.RedirectUrlListener;
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.anyString;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

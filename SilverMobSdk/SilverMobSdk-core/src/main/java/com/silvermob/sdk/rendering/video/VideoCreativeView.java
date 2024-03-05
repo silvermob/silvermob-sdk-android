@@ -24,6 +24,7 @@ import android.widget.RelativeLayout;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
+import com.silvermob.sdk.core.R;
 import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
 import com.silvermob.sdk.rendering.models.ViewPool;
 import com.silvermob.sdk.rendering.utils.helpers.Dips;
@@ -36,20 +37,6 @@ import com.silvermob.sdk.rendering.utils.url.action.UrlAction;
 import com.silvermob.sdk.rendering.views.VolumeControlView;
 
 import androidx.annotation.Nullable;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.core.R;
-import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
-import com.silvermob.sdk.rendering.models.ViewPool;
-import com.silvermob.sdk.rendering.utils.helpers.Dips;
-import com.silvermob.sdk.rendering.utils.helpers.InsetsUtils;
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
-import com.silvermob.sdk.rendering.utils.url.action.BrowserAction;
-import com.silvermob.sdk.rendering.utils.url.action.DeepLinkAction;
-import com.silvermob.sdk.rendering.utils.url.action.DeepLinkPlusAction;
-import com.silvermob.sdk.rendering.utils.url.action.UrlAction;
-import com.silvermob.sdk.rendering.views.VolumeControlView;
 
 import static android.widget.RelativeLayout.LayoutParams.MATCH_PARENT;
 import static android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT;

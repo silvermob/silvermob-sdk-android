@@ -1,13 +1,14 @@
 package com.silvermob.sdk;
 
+import com.silvermob.sdk.testutils.TestLogger;
+
+import org.junit.Before;
+import org.junit.Test;
+
 import static com.silvermob.sdk.LogUtil.DEBUG;
 import static com.silvermob.sdk.LogUtil.ERROR;
 import static com.silvermob.sdk.LogUtil.INFO;
 import static com.silvermob.sdk.LogUtil.VERBOSE;
-
-import org.junit.Before;
-import org.junit.Test;
-import com.silvermob.sdk.testutils.TestLogger;
 
 public class LogUtilTest {
 

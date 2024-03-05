@@ -32,23 +32,6 @@ import android.widget.RelativeLayout;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.mraid.handler.FetchPropertiesHandler;
-import com.silvermob.sdk.rendering.mraid.methods.others.OrientationManager;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;
-import com.silvermob.sdk.rendering.utils.broadcast.OrientationBroadcastReceiver;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialVideo;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.JsExecutor;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.core.R;
 import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
 import com.silvermob.sdk.rendering.models.internal.MraidVariableContainer;
@@ -64,7 +47,12 @@ import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.rendering.views.webview.mraid.JsExecutor;
 import com.silvermob.sdk.rendering.views.webview.mraid.Views;
 
+import org.json.JSONObject;
+
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 //Class to show ad as an interstitial i.e, a fullscreen ad
 public abstract class AdBaseDialog extends Dialog {

@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests.apps;
 
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 
 import java.io.File;
 

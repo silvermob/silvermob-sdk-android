@@ -20,9 +20,6 @@ import android.content.Context;
 import android.net.Uri;
 import android.widget.RelativeLayout;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
-
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.PlaybackException;
@@ -35,11 +32,10 @@ import com.google.android.exoplayer2.util.Util;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
 import com.silvermob.sdk.rendering.video.vast.VASTErrorCodes;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 public class ExoPlayerView extends PlayerView implements VideoPlayerView {
 

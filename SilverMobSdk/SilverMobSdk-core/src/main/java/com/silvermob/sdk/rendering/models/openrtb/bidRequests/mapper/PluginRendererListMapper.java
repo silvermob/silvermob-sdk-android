@@ -2,8 +2,6 @@ package com.silvermob.sdk.rendering.models.openrtb.bidRequests.mapper;
 
 import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.PluginRenderer;
-import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.PluginRenderer;
 
 import java.util.ArrayList;
 import java.util.List;

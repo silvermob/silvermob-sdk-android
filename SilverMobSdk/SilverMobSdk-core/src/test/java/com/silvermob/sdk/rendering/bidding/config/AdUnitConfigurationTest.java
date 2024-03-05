@@ -16,20 +16,21 @@
 
 package com.silvermob.sdk.rendering.bidding.config;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import com.silvermob.sdk.AdSize;
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

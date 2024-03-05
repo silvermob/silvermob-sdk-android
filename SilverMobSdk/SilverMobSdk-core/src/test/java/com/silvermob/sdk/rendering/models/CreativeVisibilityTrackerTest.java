@@ -24,14 +24,6 @@ import android.view.ViewParent;
 import android.view.ViewTreeObserver;
 import android.view.Window;
 
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
-import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.rendering.models.CreativeVisibilityTracker.VisibilityTrackerListener;
 import com.silvermob.sdk.rendering.models.internal.VisibilityTrackerOption;
 import com.silvermob.sdk.rendering.models.internal.VisibilityTrackerResult;
@@ -39,6 +31,12 @@ import com.silvermob.sdk.rendering.models.ntv.NativeEventTracker;
 import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
 import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
@@ -51,8 +49,21 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

@@ -16,23 +16,7 @@
 
 package com.silvermob.sdk.api.rendering;
 
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.LOADING;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_FOR_LOAD;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_GAM;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_PREBID;
-
 import android.content.Context;
-
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.DataObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.api.data.Position;
-import com.silvermob.sdk.api.exceptions.AdException;
-
-import androidx.annotation.FloatRange;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 
 import com.silvermob.sdk.ContentObject;
 import com.silvermob.sdk.DataObject;
@@ -54,6 +38,15 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.FloatRange;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.LOADING;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_FOR_LOAD;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_GAM;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_PREBID;
 
 public abstract class BaseInterstitialAdUnit {
 

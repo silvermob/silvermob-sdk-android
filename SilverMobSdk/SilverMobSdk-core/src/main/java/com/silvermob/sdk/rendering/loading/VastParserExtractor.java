@@ -22,14 +22,6 @@ import android.util.Log;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.errors.VastParseError;
-import com.silvermob.sdk.rendering.networking.modelcontrollers.AsyncVastLoader;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.errors.VastParseError;
 import com.silvermob.sdk.rendering.models.internal.VastExtractorResult;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.networking.ResponseHandler;
@@ -38,6 +30,9 @@ import com.silvermob.sdk.rendering.parser.AdResponseParserBase;
 import com.silvermob.sdk.rendering.parser.AdResponseParserVast;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.rendering.video.vast.VASTErrorCodes;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 public class VastParserExtractor {
 

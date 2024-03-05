@@ -16,20 +16,13 @@
 
 package com.silvermob.sdk.rendering.sdk;
 
-import static android.os.Looper.getMainLooper;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.robolectric.Shadows.shadowOf;
-import static java.lang.Thread.sleep;
-
 import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
 
+import com.silvermob.sdk.SilverMob;
+import com.silvermob.sdk.reflection.sdk.PrebidMobileReflection;
+import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 
 import org.junit.After;
@@ -37,10 +30,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.reflection.sdk.PrebidMobileReflection;
-import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
@@ -53,6 +42,16 @@ import java.util.Map;
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
+
+import static android.os.Looper.getMainLooper;
+import static java.lang.Thread.sleep;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(RobolectricTestRunner.class)
 public class SilverMobTest {

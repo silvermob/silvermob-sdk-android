@@ -24,7 +24,6 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
-import com.silvermob.sdk.SilverMob
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.data.DemoItem
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentMainBinding

@@ -9,21 +9,6 @@ import com.silvermob.sdk.VideoParameters;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.AdUnitFormat;
 import com.silvermob.sdk.api.data.Position;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-
-import androidx.annotation.FloatRange;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.BannerParameters;
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.DataObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.VideoParameters;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.data.AdUnitFormat;
-import com.silvermob.sdk.api.data.Position;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.interstitial.InterstitialSizes;
 import com.silvermob.sdk.rendering.models.AdPosition;
@@ -38,6 +23,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.FloatRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 
 public class AdUnitConfiguration {

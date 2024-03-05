@@ -2,10 +2,9 @@ package com.silvermob.sdk.rendering.bidding.display;
 
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 
-import androidx.annotation.Nullable;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
 
 /**
  * PrebidMediationDelegate is a delegate of custom mediation platform.

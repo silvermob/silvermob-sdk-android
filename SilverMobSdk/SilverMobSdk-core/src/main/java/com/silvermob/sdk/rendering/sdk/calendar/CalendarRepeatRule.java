@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk.rendering.sdk.calendar;
 
+import com.silvermob.sdk.LogUtil;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
 
 import java.text.ParseException;
 

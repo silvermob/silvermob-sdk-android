@@ -20,10 +20,6 @@ import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.networking.BaseResponseHandler;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
-import com.silvermob.sdk.rendering.networking.BaseResponseHandler;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

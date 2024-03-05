@@ -1,20 +1,26 @@
 package com.silvermob.sdk;
 
+import com.silvermob.sdk.api.data.AdFormat;
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.testutils.BaseSetup;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.testutils.BaseSetup;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.EnumSet;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = BaseSetup.testSDK, manifest = Config.NONE)

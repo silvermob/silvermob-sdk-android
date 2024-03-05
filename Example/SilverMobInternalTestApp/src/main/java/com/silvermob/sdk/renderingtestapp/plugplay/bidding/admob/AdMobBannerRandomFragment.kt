@@ -1,8 +1,6 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.admob
 
 import android.util.Log
-import com.silvermob.sdk.admob.PrebidBannerAdapter
-import com.silvermob.sdk.rendering.bidding.display.BidResponseCache
 import kotlin.random.Random
 
 class AdMobBannerRandomFragment : AdMobBannerFragment() {

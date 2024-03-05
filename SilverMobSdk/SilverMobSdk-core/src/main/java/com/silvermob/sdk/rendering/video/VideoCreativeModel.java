@@ -21,11 +21,6 @@ import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.models.CreativeModel;
 import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.models.CreativeModel;
-import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 import com.silvermob.sdk.rendering.video.vast.AdVerifications;
 
 import java.util.ArrayList;

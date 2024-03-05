@@ -18,7 +18,6 @@ package com.silvermob.sdk.rendering.networking.parameters;
 
 import android.os.Build;
 
-import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;

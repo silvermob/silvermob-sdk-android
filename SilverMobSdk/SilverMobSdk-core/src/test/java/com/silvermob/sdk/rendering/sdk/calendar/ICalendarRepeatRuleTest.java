@@ -16,13 +16,20 @@
 
 package com.silvermob.sdk.rendering.sdk.calendar;
 
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
 import org.json.JSONObject;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 public class ICalendarRepeatRuleTest {
 

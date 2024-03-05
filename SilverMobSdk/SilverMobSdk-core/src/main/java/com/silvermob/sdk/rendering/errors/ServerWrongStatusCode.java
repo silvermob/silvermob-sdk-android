@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.errors;
 
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.exceptions.AdException;
 
 /**
  * Error will be thrown when server has responded with error status code.

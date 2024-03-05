@@ -16,14 +16,16 @@
 
 package com.silvermob.sdk.rendering.networking.tracking;
 
+import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;

@@ -16,15 +16,14 @@
 
 package com.silvermob.sdk.rendering.video;
 
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;

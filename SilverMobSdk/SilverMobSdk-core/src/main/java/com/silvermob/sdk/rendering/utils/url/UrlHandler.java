@@ -21,11 +21,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.text.TextUtils;
 
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.mraid.methods.network.UrlResolutionTask;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
@@ -35,11 +30,13 @@ import com.silvermob.sdk.rendering.utils.url.action.DeepLinkPlusAction;
 import com.silvermob.sdk.rendering.utils.url.action.MraidInternalBrowserAction;
 import com.silvermob.sdk.rendering.utils.url.action.UrlAction;
 
-import com.silvermob.sdk.rendering.utils.url.action.*;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 /**
  * {@code UrlHandler} facilitates handling user clicks on different URLs, allowing configuration

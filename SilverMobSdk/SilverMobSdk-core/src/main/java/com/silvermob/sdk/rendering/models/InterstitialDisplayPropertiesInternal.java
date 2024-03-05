@@ -19,7 +19,6 @@ package com.silvermob.sdk.rendering.models;
 import android.content.pm.ActivityInfo;
 
 import com.silvermob.sdk.api.data.Position;
-import com.silvermob.sdk.api.data.Position;
 
 public class InterstitialDisplayPropertiesInternal extends InterstitialDisplayPropertiesPublic {
 

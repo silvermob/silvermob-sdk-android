@@ -21,16 +21,6 @@ import android.util.Log;
 import android.util.Patterns;
 import android.webkit.URLUtil;
 
-import com.silvermob.sdk.core.BuildConfig;
-import com.silvermob.sdk.rendering.mraid.MraidEnv;
-import com.silvermob.sdk.rendering.sdk.InitializationNotifier;
-import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
-import com.silvermob.sdk.rendering.sdk.SdkInitializer;
-
-import androidx.annotation.MainThread;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.silvermob.sdk.LogUtil.PrebidLogger;
 import com.silvermob.sdk.api.data.InitializationStatus;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister;
@@ -48,6 +38,10 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class SilverMob {
 

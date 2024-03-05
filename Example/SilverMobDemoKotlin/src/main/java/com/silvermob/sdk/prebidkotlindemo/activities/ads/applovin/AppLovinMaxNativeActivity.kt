@@ -23,7 +23,7 @@ import com.applovin.mediation.nativeAds.MaxNativeAdListener
 import com.applovin.mediation.nativeAds.MaxNativeAdLoader
 import com.applovin.mediation.nativeAds.MaxNativeAdView
 import com.applovin.mediation.nativeAds.MaxNativeAdViewBinder
-import com.silvermob.sdk.*
+import com.silvermob.sdk.NativeEventTracker
 import com.silvermob.sdk.prebidkotlindemo.R
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 

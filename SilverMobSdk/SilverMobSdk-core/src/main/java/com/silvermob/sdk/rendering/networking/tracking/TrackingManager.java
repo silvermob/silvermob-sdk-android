@@ -16,11 +16,12 @@
 
 package com.silvermob.sdk.rendering.networking.tracking;
 
-import androidx.annotation.Nullable;
 import com.silvermob.sdk.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class TrackingManager {
 

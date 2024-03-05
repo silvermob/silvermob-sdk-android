@@ -16,6 +16,21 @@
 
 package com.silvermob.sdk.rendering.sdk.deviceData.managers;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+
+import com.silvermob.sdk.reflection.sdk.UserConsentManagerReflection;
+import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.robolectric.Robolectric;
+import org.robolectric.RobolectricTestRunner;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
@@ -24,22 +39,6 @@ import static org.junit.Assert.fail;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-
-import com.silvermob.sdk.reflection.sdk.UserConsentManagerReflection;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import com.silvermob.sdk.reflection.sdk.UserConsentManagerReflection;
-import com.silvermob.sdk.test.utils.WhiteBox;
-import org.robolectric.Robolectric;
-import org.robolectric.RobolectricTestRunner;
 
 @RunWith(RobolectricTestRunner.class)
 public class UserConsentManagerTest {

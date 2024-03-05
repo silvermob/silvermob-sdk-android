@@ -16,10 +16,11 @@
 
 package com.silvermob.sdk.rendering.models.ntv;
 
-import androidx.annotation.Nullable;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 
 import java.util.ArrayList;
+
+import androidx.annotation.Nullable;
 
 /**
  * Specifies what type of event tracking is supported

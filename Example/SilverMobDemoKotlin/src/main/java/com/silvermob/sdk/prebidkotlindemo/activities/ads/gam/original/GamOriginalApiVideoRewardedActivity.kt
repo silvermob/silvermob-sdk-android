@@ -6,9 +6,6 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
-import com.silvermob.sdk.RewardedVideoAdUnit
-import com.silvermob.sdk.Signals
-import com.silvermob.sdk.VideoParameters
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class GamOriginalApiVideoRewardedActivity : BaseAdActivity() {

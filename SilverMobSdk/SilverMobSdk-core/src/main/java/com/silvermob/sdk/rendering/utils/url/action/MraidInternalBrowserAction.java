@@ -21,13 +21,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
-
-import androidx.annotation.VisibleForTesting;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.rendering.models.internal.MraidVariableContainer;
@@ -39,6 +32,8 @@ import com.silvermob.sdk.rendering.utils.url.UrlHandler;
 import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.VisibleForTesting;
 
 public class MraidInternalBrowserAction implements UrlAction {
 

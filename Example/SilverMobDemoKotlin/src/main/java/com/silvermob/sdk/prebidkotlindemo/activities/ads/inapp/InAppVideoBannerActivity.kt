@@ -18,13 +18,10 @@ package com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp
 import android.os.Bundle
 import android.util.Log
 import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.data.VideoPlacementType
 import com.silvermob.sdk.api.exceptions.AdException
 import com.silvermob.sdk.api.rendering.BannerView
 import com.silvermob.sdk.api.rendering.listeners.BannerViewListener
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
-import java.util.EnumSet
 
 class InAppVideoBannerActivity : BaseAdActivity() {
 

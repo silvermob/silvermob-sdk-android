@@ -23,8 +23,6 @@ import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.UiObject2;
 import androidx.test.uiautomator.Until;
 
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
-
 import static androidx.test.uiautomator.By.copy;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;

@@ -20,8 +20,6 @@ import android.os.Looper;
 
 import com.silvermob.sdk.Util;
 import com.silvermob.sdk.tasksmanager.TasksManager;
-import com.silvermob.sdk.Util;
-import com.silvermob.sdk.tasksmanager.TasksManager;
 
 import java.io.BufferedReader;
 import java.io.IOException;

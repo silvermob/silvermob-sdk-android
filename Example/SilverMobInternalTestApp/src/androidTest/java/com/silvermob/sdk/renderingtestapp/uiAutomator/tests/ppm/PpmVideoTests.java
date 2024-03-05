@@ -16,13 +16,11 @@
 
 package com.silvermob.sdk.renderingtestapp.uiAutomator.tests.ppm;
 
+import com.silvermob.sdk.renderingtestapp.R;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.BaseUiAutomatorTest;
 
 import org.junit.Test;
-import com.silvermob.sdk.renderingtestapp.R;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.BaseUiAutomatorTest;
 
 public class PpmVideoTests extends BaseUiAutomatorTest {
     // TODO: 2/8/21 Remove commented out lines when refactoring expand on click action

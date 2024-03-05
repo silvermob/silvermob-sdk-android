@@ -2,8 +2,6 @@ package com.silvermob.sdk.reflection.sdk;
 
 import com.silvermob.sdk.reflection.Reflection;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.reflection.Reflection;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 
 public class ManagersResolverReflection {
 

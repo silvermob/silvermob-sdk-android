@@ -19,14 +19,13 @@ package com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.pmps.Format;
 
-import androidx.annotation.VisibleForTesting;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.pmps.Format;
 
 import java.util.HashSet;
+
+import androidx.annotation.VisibleForTesting;
 
 public class Banner extends BaseBid {
 

@@ -19,7 +19,6 @@ package com.silvermob.sdk.rendering.bidding.listeners;
 import android.view.View;
 
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.exceptions.AdException;
 
 public interface BannerEventListener {
     void onPrebidSdkWin();

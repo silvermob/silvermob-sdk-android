@@ -22,9 +22,6 @@ import android.util.Log;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
-import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
-
-import org.json.JSONObject;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.core.R;
@@ -33,6 +30,8 @@ import com.silvermob.sdk.rendering.mraid.handler.FetchPropertiesHandler;
 import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 import com.silvermob.sdk.rendering.views.webview.mraid.Views;
+
+import org.json.JSONObject;
 
 public class PrebidWebViewBanner extends PrebidWebViewBase
     implements PreloadManager.PreloadedListener, MraidEventsManager.MraidListener {

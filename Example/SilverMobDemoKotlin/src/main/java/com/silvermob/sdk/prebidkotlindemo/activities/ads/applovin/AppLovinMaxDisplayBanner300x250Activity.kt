@@ -26,8 +26,6 @@ import com.applovin.mediation.MaxError
 import com.applovin.mediation.adapters.prebid.utils.MaxMediationBannerUtils
 import com.applovin.mediation.ads.MaxAdView
 import com.applovin.sdk.AppLovinSdkUtils
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.mediation.MediationBannerAdUnit
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class AppLovinMaxDisplayBanner300x250Activity : BaseAdActivity() {

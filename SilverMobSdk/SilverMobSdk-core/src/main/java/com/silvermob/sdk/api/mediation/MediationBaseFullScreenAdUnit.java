@@ -4,12 +4,10 @@ import android.content.Context;
 
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.api.data.Position;
+import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 
 import androidx.annotation.FloatRange;
 import androidx.annotation.Nullable;
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.api.data.Position;
-import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 
 public abstract class MediationBaseFullScreenAdUnit extends MediationBaseAdUnit {
 

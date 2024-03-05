@@ -40,29 +40,11 @@ import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
-
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.interstitial.InterstitialManagerVideoDelegate;
-import com.silvermob.sdk.rendering.listeners.CreativeViewListener;
-import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
-import com.silvermob.sdk.rendering.loading.FileDownloadListener;
-import com.silvermob.sdk.rendering.models.CreativeVisibilityTracker;
-import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
-import com.silvermob.sdk.rendering.models.internal.VisibilityTrackerOption;
-import com.silvermob.sdk.rendering.models.ntv.NativeEventTracker;
-import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
-import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-
 import java.io.File;
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 public class VideoCreative extends VideoCreativeProtocol
     implements VideoCreativeViewListener, InterstitialManagerVideoDelegate {

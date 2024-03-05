@@ -23,7 +23,6 @@ import android.content.IntentFilter;
 import com.silvermob.sdk.rendering.utils.constants.IntentActions;
 
 import androidx.annotation.NonNull;
-import com.silvermob.sdk.rendering.utils.constants.IntentActions;
 
 public class EventForwardingLocalBroadcastReceiver extends BaseLocalBroadcastReceiver {
 

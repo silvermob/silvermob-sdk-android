@@ -18,14 +18,13 @@ package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
 import com.silvermob.sdk.LogUtil;
 
-import androidx.annotation.Nullable;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
 
 import java.util.ArrayList;
+
+import androidx.annotation.Nullable;
 
 public class Regs extends BaseBid {
 

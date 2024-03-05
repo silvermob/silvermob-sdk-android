@@ -16,14 +16,12 @@
 
 package com.silvermob.sdk.rendering.networking.urlBuilder;
 
+import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

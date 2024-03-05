@@ -35,8 +35,6 @@ import android.widget.VideoView;
 
 import com.silvermob.sdk.rendering.utils.broadcast.local.BaseLocalBroadcastReceiver;
 import com.silvermob.sdk.rendering.utils.constants.IntentActions;
-import com.silvermob.sdk.rendering.utils.broadcast.local.BaseLocalBroadcastReceiver;
-import com.silvermob.sdk.rendering.utils.constants.IntentActions;
 
 /**
  * Custom browser for internal usage. Responsible for modal advertisement

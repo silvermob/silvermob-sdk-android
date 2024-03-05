@@ -16,12 +16,8 @@
 
 package com.silvermob.sdk.rendering.parser;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.rendering.errors.VastParseError;
 import com.silvermob.sdk.rendering.video.VideoAdEvent;
-import com.silvermob.sdk.rendering.video.vast.*;
-
 import com.silvermob.sdk.rendering.video.vast.Companion;
 import com.silvermob.sdk.rendering.video.vast.Creative;
 import com.silvermob.sdk.rendering.video.vast.HTMLResource;
@@ -30,13 +26,20 @@ import com.silvermob.sdk.rendering.video.vast.StaticResource;
 import com.silvermob.sdk.rendering.video.vast.Tracking;
 import com.silvermob.sdk.rendering.video.vast.Verification;
 import com.silvermob.sdk.test.utils.ResourceUtils;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

@@ -1,5 +1,15 @@
 package com.silvermob.sdk.api.rendering.pluginrenderer;
 
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mockito;
+
+import java.util.List;
+
+import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -8,15 +18,6 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mockito;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-
-import java.util.List;
 
 public class SilverMobPluginRegisterTest {
 

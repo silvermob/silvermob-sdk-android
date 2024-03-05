@@ -22,7 +22,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;

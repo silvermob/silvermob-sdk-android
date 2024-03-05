@@ -3,21 +3,20 @@ package com.applovin.mediation.adapters.prebid.managers;
 import android.app.Activity;
 import android.util.Log;
 
-import androidx.annotation.Nullable;
-
 import com.applovin.mediation.MaxAdFormat;
 import com.applovin.mediation.adapter.MaxAdapterError;
 import com.applovin.mediation.adapter.listeners.MaxAdViewAdapterListener;
 import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
 import com.applovin.mediation.adapters.prebid.ListenersCreator;
 import com.applovin.mediation.adapters.prebid.ParametersChecker;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.rendering.DisplayView;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
+
+import androidx.annotation.Nullable;
 
 public class MaxBannerManager {
 

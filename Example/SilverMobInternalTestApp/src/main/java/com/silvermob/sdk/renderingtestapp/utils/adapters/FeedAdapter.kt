@@ -23,9 +23,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.FrameLayout
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.data.VideoPlacementType
-import com.silvermob.sdk.api.rendering.BannerView
 
 private const val TAG = "FeedAdapter"
 

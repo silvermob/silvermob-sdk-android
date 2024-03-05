@@ -19,7 +19,6 @@ package com.silvermob.sdk.renderingtestapp.plugplay.utilities.version
 import android.os.Bundle
 import android.view.View
 import com.google.android.gms.ads.MobileAds
-import com.silvermob.sdk.SilverMob
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentsVersionInfoBinding
 import com.silvermob.sdk.renderingtestapp.utils.BaseFragment

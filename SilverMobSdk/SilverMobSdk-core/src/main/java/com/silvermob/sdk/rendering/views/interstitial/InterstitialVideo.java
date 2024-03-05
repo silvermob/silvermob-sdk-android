@@ -32,13 +32,6 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.silvermob.sdk.rendering.utils.helpers.InsetsUtils;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.base.BaseAdView;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.core.R;
@@ -53,6 +46,9 @@ import java.lang.ref.WeakReference;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 @SuppressLint("NewApi")
 //Interstitial video

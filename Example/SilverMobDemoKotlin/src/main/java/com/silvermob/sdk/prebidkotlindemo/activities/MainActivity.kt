@@ -28,10 +28,13 @@ import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.ads.MobileAds
-import com.silvermob.sdk.SilverMob
 import com.silvermob.sdk.prebidkotlindemo.R
 import com.silvermob.sdk.prebidkotlindemo.databinding.ActivityMainBinding
-import com.silvermob.sdk.prebidkotlindemo.testcases.*
+import com.silvermob.sdk.prebidkotlindemo.testcases.AdFormat
+import com.silvermob.sdk.prebidkotlindemo.testcases.IntegrationKind
+import com.silvermob.sdk.prebidkotlindemo.testcases.TestCase
+import com.silvermob.sdk.prebidkotlindemo.testcases.TestCaseAdapter
+import com.silvermob.sdk.prebidkotlindemo.testcases.TestCaseRepository
 import com.silvermob.sdk.prebidkotlindemo.utils.Settings
 
 class MainActivity : AppCompatActivity() {

@@ -17,7 +17,6 @@
 package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.factory;
 
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
 
 import androidx.test.uiautomator.By;
 import androidx.test.uiautomator.BySelector;

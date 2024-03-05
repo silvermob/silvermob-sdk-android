@@ -24,16 +24,15 @@ import android.os.RemoteException;
 
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.HomePage;
 
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.runner.RunWith;
+
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.uiautomator.By;
 import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.Until;
-
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.runner.RunWith;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.HomePage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNull.notNullValue;

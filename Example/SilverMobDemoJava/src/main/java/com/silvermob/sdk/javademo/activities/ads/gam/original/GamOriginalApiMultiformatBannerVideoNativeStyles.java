@@ -2,18 +2,12 @@ package com.silvermob.sdk.javademo.activities.ads.gam.original;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.admanager.AdManagerAdRequest;
 import com.google.android.gms.ads.admanager.AdManagerAdView;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import com.silvermob.sdk.javademo.activities.BaseAdActivity;
-
-import org.jetbrains.annotations.NotNull;
 import com.silvermob.sdk.BannerParameters;
 import com.silvermob.sdk.NativeAdUnit;
 import com.silvermob.sdk.NativeAsset;
@@ -29,8 +23,13 @@ import com.silvermob.sdk.api.original.PrebidAdUnit;
 import com.silvermob.sdk.api.original.PrebidRequest;
 import com.silvermob.sdk.javademo.activities.BaseAdActivity;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Random;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class GamOriginalApiMultiformatBannerVideoNativeStyles extends BaseAdActivity {
 

@@ -19,10 +19,6 @@ package com.silvermob.sdk.rendering.utils.url.action;
 import android.content.Context;
 import android.net.Uri;
 
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;

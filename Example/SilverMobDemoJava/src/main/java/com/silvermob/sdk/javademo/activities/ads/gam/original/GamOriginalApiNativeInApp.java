@@ -8,9 +8,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdSize;
@@ -21,9 +18,6 @@ import com.google.android.gms.ads.formats.OnAdManagerAdViewLoadedListener;
 import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd;
 import com.google.common.collect.Lists;
-import com.silvermob.sdk.javademo.activities.BaseAdActivity;
-import com.silvermob.sdk.javademo.utils.ImageUtils;
-
 import com.silvermob.sdk.NativeAdUnit;
 import com.silvermob.sdk.NativeDataAsset;
 import com.silvermob.sdk.NativeEventTracker;
@@ -38,6 +32,9 @@ import com.silvermob.sdk.javademo.activities.BaseAdActivity;
 import com.silvermob.sdk.javademo.utils.ImageUtils;
 
 import java.util.ArrayList;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class GamOriginalApiNativeInApp extends BaseAdActivity {
 

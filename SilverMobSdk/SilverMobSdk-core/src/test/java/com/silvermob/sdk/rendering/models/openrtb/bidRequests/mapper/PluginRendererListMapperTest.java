@@ -1,16 +1,8 @@
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests.mapper;
 
-import static org.junit.Assert.*;
-
 import android.content.Context;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.junit.Test;
 import com.silvermob.sdk.api.rendering.PrebidMobileInterstitialControllerInterface;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PluginEventListener;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer;
@@ -21,8 +13,17 @@ import com.silvermob.sdk.rendering.bidding.listeners.DisplayVideoListener;
 import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.PluginRenderer;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import static org.junit.Assert.assertEquals;
 
 public class PluginRendererListMapperTest {
 

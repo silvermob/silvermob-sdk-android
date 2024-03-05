@@ -21,16 +21,6 @@ import android.content.Context;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.rendering.views.AdViewManagerListener;
-import com.silvermob.sdk.rendering.views.video.VideoViewListener;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
@@ -43,14 +33,32 @@ import com.silvermob.sdk.rendering.views.AdViewManager;
 import com.silvermob.sdk.rendering.views.AdViewManagerListener;
 import com.silvermob.sdk.rendering.views.video.VideoViewListener;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
+import static com.silvermob.sdk.api.rendering.VideoView.State.PAUSED_AUTO;
+import static com.silvermob.sdk.api.rendering.VideoView.State.PAUSED_BY_USER;
+import static com.silvermob.sdk.api.rendering.VideoView.State.PLAYBACK_FINISHED;
+import static com.silvermob.sdk.api.rendering.VideoView.State.PLAYBACK_NOT_STARTED;
+import static com.silvermob.sdk.api.rendering.VideoView.State.PLAYING;
+import static com.silvermob.sdk.api.rendering.VideoView.State.UNDEFINED;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.*;
-import static com.silvermob.sdk.api.rendering.VideoView.State.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

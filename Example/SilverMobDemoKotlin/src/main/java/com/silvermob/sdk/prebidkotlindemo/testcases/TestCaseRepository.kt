@@ -1,11 +1,41 @@
 package com.silvermob.sdk.prebidkotlindemo.testcases
 
 import com.silvermob.sdk.prebidkotlindemo.R
-import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.*
-import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.*
-import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.*
-import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.*
-import com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.*
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobDisplayBanner320x50Activity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobDisplayInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobNativeActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobVideoInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobVideoRewardedActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner300x250Activity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner320x50Activity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxNativeActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxVideoRewardedActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBanner300x250Activity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBanner320x50Activity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayBannerMultiSizeActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiDisplayInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiInStreamActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerVideoNativeInAppActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatBannerVideoNativeStylesActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiMultiformatInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiNativeInAppActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiNativeStylesActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoBannerActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.original.GamOriginalApiVideoRewardedActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiDisplayBanner320x50Activity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiDisplayInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiNativeActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoBannerActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering.GamRenderingApiVideoRewardedActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayBanner320x50Activity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppDisplayInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoBannerActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoInterstitialActivity
+import com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp.InAppVideoRewardedActivity
 
 object TestCaseRepository {
 

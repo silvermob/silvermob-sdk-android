@@ -30,9 +30,6 @@ import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd
-import com.silvermob.sdk.api.data.FetchDemandResult
-import com.silvermob.sdk.eventhandlers.utils.GamUtils
-import com.silvermob.sdk.rendering.utils.ntv.NativeAdProvider
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm.PpmNativeFragment
 import com.silvermob.sdk.renderingtestapp.plugplay.config.AdConfiguratorDialogFragment

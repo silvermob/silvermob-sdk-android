@@ -22,12 +22,6 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAd
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAdLoadCallback
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.BannerParameters
-import com.silvermob.sdk.VideoParameters
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.original.PrebidAdUnit
-import com.silvermob.sdk.api.original.PrebidRequest
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBidInterstitialFragment
 

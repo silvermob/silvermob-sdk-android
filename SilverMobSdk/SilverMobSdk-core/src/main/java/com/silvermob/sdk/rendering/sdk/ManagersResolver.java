@@ -18,7 +18,6 @@ package com.silvermob.sdk.rendering.sdk;
 
 import android.content.Context;
 
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.rendering.sdk.deviceData.managers.ConnectionInfoManager;
 import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoImpl;
 import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;

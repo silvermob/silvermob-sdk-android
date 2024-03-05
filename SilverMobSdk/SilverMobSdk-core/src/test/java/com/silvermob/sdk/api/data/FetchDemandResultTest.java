@@ -18,8 +18,14 @@ package com.silvermob.sdk.api.data;
 
 import org.junit.Test;
 
+import static com.silvermob.sdk.api.data.FetchDemandResult.INVALID_ACCOUNT_ID;
+import static com.silvermob.sdk.api.data.FetchDemandResult.INVALID_CONFIG_ID;
+import static com.silvermob.sdk.api.data.FetchDemandResult.INVALID_SIZE;
+import static com.silvermob.sdk.api.data.FetchDemandResult.NETWORK_ERROR;
+import static com.silvermob.sdk.api.data.FetchDemandResult.NO_BIDS;
+import static com.silvermob.sdk.api.data.FetchDemandResult.SERVER_ERROR;
+import static com.silvermob.sdk.api.data.FetchDemandResult.TIMEOUT;
 import static org.junit.Assert.assertEquals;
-import static com.silvermob.sdk.api.data.FetchDemandResult.*;
 
 public class FetchDemandResultTest {
 

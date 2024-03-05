@@ -16,24 +16,12 @@
 
 package com.silvermob.sdk.api.rendering;
 
-import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
-
 import android.content.Context;
 import android.view.View;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.core.BuildConfig;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.bidding.listeners.DisplayVideoListener;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PluginEventListener;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
@@ -41,7 +29,15 @@ import com.silvermob.sdk.core.BuildConfig;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.display.InterstitialController;
 import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener;
+import com.silvermob.sdk.rendering.bidding.listeners.DisplayVideoListener;
 import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
+
+import org.json.JSONObject;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
 
 public class PrebidRenderer implements PrebidMobilePluginRenderer {
 

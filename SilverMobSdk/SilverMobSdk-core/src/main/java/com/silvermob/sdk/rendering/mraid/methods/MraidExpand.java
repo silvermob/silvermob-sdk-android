@@ -24,14 +24,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
-
-import androidx.annotation.VisibleForTesting;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.interstitial.AdBaseDialog;
 import com.silvermob.sdk.rendering.interstitial.AdExpandedDialog;
@@ -43,6 +35,8 @@ import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
 import com.silvermob.sdk.rendering.views.webview.mraid.Views;
+
+import androidx.annotation.VisibleForTesting;
 
 public class MraidExpand {
 

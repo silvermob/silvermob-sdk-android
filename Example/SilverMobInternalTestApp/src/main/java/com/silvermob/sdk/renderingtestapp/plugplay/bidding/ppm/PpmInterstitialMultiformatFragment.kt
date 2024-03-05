@@ -16,12 +16,10 @@
 
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
 
-import com.silvermob.sdk.AdSize
 import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBidInterstitialFragment
-import java.util.*
+import java.util.EnumSet
 
 open class PpmInterstitialMultiformatFragment : BaseBidInterstitialFragment() {
 

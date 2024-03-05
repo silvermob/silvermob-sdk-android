@@ -1,10 +1,7 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
 
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBidInterstitialFragment
-import com.silvermob.sdk.api.data.Position
-import java.util.*
+import java.util.EnumSet
 
 class PpmInterstitialSkipButtonFragment : BaseBidInterstitialFragment() {
 

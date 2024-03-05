@@ -20,10 +20,6 @@ import android.net.Uri;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.webview.AdWebViewClient;
-
-import androidx.annotation.VisibleForTesting;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.mraid.MraidEnv;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
@@ -32,6 +28,8 @@ import com.silvermob.sdk.rendering.views.webview.AdWebViewClient;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.Locale;
+
+import androidx.annotation.VisibleForTesting;
 
 /**
  * Handles injecting the MRAID javascript to the 2nd webview, when encountering mraid.js urls

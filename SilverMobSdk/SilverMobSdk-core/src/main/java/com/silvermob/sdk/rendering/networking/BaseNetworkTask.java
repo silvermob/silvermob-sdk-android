@@ -24,16 +24,8 @@ import com.silvermob.sdk.rendering.loading.FileDownloadTask;
 import com.silvermob.sdk.rendering.networking.exception.BaseExceptionHolder;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
 import org.apache.http.conn.ConnectTimeoutException;
 import org.jetbrains.annotations.NotNull;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.rendering.loading.FileDownloadTask;
-import com.silvermob.sdk.rendering.networking.exception.BaseExceptionHolder;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -48,6 +40,9 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Locale;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 /**
  * Performs HTTP communication in the background, i.e. off the UI thread.

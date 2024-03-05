@@ -17,12 +17,11 @@
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps;
 
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.pmps.Deals;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.pmps.Deals;
 
 import java.util.ArrayList;
 import java.util.List;

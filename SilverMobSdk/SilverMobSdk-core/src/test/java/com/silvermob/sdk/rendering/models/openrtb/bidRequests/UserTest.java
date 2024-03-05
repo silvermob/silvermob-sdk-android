@@ -16,10 +16,11 @@
 
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
 
 import static org.junit.Assert.assertEquals;
 

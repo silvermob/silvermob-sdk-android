@@ -1,9 +1,18 @@
 package com.silvermob.sdk.rendering.sdk;
 
+import com.silvermob.sdk.rendering.loading.FileDownloadListener;
 import com.silvermob.sdk.rendering.sdk.scripts.DownloadListenerCreator;
 import com.silvermob.sdk.rendering.sdk.scripts.JsScriptData;
 import com.silvermob.sdk.rendering.sdk.scripts.JsScriptRequester;
 import com.silvermob.sdk.rendering.sdk.scripts.JsScriptStorage;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import java.io.File;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.atLeastOnce;
@@ -11,19 +20,6 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.only;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.rendering.loading.FileDownloadListener;
-import com.silvermob.sdk.rendering.sdk.scripts.DownloadListenerCreator;
-import com.silvermob.sdk.rendering.sdk.scripts.JsScriptData;
-import com.silvermob.sdk.rendering.sdk.scripts.JsScriptRequester;
-import com.silvermob.sdk.rendering.sdk.scripts.JsScriptStorage;
-
-import java.io.File;
 
 public class JsScriptsDownloaderTest {
 

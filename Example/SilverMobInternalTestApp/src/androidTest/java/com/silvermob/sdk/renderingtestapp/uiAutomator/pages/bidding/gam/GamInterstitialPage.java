@@ -18,8 +18,6 @@ package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.gam;
 
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.WebViewLocator;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.WebViewLocator;
 
 import java.util.concurrent.TimeUnit;
 

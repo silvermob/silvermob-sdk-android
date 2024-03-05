@@ -16,13 +16,9 @@
 
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.gam.rendering
 
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
-import com.silvermob.sdk.eventhandlers.GamInterstitialEventHandler
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBidInterstitialFragment
 import com.silvermob.sdk.renderingtestapp.utils.CommandLineArgumentParser
-import java.util.*
+import java.util.EnumSet
 
 open class GamInterstitialFragment : BaseBidInterstitialFragment() {
     override fun initInterstitialAd(adUnitFormat: com.silvermob.sdk.api.data.AdUnitFormat, adUnitId: String?, configId: String?, width: Int, height: Int) {

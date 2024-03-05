@@ -26,12 +26,13 @@ import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.loading.FileDownloadListener;
 import com.silvermob.sdk.rendering.loading.FileDownloadTask;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.loading.FileDownloadListener;
-import com.silvermob.sdk.rendering.loading.FileDownloadTask;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URLConnection;
 import java.util.Calendar;
 import java.util.Date;

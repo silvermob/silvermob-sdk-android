@@ -1,10 +1,10 @@
 package com.silvermob.sdk.api.data;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
 import java.util.EnumSet;
+
+import static org.junit.Assert.assertEquals;
 
 public class AdFormatTest {
 

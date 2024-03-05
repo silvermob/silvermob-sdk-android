@@ -21,17 +21,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.webkit.URLUtil;
 
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
-
-import androidx.annotation.Nullable;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.rendering.listeners.OnBrowserActionResultListener;
 import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
 import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
 import com.silvermob.sdk.rendering.utils.url.UrlHandler;
 import com.silvermob.sdk.rendering.views.browser.AdBrowserActivity;
+
+import androidx.annotation.Nullable;
 
 public class BrowserAction implements UrlAction {
 

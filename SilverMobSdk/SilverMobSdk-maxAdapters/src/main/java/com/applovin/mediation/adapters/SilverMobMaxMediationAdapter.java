@@ -19,7 +19,6 @@ import com.applovin.mediation.adapters.prebid.managers.MaxBannerManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxInterstitialManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxNativeManager;
 import com.applovin.sdk.AppLovinSdk;
-
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.TargetingParams;
 

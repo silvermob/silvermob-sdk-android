@@ -18,8 +18,6 @@ package com.silvermob.sdk.rendering.bidding.interfaces;
 
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 import com.silvermob.sdk.rendering.bidding.listeners.BannerEventListener;
 
 public class StandaloneBannerEventHandler implements BannerEventHandler {

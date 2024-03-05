@@ -16,13 +16,12 @@
 
 package com.silvermob.sdk.rendering.networking.urlBuilder;
 
+import com.silvermob.sdk.rendering.models.openrtb.BidRequest;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Device;
 import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 
 import org.json.JSONException;
 import org.junit.Test;
-import com.silvermob.sdk.rendering.models.openrtb.BidRequest;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Device;
-import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

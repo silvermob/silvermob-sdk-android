@@ -1,13 +1,5 @@
 package com.silvermob.sdk.api.original;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.assertj.core.util.Lists;
-import org.hamcrest.Matchers;
-import org.junit.Test;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.BannerParameters;
 import com.silvermob.sdk.ContentObject;
@@ -21,12 +13,21 @@ import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.models.AdPosition;
 import com.silvermob.sdk.rendering.models.PlacementType;
 
+import org.assertj.core.util.Lists;
+import org.hamcrest.Matchers;
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class MultiformatAdUnitFacadeTest {
 

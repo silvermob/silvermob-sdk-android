@@ -20,19 +20,17 @@ package com.silvermob.sdk.rendering.bidding.data.bid;
 import android.util.Base64;
 
 import com.silvermob.sdk.api.data.BidInfo;
-import com.silvermob.sdk.rendering.utils.helpers.MacrosResolutionHelper;
-
-import androidx.annotation.Nullable;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-import com.silvermob.sdk.api.data.BidInfo;
 import com.silvermob.sdk.rendering.models.internal.MacrosModel;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.MobileSdkPassThrough;
 import com.silvermob.sdk.rendering.utils.helpers.MacrosResolutionHelper;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 public class Bid {
 

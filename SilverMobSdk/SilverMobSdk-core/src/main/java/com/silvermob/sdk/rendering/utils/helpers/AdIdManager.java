@@ -22,16 +22,15 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import androidx.annotation.VisibleForTesting;
-
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.listeners.AdIdFetchListener;
 
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.VisibleForTesting;
 
 public class AdIdManager {
     private static final String TAG = AdIdManager.class.getSimpleName();

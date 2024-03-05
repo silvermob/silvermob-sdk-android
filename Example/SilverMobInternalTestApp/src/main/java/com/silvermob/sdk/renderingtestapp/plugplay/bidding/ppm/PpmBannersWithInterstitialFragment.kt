@@ -18,12 +18,6 @@ package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
 
 import android.util.Log
 import android.widget.Button
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.exceptions.AdException
-import com.silvermob.sdk.api.rendering.BannerView
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
-import com.silvermob.sdk.api.rendering.listeners.BannerViewListener
-import com.silvermob.sdk.api.rendering.listeners.InterstitialAdUnitListener
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentInterstitialHtmlWithBannersBinding
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBannersWithInterstitialFragment

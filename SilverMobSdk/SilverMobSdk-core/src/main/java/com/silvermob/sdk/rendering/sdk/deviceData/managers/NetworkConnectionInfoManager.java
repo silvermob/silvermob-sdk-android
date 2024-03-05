@@ -25,8 +25,6 @@ import android.net.NetworkInfo;
 
 import com.silvermob.sdk.rendering.networking.parameters.UserParameters;
 import com.silvermob.sdk.rendering.sdk.BaseManager;
-import com.silvermob.sdk.rendering.networking.parameters.UserParameters;
-import com.silvermob.sdk.rendering.sdk.BaseManager;
 
 public final class NetworkConnectionInfoManager extends BaseManager implements ConnectionInfoManager {
     private ConnectivityManager connectivityManager;

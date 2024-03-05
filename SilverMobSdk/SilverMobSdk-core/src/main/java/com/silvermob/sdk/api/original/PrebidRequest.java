@@ -7,11 +7,6 @@ import com.silvermob.sdk.NativeParameters;
 import com.silvermob.sdk.VideoParameters;
 
 import org.jetbrains.annotations.Nullable;
-import com.silvermob.sdk.BannerParameters;
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.DataObject;
-import com.silvermob.sdk.NativeParameters;
-import com.silvermob.sdk.VideoParameters;
 
 import java.util.ArrayList;
 import java.util.HashMap;

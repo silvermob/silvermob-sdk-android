@@ -22,15 +22,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
@@ -43,7 +34,8 @@ import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
 
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.*;
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 public class MraidController {
 

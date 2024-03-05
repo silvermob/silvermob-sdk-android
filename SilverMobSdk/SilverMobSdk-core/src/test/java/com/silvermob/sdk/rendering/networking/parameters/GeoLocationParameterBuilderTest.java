@@ -16,29 +16,27 @@
 
 package com.silvermob.sdk.rendering.networking.parameters;
 
-import static org.junit.Assert.assertEquals;
-import static org.robolectric.Shadows.shadowOf;
-
 import android.app.Activity;
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationManager;
 
-import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
 import com.silvermob.sdk.rendering.models.openrtb.BidRequest;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.shadows.ShadowActivity;
 import org.robolectric.shadows.ShadowLocationManager;
+
+import static org.junit.Assert.assertEquals;
+import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(RobolectricTestRunner.class)
 public class GeoLocationParameterBuilderTest {

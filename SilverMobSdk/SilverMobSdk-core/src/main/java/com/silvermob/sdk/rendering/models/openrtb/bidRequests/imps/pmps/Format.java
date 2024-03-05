@@ -20,7 +20,6 @@ import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
 
 public class Format extends BaseBid {
 

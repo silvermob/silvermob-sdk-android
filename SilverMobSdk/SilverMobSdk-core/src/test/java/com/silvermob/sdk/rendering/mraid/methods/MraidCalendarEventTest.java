@@ -16,12 +16,6 @@
 
 package com.silvermob.sdk.rendering.mraid.methods;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
-import static org.robolectric.Shadows.shadowOf;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.provider.CalendarContract;
@@ -29,19 +23,22 @@ import android.provider.CalendarContract;
 import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
+import com.silvermob.sdk.test.utils.ResourceUtils;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowActivity;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

@@ -2,9 +2,8 @@ package com.silvermob.sdk.admob;
 
 import android.os.Bundle;
 import android.util.Log;
-import androidx.annotation.Nullable;
+
 import com.google.android.gms.ads.AdView;
-import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
@@ -14,6 +13,8 @@ import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
 
 public class AdMobMediationBannerUtils implements PrebidMediationDelegate {
 

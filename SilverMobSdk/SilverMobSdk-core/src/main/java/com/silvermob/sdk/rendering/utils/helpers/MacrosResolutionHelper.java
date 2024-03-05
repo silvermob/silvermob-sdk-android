@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk.rendering.utils.helpers;
 
-import org.json.JSONObject;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.internal.MacrosModel;
+
+import org.json.JSONObject;
 
 import java.util.Map;
 

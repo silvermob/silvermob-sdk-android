@@ -19,8 +19,10 @@ package com.silvermob.sdk.rendering.utils.url;
 import android.content.Context;
 import android.net.Uri;
 
+import com.silvermob.sdk.rendering.mraid.methods.network.UrlResolutionTask;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 import com.silvermob.sdk.rendering.utils.url.action.DeepLinkAction;
+import com.silvermob.sdk.test.utils.WhiteBox;
 
 import org.junit.After;
 import org.junit.Before;
@@ -28,10 +30,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.rendering.mraid.methods.network.UrlResolutionTask;
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-import com.silvermob.sdk.rendering.utils.url.action.DeepLinkAction;
-import com.silvermob.sdk.test.utils.WhiteBox;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
@@ -40,7 +38,12 @@ import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertFalse;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

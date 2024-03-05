@@ -1,6 +1,16 @@
 package com.silvermob.sdk.rendering.sdk;
 
+import com.silvermob.sdk.api.data.InitializationStatus;
 import com.silvermob.sdk.reflection.Reflection;
+import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.robolectric.RobolectricTestRunner;
 
 import static android.os.Looper.getMainLooper;
 import static org.junit.Assert.assertEquals;
@@ -11,17 +21,6 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.robolectric.Shadows.shadowOf;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.api.data.InitializationStatus;
-import com.silvermob.sdk.reflection.Reflection;
-import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
-import org.robolectric.RobolectricTestRunner;
 
 @RunWith(RobolectricTestRunner.class)
 public class InitializationManagerTest {

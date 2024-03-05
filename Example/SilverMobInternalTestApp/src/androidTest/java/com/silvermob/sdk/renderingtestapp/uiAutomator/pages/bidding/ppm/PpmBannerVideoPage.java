@@ -23,8 +23,6 @@ import androidx.test.uiautomator.BySelector;
 import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.Until;
 
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
-
 import static org.junit.Assert.assertTrue;
 
 public class PpmBannerVideoPage extends AdBasePage<PpmBannerVideoPage> {

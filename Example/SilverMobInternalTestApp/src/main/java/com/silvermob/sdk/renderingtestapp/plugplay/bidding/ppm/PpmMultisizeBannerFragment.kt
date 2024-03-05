@@ -16,8 +16,6 @@
 
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
 
-import com.silvermob.sdk.AdSize
-
 class PpmMultisizeBannerFragment : PpmBannerFragment() {
     override fun initAd(): Any? {
         super.initAd()

@@ -18,8 +18,6 @@ package com.silvermob.sdk.rendering.listeners;
 
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.models.AbstractCreative;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.models.AbstractCreative;
 
 public interface CreativeResolutionListener {
     void creativeReady(AbstractCreative creative);

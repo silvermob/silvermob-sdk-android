@@ -21,16 +21,14 @@ import android.text.TextUtils;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 /**
  * Holds BidResponses in memory until they are used

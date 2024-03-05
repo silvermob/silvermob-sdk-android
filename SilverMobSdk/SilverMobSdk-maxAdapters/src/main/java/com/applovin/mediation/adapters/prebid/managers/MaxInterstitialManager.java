@@ -3,18 +3,17 @@ package com.applovin.mediation.adapters.prebid.managers;
 import android.app.Activity;
 import android.util.Log;
 
-import androidx.annotation.Nullable;
-
 import com.applovin.mediation.adapter.MaxAdapterError;
 import com.applovin.mediation.adapter.listeners.MaxInterstitialAdapterListener;
 import com.applovin.mediation.adapter.listeners.MaxRewardedAdapterListener;
 import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
 import com.applovin.mediation.adapters.prebid.ListenersCreator;
 import com.applovin.mediation.adapters.prebid.ParametersChecker;
-
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.bidding.display.InterstitialController;
 import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener;
+
+import androidx.annotation.Nullable;
 
 public class MaxInterstitialManager {
 

@@ -19,7 +19,6 @@ package com.silvermob.sdk.renderingtestapp.plugplay.utilities.consent
 import android.content.SharedPreferences
 import android.util.Log
 import com.google.gson.Gson
-import com.silvermob.sdk.LogUtil
 import com.silvermob.sdk.renderingtestapp.data.ConsentConfiguration
 import java.util.concurrent.Executors
 import java.util.concurrent.ScheduledFuture

@@ -1,12 +1,13 @@
 package com.silvermob.sdk;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import org.json.JSONObject;
 import com.silvermob.sdk.configuration.NativeAdUnitConfiguration;
 
+import org.json.JSONObject;
+
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * For details of the configuration of native parameters, please check this documentation:

@@ -17,16 +17,11 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.pluginrenderer
 
 import android.os.Bundle
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.LogUtil
-import com.silvermob.sdk.SilverMob
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBidInterstitialFragment
 import com.silvermob.sdk.renderingtestapp.utils.CommandLineArgumentParser
 import com.silvermob.sdk.renderingtestapp.utils.SampleCustomRenderer
 import com.silvermob.sdk.renderingtestapp.utils.SampleCustomRendererEventListener
-import java.util.*
+import java.util.EnumSet
 
 open class PpmInterstitialPluginEventListenerFragment : BaseBidInterstitialFragment(), SampleCustomRendererEventListener {
     private val TAG = PpmInterstitialPluginEventListenerFragment::class.java.simpleName

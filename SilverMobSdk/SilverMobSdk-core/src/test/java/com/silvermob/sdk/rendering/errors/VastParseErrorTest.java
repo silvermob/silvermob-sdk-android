@@ -16,8 +16,9 @@
 
 package com.silvermob.sdk.rendering.errors;
 
-import org.junit.Test;
 import com.silvermob.sdk.api.exceptions.AdException;
+
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 

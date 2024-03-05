@@ -16,8 +16,6 @@
 
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.gam.rendering
 
-import com.silvermob.sdk.api.rendering.RewardedAdUnit
-import com.silvermob.sdk.eventhandlers.GamRewardedEventHandler
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBidRewardedFragment
 
 class GamRewardedVideoFragment : BaseBidRewardedFragment() {

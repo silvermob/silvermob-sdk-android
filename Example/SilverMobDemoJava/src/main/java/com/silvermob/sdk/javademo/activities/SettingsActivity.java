@@ -6,16 +6,14 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 
+import com.silvermob.sdk.javademo.R;
+import com.silvermob.sdk.javademo.databinding.ActivitySettingsBinding;
 import com.silvermob.sdk.javademo.utils.Settings;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
-import com.silvermob.sdk.javademo.R;
-import com.silvermob.sdk.javademo.databinding.ActivitySettingsBinding;
-import com.silvermob.sdk.javademo.utils.Settings;
 
 public class SettingsActivity extends AppCompatActivity {
 

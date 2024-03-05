@@ -17,9 +17,6 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
 
 import android.annotation.SuppressLint
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.rendering.BannerView
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager
 import com.silvermob.sdk.renderingtestapp.utils.CommandLineArgumentParser
 
 class PpmBannerSpecialSymbolsFragment : PpmBannerFragment() {

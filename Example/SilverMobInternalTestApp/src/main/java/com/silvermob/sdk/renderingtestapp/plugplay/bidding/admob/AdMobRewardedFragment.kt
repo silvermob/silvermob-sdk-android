@@ -9,9 +9,6 @@ import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
-import com.silvermob.sdk.admob.AdMobMediationRewardedUtils
-import com.silvermob.sdk.admob.PrebidRewardedAdapter
-import com.silvermob.sdk.api.mediation.MediationRewardedVideoAdUnit
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentAdmobRewardedBinding

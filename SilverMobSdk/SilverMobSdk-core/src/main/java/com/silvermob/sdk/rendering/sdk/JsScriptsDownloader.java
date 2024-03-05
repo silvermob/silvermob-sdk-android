@@ -2,9 +2,6 @@ package com.silvermob.sdk.rendering.sdk;
 
 import android.content.Context;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.loading.FileDownloadListener;
 import com.silvermob.sdk.rendering.sdk.scripts.DownloadListenerCreator;
@@ -21,6 +18,9 @@ import java.io.InputStreamReader;
 import java.util.Collections;
 import java.util.SortedSet;
 import java.util.TreeSet;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 /**
  * Downloader and fetcher for JS scripts needed for the Prebid SDK (omsdk.js, mraid.js).

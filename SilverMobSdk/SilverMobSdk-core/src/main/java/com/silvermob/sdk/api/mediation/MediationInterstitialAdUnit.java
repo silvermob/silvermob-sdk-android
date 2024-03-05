@@ -20,17 +20,14 @@ import android.content.Context;
 
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.api.data.AdUnitFormat;
-
-import androidx.annotation.IntRange;
-import androidx.annotation.NonNull;
-
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.api.data.AdUnitFormat;
 import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener;
 import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 import com.silvermob.sdk.rendering.models.AdPosition;
 
 import java.util.EnumSet;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
 
 public class MediationInterstitialAdUnit extends MediationBaseFullScreenAdUnit {
 

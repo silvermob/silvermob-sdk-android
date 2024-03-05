@@ -21,8 +21,6 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAd
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAdLoadCallback
-import com.silvermob.sdk.AdUnit
-import com.silvermob.sdk.InterstitialAdUnit
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class GamOriginalApiDisplayInterstitialActivity : BaseAdActivity() {

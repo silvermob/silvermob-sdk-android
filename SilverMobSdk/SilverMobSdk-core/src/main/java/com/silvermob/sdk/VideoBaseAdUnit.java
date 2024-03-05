@@ -16,13 +16,13 @@
 
 package com.silvermob.sdk;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.silvermob.sdk.api.data.AdFormat;
 
 import java.util.EnumSet;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public abstract class VideoBaseAdUnit extends AdUnit {
 

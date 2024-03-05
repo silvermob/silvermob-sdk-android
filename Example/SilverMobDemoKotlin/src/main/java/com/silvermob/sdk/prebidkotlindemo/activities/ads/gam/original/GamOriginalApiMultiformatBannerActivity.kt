@@ -20,15 +20,9 @@ import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerAdView
-import com.silvermob.sdk.BannerAdUnit
-import com.silvermob.sdk.BannerParameters
-import com.silvermob.sdk.Signals
-import com.silvermob.sdk.VideoParameters
-import com.silvermob.sdk.addendum.AdViewUtils
-import com.silvermob.sdk.addendum.PbFindSizeError
-import com.silvermob.sdk.api.data.AdUnitFormat
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
-import java.util.*
+import java.util.EnumSet
+import java.util.Random
 
 
 class GamOriginalApiMultiformatBannerActivity : BaseAdActivity() {

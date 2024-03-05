@@ -22,18 +22,6 @@ import android.widget.FrameLayout;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.utils.broadcast.local.EventForwardingLocalBroadcastReceiver;
-import com.silvermob.sdk.rendering.utils.constants.IntentActions;
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.rendering.views.AdViewManagerListener;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.video.VideoViewListener;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.display.BidResponseCache;
@@ -47,6 +35,9 @@ import com.silvermob.sdk.rendering.views.AdViewManager;
 import com.silvermob.sdk.rendering.views.AdViewManagerListener;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 import com.silvermob.sdk.rendering.views.video.VideoViewListener;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class PrebidDisplayView extends FrameLayout {
 

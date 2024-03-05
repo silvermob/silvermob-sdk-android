@@ -23,16 +23,12 @@ import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerAdView
-import com.silvermob.sdk.BannerAdUnit
-import com.silvermob.sdk.addendum.AdViewUtils
-import com.silvermob.sdk.addendum.PbFindSizeError
-import com.silvermob.sdk.api.data.AdUnitFormat
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentBiddingBannerVideoBinding
 import com.silvermob.sdk.renderingtestapp.plugplay.config.AdConfiguratorDialogFragment
 import com.silvermob.sdk.renderingtestapp.utils.BaseEvents
-import java.util.*
+import java.util.EnumSet
 
 class GamOriginalOutstreamNewApiFragment : AdFragment() {
     companion object {

@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
+import com.silvermob.sdk.ContentObject;
+
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.ContentObject;
 
 import static org.junit.Assert.assertEquals;
 

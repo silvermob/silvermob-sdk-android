@@ -3,16 +3,10 @@ package com.silvermob.sdk.javademo.activities.ads.gam.original;
 import android.os.Bundle;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.admanager.AdManagerAdRequest;
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAd;
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAdLoadCallback;
-import com.silvermob.sdk.javademo.activities.BaseAdActivity;
-import com.silvermob.sdk.javademo.utils.Settings;
-
 import com.silvermob.sdk.InterstitialAdUnit;
 import com.silvermob.sdk.Signals;
 import com.silvermob.sdk.VideoParameters;
@@ -22,6 +16,9 @@ import com.silvermob.sdk.javademo.utils.Settings;
 
 import java.util.Collections;
 import java.util.EnumSet;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class GamOriginalApiVideoInterstitial extends BaseAdActivity {
 

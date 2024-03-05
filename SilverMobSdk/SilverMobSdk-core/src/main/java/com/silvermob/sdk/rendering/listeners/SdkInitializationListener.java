@@ -4,8 +4,6 @@ import com.silvermob.sdk.api.data.InitializationStatus;
 import com.silvermob.sdk.api.exceptions.InitError;
 
 import org.jetbrains.annotations.NotNull;
-import com.silvermob.sdk.api.data.InitializationStatus;
-import com.silvermob.sdk.api.exceptions.InitError;
 
 public interface SdkInitializationListener {
 

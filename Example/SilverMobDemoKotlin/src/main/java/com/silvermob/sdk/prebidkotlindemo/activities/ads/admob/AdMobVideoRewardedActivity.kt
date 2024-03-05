@@ -21,9 +21,6 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
-import com.silvermob.sdk.admob.AdMobMediationRewardedUtils
-import com.silvermob.sdk.admob.PrebidRewardedAdapter
-import com.silvermob.sdk.api.mediation.MediationRewardedVideoAdUnit
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class AdMobVideoRewardedActivity : BaseAdActivity() {

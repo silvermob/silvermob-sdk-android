@@ -16,21 +16,17 @@
 
 package com.silvermob.sdk.rendering.networking.parameters;
 
-import static com.silvermob.sdk.SilverMob.SDK_VERSION;
-
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.BannerParameters;
 import com.silvermob.sdk.DataObject;
 import com.silvermob.sdk.ExternalUserId;
-import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.Signals;
+import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.TargetingParams;
 import com.silvermob.sdk.VideoParameters;
 import com.silvermob.sdk.api.data.AdFormat;
@@ -47,6 +43,9 @@ import com.silvermob.sdk.rendering.models.openrtb.bidRequests.source.Source;
 import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -54,6 +53,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
+
+import static com.silvermob.sdk.SilverMob.SDK_VERSION;
 
 public class BasicParameterBuilder extends ParameterBuilder {
 

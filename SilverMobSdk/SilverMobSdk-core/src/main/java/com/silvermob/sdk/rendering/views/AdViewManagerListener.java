@@ -17,6 +17,7 @@
 package com.silvermob.sdk.rendering.views;
 
 import android.view.View;
+
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.models.AdDetails;
 

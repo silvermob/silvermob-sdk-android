@@ -24,19 +24,15 @@ import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;
 import com.silvermob.sdk.rendering.networking.tracking.ServerConnection;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;
-import com.silvermob.sdk.rendering.networking.tracking.ServerConnection;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 public class WinNotifier {
 

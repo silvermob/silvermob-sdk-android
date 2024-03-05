@@ -21,12 +21,10 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.sdk.BaseManager;
 
 import androidx.annotation.Nullable;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.sdk.BaseManager;
 
 /**
  * UserConsent manager. It is initialized during SDK initialization.

@@ -1,11 +1,13 @@
 package com.silvermob.sdk.admob;
 
 import android.os.Bundle;
-import androidx.annotation.Nullable;
+
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
 
 public class AdMobMediationInterstitialUtils implements PrebidMediationDelegate {
 

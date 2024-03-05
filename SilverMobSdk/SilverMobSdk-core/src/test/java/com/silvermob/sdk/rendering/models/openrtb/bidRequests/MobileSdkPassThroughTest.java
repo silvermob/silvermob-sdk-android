@@ -1,15 +1,17 @@
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
+import com.silvermob.sdk.api.data.Position;
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.core.BuildConfig;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.api.data.Position;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.core.BuildConfig;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 public class MobileSdkPassThroughTest {
 

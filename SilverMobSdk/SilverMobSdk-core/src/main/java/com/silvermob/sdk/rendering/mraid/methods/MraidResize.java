@@ -28,18 +28,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.silvermob.sdk.rendering.mraid.handler.FetchPropertiesHandler;
-import com.silvermob.sdk.rendering.utils.helpers.Dips;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
-
-import androidx.annotation.DrawableRes;
-import org.json.JSONException;
-import org.json.JSONObject;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.core.R;
 import com.silvermob.sdk.rendering.mraid.handler.FetchPropertiesHandler;
@@ -51,7 +39,12 @@ import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
 import com.silvermob.sdk.rendering.views.webview.mraid.Views;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.DrawableRes;
 
 public class MraidResize {
 

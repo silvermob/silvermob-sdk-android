@@ -18,8 +18,6 @@ package com.silvermob.sdk.rendering.networking.urlBuilder;
 
 import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 import com.silvermob.sdk.rendering.networking.parameters.ParameterBuilder;
-import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
-import com.silvermob.sdk.rendering.networking.parameters.ParameterBuilder;
 
 import java.util.ArrayList;
 

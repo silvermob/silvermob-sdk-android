@@ -1,19 +1,20 @@
 package com.silvermob.sdk.configuration;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import com.silvermob.sdk.api.data.AdFormat;
+import com.silvermob.sdk.api.data.AdUnitFormat;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.data.AdUnitFormat;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.EnumSet;
 import java.util.UUID;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

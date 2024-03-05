@@ -4,11 +4,17 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Insets;
 import android.os.Build;
-import android.view.*;
+import android.view.DisplayCutout;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowInsets;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
-import androidx.annotation.Nullable;
+
 import com.silvermob.sdk.LogUtil;
+
+import androidx.annotation.Nullable;
 
 public class InsetsUtils {
 

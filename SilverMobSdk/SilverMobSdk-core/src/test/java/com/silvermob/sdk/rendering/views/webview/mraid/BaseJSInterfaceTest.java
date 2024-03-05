@@ -16,30 +16,6 @@
 
 package com.silvermob.sdk.rendering.views.webview.mraid;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.anyString;
-import static org.mockito.Mockito.eq;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.reset;
-import static org.mockito.Mockito.timeout;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.DEVICE_ORIENTATION;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.DEVICE_ORIENTATION_LOCKED;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.LOCATION_ACCURACY;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.LOCATION_ERROR;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.LOCATION_LASTFIX;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.LOCATION_LAT;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.LOCATION_LON;
-import static com.silvermob.sdk.rendering.views.webview.mraid.JSInterface.LOCATION_TYPE;
-import static org.robolectric.Shadows.shadowOf;
-
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
@@ -47,24 +23,6 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Looper;
 
-import com.silvermob.sdk.reflection.Reflection;
-import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.utils.device.DeviceVolumeObserver;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.reflection.Reflection;
 import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
 import com.silvermob.sdk.rendering.models.CreativeModel;
@@ -84,6 +42,17 @@ import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.Shadows;
@@ -93,6 +62,22 @@ import org.robolectric.shadows.ShadowActivity;
 import org.robolectric.shadows.ShadowLocationManager;
 
 import java.lang.reflect.Field;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyString;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.timeout;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

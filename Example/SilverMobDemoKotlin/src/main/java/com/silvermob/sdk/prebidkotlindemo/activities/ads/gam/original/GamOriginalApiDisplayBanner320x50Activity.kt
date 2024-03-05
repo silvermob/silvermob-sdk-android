@@ -23,8 +23,6 @@ import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerAdView
 import com.silvermob.sdk.BannerAdUnit
 import com.silvermob.sdk.BannerParameters
-import com.silvermob.sdk.Signals
-import com.silvermob.sdk.addendum.AdViewUtils
 import com.silvermob.sdk.addendum.PbFindSizeError
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
@@ -58,7 +56,7 @@ class GamOriginalApiDisplayBanner320x50Activity : BaseAdActivity() {
                         adView.setAdSizes(AdSize(width, height))
                     }
 
-                    override fun failure(error: com.silvermob.sdk.addendum.PbFindSizeError) {}
+                    override fun failure(error: PbFindSizeError) {}
                 })
 
             }
@@ -70,9 +68,9 @@ class GamOriginalApiDisplayBanner320x50Activity : BaseAdActivity() {
         adWrapperView.addView(adView)
 
         val request = AdManagerAdRequest.Builder().build()
-        adUnit = com.silvermob.sdk.BannerAdUnit(CONFIG_ID, WIDTH, HEIGHT)
+        adUnit = BannerAdUnit(CONFIG_ID, WIDTH, HEIGHT)
 
-        val parameters = com.silvermob.sdk.BannerParameters()
+        val parameters = BannerParameters()
         parameters.api = listOf(com.silvermob.sdk.Signals.Api.MRAID_3, com.silvermob.sdk.Signals.Api.OMID_1)
         adUnit?.bannerParameters = parameters
 

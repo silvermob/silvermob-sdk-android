@@ -1,14 +1,14 @@
 package com.silvermob.sdk;
 
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.Matchers;
-import org.junit.Test;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.Matchers;
+import org.junit.Test;
+
 import java.util.ArrayList;
 
-import static org.hamcrest.CoreMatchers.hasItems;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 

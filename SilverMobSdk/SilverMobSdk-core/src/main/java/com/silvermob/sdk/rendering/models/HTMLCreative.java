@@ -27,21 +27,6 @@ import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.interstitial.InterstitialManagerDisplayDelegate;
-import com.silvermob.sdk.rendering.mraid.methods.MraidController;
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBanner;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewInterstitial;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-
-import androidx.annotation.VisibleForTesting;
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.interstitial.InterstitialManagerDisplayDelegate;
 import com.silvermob.sdk.rendering.listeners.CreativeViewListener;
 import com.silvermob.sdk.rendering.listeners.WebViewDelegate;
 import com.silvermob.sdk.rendering.models.internal.MraidEvent;
@@ -58,6 +43,8 @@ import com.silvermob.sdk.rendering.views.webview.PrebidWebViewInterstitial;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 
 import java.util.EnumSet;
+
+import androidx.annotation.VisibleForTesting;
 
 public class HTMLCreative extends AbstractCreative implements WebViewDelegate, InterstitialManagerDisplayDelegate, Comparable {
 

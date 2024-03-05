@@ -20,8 +20,6 @@ import android.text.TextUtils;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.utils.helpers.MraidUtils;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.utils.helpers.MraidUtils;
 
 public class MraidVariableContainer {
     private static final String TAG = MraidVariableContainer.class.getSimpleName();

@@ -7,17 +7,12 @@ import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.configuration.PBSConfig;
 import com.silvermob.sdk.core.BuildConfig;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.api.data.Position;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.configuration.PBSConfig;
-import com.silvermob.sdk.core.BuildConfig;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * A class responsible for parsing "prebidmobilesdk" pass through type from bid response.

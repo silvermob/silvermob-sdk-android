@@ -27,19 +27,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import com.silvermob.sdk.javademo.testcases.AdFormat;
-import com.silvermob.sdk.javademo.testcases.IntegrationKind;
-import com.silvermob.sdk.javademo.testcases.TestCase;
-import com.silvermob.sdk.javademo.testcases.TestCaseAdapter;
-import com.silvermob.sdk.javademo.testcases.TestCaseRepository;
-import com.silvermob.sdk.javademo.utils.Settings;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.silvermob.sdk.javademo.R;
 import com.silvermob.sdk.javademo.databinding.ActivityMainBinding;
 import com.silvermob.sdk.javademo.testcases.AdFormat;
@@ -50,6 +37,12 @@ import com.silvermob.sdk.javademo.testcases.TestCaseRepository;
 import com.silvermob.sdk.javademo.utils.Settings;
 
 import java.util.ArrayList;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -19,16 +19,6 @@ package com.silvermob.sdk.rendering.video;
 import android.app.Activity;
 import android.content.Context;
 
-import com.silvermob.sdk.reflection.Reflection;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.reflection.Reflection;
@@ -38,6 +28,14 @@ import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
 import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
@@ -45,7 +43,13 @@ import org.robolectric.annotation.Config;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.ArgumentMatchers.anyFloat;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

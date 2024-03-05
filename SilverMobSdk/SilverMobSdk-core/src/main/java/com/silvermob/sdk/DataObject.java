@@ -1,14 +1,15 @@
 package com.silvermob.sdk;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 
 import java.util.ArrayList;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class DataObject {
 

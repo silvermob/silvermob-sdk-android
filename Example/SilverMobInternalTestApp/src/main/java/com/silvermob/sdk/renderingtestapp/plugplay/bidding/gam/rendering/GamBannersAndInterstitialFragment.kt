@@ -17,11 +17,6 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.gam.rendering
 
 import android.widget.Button
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.rendering.BannerView
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
-import com.silvermob.sdk.eventhandlers.GamBannerEventHandler
-import com.silvermob.sdk.eventhandlers.GamInterstitialEventHandler
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm.PpmBannersWithInterstitialFragment
 

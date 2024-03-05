@@ -16,32 +16,12 @@
 
 package com.silvermob.sdk.api.rendering;
 
-import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.util.Pair;
 import android.view.View;
 import android.widget.FrameLayout;
-
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.DataObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.data.BannerAdPosition;
-import com.silvermob.sdk.api.data.VideoPlacementType;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.rendering.listeners.BannerVideoListener;
-import com.silvermob.sdk.rendering.utils.broadcast.ScreenStateReceiver;
-import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.ContentObject;
@@ -78,6 +58,12 @@ import com.silvermob.sdk.rendering.views.webview.mraid.Views;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+
+import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
 public class BannerView extends FrameLayout {
 

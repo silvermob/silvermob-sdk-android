@@ -21,11 +21,9 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAd
 import com.google.android.gms.ads.admanager.AdManagerInterstitialAdLoadCallback
-import com.silvermob.sdk.InterstitialAdUnit
-import com.silvermob.sdk.VideoParameters
-import com.silvermob.sdk.api.data.AdUnitFormat
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
-import java.util.*
+import java.util.EnumSet
+import java.util.Random
 
 class GamOriginalApiMultiformatInterstitialActivity : BaseAdActivity() {
 

@@ -3,7 +3,6 @@ package com.silvermob.sdk.rendering.sdk;
 import android.text.TextUtils;
 import android.webkit.WebSettings;
 
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 

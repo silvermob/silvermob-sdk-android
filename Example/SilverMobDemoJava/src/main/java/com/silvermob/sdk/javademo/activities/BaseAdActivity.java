@@ -3,19 +3,16 @@ package com.silvermob.sdk.javademo.activities;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
+import com.silvermob.sdk.javademo.R;
+import com.silvermob.sdk.javademo.databinding.ActivityDemoBinding;
 import com.silvermob.sdk.javademo.testcases.TestCase;
+import com.silvermob.sdk.javademo.testcases.TestCaseRepository;
 import com.silvermob.sdk.javademo.utils.Settings;
 
 import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
-import com.silvermob.sdk.javademo.R;
-import com.silvermob.sdk.javademo.databinding.ActivityDemoBinding;
-import com.silvermob.sdk.javademo.testcases.TestCase;
-import com.silvermob.sdk.javademo.testcases.TestCaseRepository;
-import com.silvermob.sdk.javademo.utils.Settings;
 
 public class BaseAdActivity extends AppCompatActivity {
 

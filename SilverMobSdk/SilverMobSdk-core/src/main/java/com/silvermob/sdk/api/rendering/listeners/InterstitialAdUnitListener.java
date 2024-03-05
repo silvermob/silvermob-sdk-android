@@ -18,8 +18,6 @@ package com.silvermob.sdk.api.rendering.listeners;
 
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.api.rendering.InterstitialAdUnit;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit;
 
 /**
  * Listener interface representing InterstitialAdUnit events.

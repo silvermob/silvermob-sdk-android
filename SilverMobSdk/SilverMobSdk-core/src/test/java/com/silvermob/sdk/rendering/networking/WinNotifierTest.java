@@ -17,11 +17,13 @@
 package com.silvermob.sdk.rendering.networking;
 
 import android.text.TextUtils;
-import okhttp3.HttpUrl;
-import okhttp3.mockwebserver.MockResponse;
-import okhttp3.mockwebserver.MockWebServer;
-import okhttp3.mockwebserver.QueueDispatcher;
-import okhttp3.mockwebserver.RecordedRequest;
+
+import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;
+import com.silvermob.sdk.test.utils.ResourceUtils;
+import com.silvermob.sdk.test.utils.WhiteBox;
+
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 import org.junit.After;
@@ -31,17 +33,22 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;
-import com.silvermob.sdk.test.utils.ResourceUtils;
-import com.silvermob.sdk.test.utils.WhiteBox;
 
 import java.io.IOException;
 import java.util.HashMap;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import okhttp3.HttpUrl;
+import okhttp3.mockwebserver.MockResponse;
+import okhttp3.mockwebserver.MockWebServer;
+import okhttp3.mockwebserver.QueueDispatcher;
+import okhttp3.mockwebserver.RecordedRequest;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(JUnit4.class)
 public class WinNotifierTest {

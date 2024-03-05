@@ -22,26 +22,21 @@ import android.util.Pair;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.utils.helpers.Dips;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.MobileSdkPassThrough;
 import com.silvermob.sdk.rendering.utils.helpers.Dips;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class BidResponse {
     private final static String TAG = BidResponse.class.getSimpleName();

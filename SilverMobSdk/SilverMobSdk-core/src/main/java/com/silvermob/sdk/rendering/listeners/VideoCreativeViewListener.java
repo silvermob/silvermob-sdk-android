@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.listeners;
 
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
 import com.silvermob.sdk.rendering.video.VideoAdEvent;
 

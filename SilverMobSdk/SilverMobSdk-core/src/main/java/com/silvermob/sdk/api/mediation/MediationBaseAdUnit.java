@@ -27,18 +27,6 @@ import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.api.data.FetchDemandResult;
 import com.silvermob.sdk.api.exceptions.AdException;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.DataObject;
-import com.silvermob.sdk.Host;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.api.data.FetchDemandResult;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
@@ -51,6 +39,9 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public abstract class MediationBaseAdUnit {
 

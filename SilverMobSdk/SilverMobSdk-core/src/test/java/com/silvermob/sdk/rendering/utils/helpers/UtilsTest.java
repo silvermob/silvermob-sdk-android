@@ -26,8 +26,15 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import androidx.test.filters.Suppress;
+
+import com.silvermob.sdk.SilverMob;
+import com.silvermob.sdk.api.data.Position;
+import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
+import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
 import junit.framework.TestCase;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,11 +43,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.api.data.Position;
-import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
-import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
@@ -55,10 +57,16 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
+import androidx.test.filters.Suppress;
+
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertThat;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19, qualifiers = "w1920dp-h1080dp")

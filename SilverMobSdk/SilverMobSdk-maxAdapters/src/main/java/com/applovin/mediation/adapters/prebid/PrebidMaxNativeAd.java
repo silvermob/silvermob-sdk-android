@@ -6,7 +6,6 @@ import android.view.View;
 import com.applovin.mediation.adapter.listeners.MaxNativeAdAdapterListener;
 import com.applovin.mediation.nativeAds.MaxNativeAd;
 import com.applovin.mediation.nativeAds.MaxNativeAdView;
-
 import com.silvermob.sdk.PrebidNativeAd;
 import com.silvermob.sdk.PrebidNativeAdEventListener;
 

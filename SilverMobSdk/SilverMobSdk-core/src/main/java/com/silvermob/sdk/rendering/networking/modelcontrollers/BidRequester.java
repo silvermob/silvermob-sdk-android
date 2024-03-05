@@ -18,9 +18,6 @@ package com.silvermob.sdk.rendering.networking.modelcontrollers;
 
 import android.text.TextUtils;
 
-import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
-import com.silvermob.sdk.rendering.networking.urlBuilder.BidPathBuilder;
-import com.silvermob.sdk.rendering.networking.urlBuilder.PathBuilderBase;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.networking.ResponseHandler;
 import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;

@@ -16,10 +16,11 @@
 
 package com.silvermob.sdk.rendering.mraid;
 
+import com.silvermob.sdk.SilverMob;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import com.silvermob.sdk.SilverMob;
 
 import static junit.framework.TestCase.assertEquals;
 

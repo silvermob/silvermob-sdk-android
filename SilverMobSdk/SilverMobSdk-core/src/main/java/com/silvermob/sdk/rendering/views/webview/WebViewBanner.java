@@ -20,7 +20,6 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.silvermob.sdk.rendering.utils.helpers.HandlerQueueManager;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.internal.MraidEvent;
 import com.silvermob.sdk.rendering.utils.helpers.HandlerQueueManager;

@@ -16,10 +16,6 @@
 package com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering
 
 import android.os.Bundle
-import com.silvermob.sdk.api.exceptions.AdException
-import com.silvermob.sdk.api.rendering.RewardedAdUnit
-import com.silvermob.sdk.api.rendering.listeners.RewardedAdUnitListener
-import com.silvermob.sdk.eventhandlers.GamRewardedEventHandler
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class GamRenderingApiVideoRewardedActivity : BaseAdActivity() {

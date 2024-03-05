@@ -19,23 +19,28 @@ package com.silvermob.sdk.eventhandlers;
 import android.app.Activity;
 import android.content.Context;
 import android.view.View;
+
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.admanager.AdManagerAdView;
+import com.silvermob.sdk.AdSize;
+import com.silvermob.sdk.eventhandlers.global.Constants;
+import com.silvermob.sdk.test.utils.WhiteBox;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.eventhandlers.global.Constants;
-import com.silvermob.sdk.test.utils.WhiteBox;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

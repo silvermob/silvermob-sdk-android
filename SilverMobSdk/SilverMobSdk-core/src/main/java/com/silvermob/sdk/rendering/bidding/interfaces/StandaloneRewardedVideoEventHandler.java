@@ -17,11 +17,10 @@
 package com.silvermob.sdk.rendering.bidding.interfaces;
 
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
+import com.silvermob.sdk.rendering.bidding.listeners.RewardedVideoEventListener;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.listeners.RewardedVideoEventListener;
 
 public class StandaloneRewardedVideoEventHandler implements RewardedEventHandler {
     private RewardedVideoEventListener listener;

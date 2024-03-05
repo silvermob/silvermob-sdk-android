@@ -24,7 +24,6 @@ import com.applovin.mediation.MaxAdViewAdListener
 import com.applovin.mediation.MaxError
 import com.applovin.mediation.adapters.prebid.utils.MaxMediationBannerUtils
 import com.applovin.mediation.ads.MaxAdView
-import com.applovin.sdk.AppLovinSdk
 import com.silvermob.sdk.AdSize
 import com.silvermob.sdk.api.mediation.MediationBannerAdUnit
 import com.silvermob.sdk.prebidkotlindemo.R
@@ -76,13 +75,14 @@ class AppLovinMaxDisplayBanner320x50Activity : BaseAdActivity() {
         adUnit = MediationBannerAdUnit(
                 this,
                 CONFIG_ID,
-                com.silvermob.sdk.AdSize(WIDTH, HEIGHT),
+                AdSize(WIDTH, HEIGHT),
                 mediationUtils
         )
-        adUnit?.setRefreshInterval(refreshTimeSeconds)
+        /*adUnit?.setRefreshInterval(refreshTimeSeconds)
         adUnit?.fetchDemand {
-            adView?.loadAd()
-        }
+
+        }*/
+        adView?.loadAd()
     }
 
 

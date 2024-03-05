@@ -3,10 +3,6 @@ package com.silvermob.sdk.testutils;
 import android.content.Context;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import org.json.JSONObject;
 import com.silvermob.sdk.api.rendering.PrebidMobileInterstitialControllerInterface;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PluginEventListener;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer;
@@ -16,6 +12,11 @@ import com.silvermob.sdk.rendering.bidding.display.InterstitialController;
 import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener;
 import com.silvermob.sdk.rendering.bidding.listeners.DisplayVideoListener;
 import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
+
+import org.json.JSONObject;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class FakePrebidMobilePluginRenderer {
     public static PrebidMobilePluginRenderer getFakePrebidRenderer(

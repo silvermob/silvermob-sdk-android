@@ -19,7 +19,12 @@ package com.silvermob.sdk.api.rendering;
 import android.app.Activity;
 import android.content.Context;
 
+import com.silvermob.sdk.api.exceptions.AdException;
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialViewListener;
 import com.silvermob.sdk.rendering.views.AdViewManager;
+import com.silvermob.sdk.test.utils.WhiteBox;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -27,16 +32,14 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialViewListener;
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.test.utils.WhiteBox;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 public class InterstitialViewTest {

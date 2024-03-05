@@ -18,11 +18,6 @@ package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.factory;
 
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.Mraid3LoadAndEventsPage;
-
-import androidx.test.uiautomator.UiDevice;
-
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.Mraid3LoadAndEventsPage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.Mraid3ResizeNegativePage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.Mraid3TestMethods;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.Mraid3TestProperties;
@@ -31,6 +26,8 @@ import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.Mraid
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.MraidExpand2Page;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.MraidResizePage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds.MraidResizeWithErrorsPage;
+
+import androidx.test.uiautomator.UiDevice;
 
 public class MraidPageFactory extends PageFactory {
 

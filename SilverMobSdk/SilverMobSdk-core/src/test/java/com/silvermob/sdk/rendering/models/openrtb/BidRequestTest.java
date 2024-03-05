@@ -24,7 +24,6 @@ import com.silvermob.sdk.rendering.models.openrtb.bidRequests.User;
 
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.*;
 
 import java.util.ArrayList;
 

@@ -23,17 +23,12 @@ import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.FetchDemandResult;
 import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener;
-
-import androidx.annotation.NonNull;
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.data.FetchDemandResult;
-import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.display.BidResponseCache;
 import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 import com.silvermob.sdk.rendering.models.AdPosition;
+
+import androidx.annotation.NonNull;
 
 public class MediationRewardedVideoAdUnit extends MediationBaseFullScreenAdUnit {
 

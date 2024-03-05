@@ -22,17 +22,12 @@ import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.BannerAdPosition;
-import com.silvermob.sdk.rendering.utils.broadcast.ScreenStateReceiver;
-
-import androidx.annotation.NonNull;
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.data.BannerAdPosition;
 import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener;
 import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 import com.silvermob.sdk.rendering.models.AdPosition;
 import com.silvermob.sdk.rendering.utils.broadcast.ScreenStateReceiver;
+
+import androidx.annotation.NonNull;
 
 public class MediationBannerAdUnit extends MediationBaseAdUnit {
 

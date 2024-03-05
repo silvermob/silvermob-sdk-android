@@ -26,19 +26,6 @@ import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.loading.AdLoadListener;
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
-import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
-
-import androidx.annotation.NonNull;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.rendering.loading.AdLoadListener;
 import com.silvermob.sdk.rendering.loading.VastParserExtractor;
 import com.silvermob.sdk.rendering.models.internal.VastExtractorResult;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
@@ -47,6 +34,8 @@ import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
 import com.silvermob.sdk.rendering.video.OmEventTracker;
 
 import java.util.ArrayList;
+
+import androidx.annotation.NonNull;
 
 public class CreativeModelMakerBids {
 

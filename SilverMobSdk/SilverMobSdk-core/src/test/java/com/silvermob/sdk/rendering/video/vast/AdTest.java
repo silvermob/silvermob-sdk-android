@@ -17,9 +17,11 @@
 package com.silvermob.sdk.rendering.video.vast;
 
 import android.util.Xml;
+
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 import org.robolectric.RobolectricTestRunner;
 import org.xmlpull.v1.XmlPullParser;
 

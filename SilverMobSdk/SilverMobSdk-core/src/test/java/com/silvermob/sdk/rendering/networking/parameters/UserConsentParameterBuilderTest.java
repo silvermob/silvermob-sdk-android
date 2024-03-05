@@ -16,12 +16,11 @@
 
 package com.silvermob.sdk.rendering.networking.parameters;
 
-import static org.junit.Assert.assertEquals;
-
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
 import com.silvermob.sdk.reflection.sdk.UserConsentManagerReflection;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
@@ -31,13 +30,10 @@ import org.json.JSONException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
-import com.silvermob.sdk.reflection.sdk.UserConsentManagerReflection;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.UserConsentManager;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(RobolectricTestRunner.class)
 public class UserConsentParameterBuilderTest {

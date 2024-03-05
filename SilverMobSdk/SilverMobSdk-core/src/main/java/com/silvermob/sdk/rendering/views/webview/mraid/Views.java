@@ -20,9 +20,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.silvermob.sdk.LogUtil;
+
 import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
-import com.silvermob.sdk.LogUtil;
 
 public class Views {
 

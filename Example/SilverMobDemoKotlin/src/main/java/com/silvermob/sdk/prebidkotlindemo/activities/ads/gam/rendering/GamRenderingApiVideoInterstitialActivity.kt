@@ -17,12 +17,8 @@ package com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering
 
 import android.os.Bundle
 import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.exceptions.AdException
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
-import com.silvermob.sdk.api.rendering.listeners.InterstitialAdUnitListener
-import com.silvermob.sdk.eventhandlers.GamInterstitialEventHandler
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
-import java.util.*
+import java.util.EnumSet
 
 class GamRenderingApiVideoInterstitialActivity : BaseAdActivity() {
 

@@ -16,8 +16,9 @@
 
 package com.silvermob.sdk.api.data;
 
-import androidx.annotation.Nullable;
 import com.silvermob.sdk.rendering.models.PlacementType;
+
+import androidx.annotation.Nullable;
 
 public enum VideoPlacementType {
     IN_BANNER(2),

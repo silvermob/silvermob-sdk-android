@@ -17,10 +17,9 @@
 package com.silvermob.sdk.rendering.bidding.interfaces;
 
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
+import com.silvermob.sdk.rendering.bidding.listeners.InterstitialEventListener;
 
 import androidx.annotation.Nullable;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.listeners.InterstitialEventListener;
 
 public interface InterstitialEventHandler {
     void setInterstitialEventListener(InterstitialEventListener interstitialEventListener);

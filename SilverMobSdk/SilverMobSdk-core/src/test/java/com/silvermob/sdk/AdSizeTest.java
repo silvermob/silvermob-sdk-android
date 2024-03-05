@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk;
 
+import com.silvermob.sdk.testutils.BaseSetup;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.testutils.BaseSetup;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 

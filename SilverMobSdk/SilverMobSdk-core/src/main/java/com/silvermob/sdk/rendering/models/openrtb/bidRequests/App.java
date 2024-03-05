@@ -22,8 +22,6 @@ import com.silvermob.sdk.rendering.models.openrtb.bidRequests.apps.Publisher;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.apps.Publisher;
 
 public class App extends BaseBid {
 

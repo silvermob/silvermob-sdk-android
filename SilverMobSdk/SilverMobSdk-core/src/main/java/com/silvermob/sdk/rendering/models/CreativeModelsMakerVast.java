@@ -21,15 +21,6 @@ import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.errors.VastParseError;
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-
-import androidx.annotation.NonNull;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.errors.VastParseError;
 import com.silvermob.sdk.rendering.loading.AdLoadListener;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 import com.silvermob.sdk.rendering.parser.AdResponseParserBase;
@@ -43,11 +34,14 @@ import com.silvermob.sdk.rendering.video.vast.ClickTracking;
 import com.silvermob.sdk.rendering.video.vast.Companion;
 import com.silvermob.sdk.rendering.video.vast.Impression;
 import com.silvermob.sdk.rendering.video.vast.Tracking;
-import com.silvermob.sdk.rendering.video.vast.*;
 
 import java.util.ArrayList;
 
-import static com.silvermob.sdk.rendering.parser.AdResponseParserVast.*;
+import androidx.annotation.NonNull;
+
+import static com.silvermob.sdk.rendering.parser.AdResponseParserVast.RESOURCE_FORMAT_HTML;
+import static com.silvermob.sdk.rendering.parser.AdResponseParserVast.RESOURCE_FORMAT_IFRAME;
+import static com.silvermob.sdk.rendering.parser.AdResponseParserVast.RESOURCE_FORMAT_STATIC;
 
 public class CreativeModelsMakerVast extends CreativeModelsMaker {
 

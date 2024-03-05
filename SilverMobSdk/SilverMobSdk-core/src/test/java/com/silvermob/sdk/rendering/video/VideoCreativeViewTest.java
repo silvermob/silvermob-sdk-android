@@ -19,12 +19,14 @@ package com.silvermob.sdk.rendering.video;
 import android.app.Activity;
 import android.content.Context;
 import android.view.View;
+
+import com.silvermob.sdk.api.exceptions.AdException;
+import com.silvermob.sdk.test.utils.WhiteBox;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.test.utils.WhiteBox;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;

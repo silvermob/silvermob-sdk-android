@@ -28,14 +28,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd
-import com.silvermob.sdk.NativeData
-import com.silvermob.sdk.PrebidNativeAd
-import com.silvermob.sdk.PrebidNativeAdEventListener
-import com.silvermob.sdk.api.data.FetchDemandResult
-import com.silvermob.sdk.api.mediation.MediationNativeAdUnit
-import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener
-import com.silvermob.sdk.eventhandlers.utils.GamUtils
-import com.silvermob.sdk.rendering.utils.ntv.NativeAdProvider
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.utils.loadImage
 

@@ -1,10 +1,11 @@
 package com.silvermob.sdk.rendering.bidding.config;
 
-import androidx.annotation.Nullable;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
 
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
 
 public class MockMediationUtils implements PrebidMediationDelegate {
 

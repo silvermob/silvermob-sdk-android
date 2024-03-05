@@ -18,6 +18,7 @@ package com.silvermob.sdk.rendering.mraid.methods;
 
 import android.content.Context;
 
+import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.utils.url.UrlHandler;
 import com.silvermob.sdk.rendering.utils.url.action.DeepLinkAction;
 import com.silvermob.sdk.rendering.utils.url.action.DeepLinkPlusAction;
@@ -26,13 +27,6 @@ import com.silvermob.sdk.rendering.utils.url.action.UrlAction;
 import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 
 import androidx.annotation.VisibleForTesting;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
-import com.silvermob.sdk.rendering.utils.url.action.DeepLinkAction;
-import com.silvermob.sdk.rendering.utils.url.action.DeepLinkPlusAction;
-import com.silvermob.sdk.rendering.utils.url.action.MraidInternalBrowserAction;
-import com.silvermob.sdk.rendering.utils.url.action.UrlAction;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 
 public class MraidUrlHandler {
 

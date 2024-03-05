@@ -18,8 +18,6 @@ package com.silvermob.sdk.api.rendering.listeners;
 
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.api.rendering.BannerView;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.rendering.BannerView;
 
 /**
  * Listener interface representing BannerView events.

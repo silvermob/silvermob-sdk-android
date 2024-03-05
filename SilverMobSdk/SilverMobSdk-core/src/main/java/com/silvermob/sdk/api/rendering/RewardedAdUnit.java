@@ -21,17 +21,14 @@ import android.content.Context;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
-
-import androidx.annotation.Nullable;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.api.rendering.listeners.RewardedAdUnitListener;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 import com.silvermob.sdk.rendering.bidding.interfaces.RewardedEventHandler;
 import com.silvermob.sdk.rendering.bidding.interfaces.StandaloneRewardedVideoEventHandler;
 import com.silvermob.sdk.rendering.bidding.listeners.RewardedVideoEventListener;
+
+import androidx.annotation.Nullable;
 
 public class RewardedAdUnit extends BaseInterstitialAdUnit {
 

@@ -20,7 +20,6 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
 
 final class CalendarLT14 implements ICalendar
 {

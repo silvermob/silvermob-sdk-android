@@ -23,9 +23,6 @@ import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerAdView
-import com.silvermob.sdk.VideoAdUnit
-import com.silvermob.sdk.addendum.AdViewUtils
-import com.silvermob.sdk.addendum.PbFindSizeError
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentBiddingBannerVideoBinding

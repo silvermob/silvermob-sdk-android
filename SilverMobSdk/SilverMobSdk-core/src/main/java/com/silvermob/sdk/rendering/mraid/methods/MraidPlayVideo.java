@@ -19,7 +19,6 @@ package com.silvermob.sdk.rendering.mraid.methods;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 

@@ -18,7 +18,6 @@ package com.silvermob.sdk.rendering.mraid.methods.network;
 
 import android.text.TextUtils;
 
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.networking.ResponseHandler;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;

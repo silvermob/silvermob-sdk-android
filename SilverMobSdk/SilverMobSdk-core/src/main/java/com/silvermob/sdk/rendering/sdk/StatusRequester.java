@@ -2,14 +2,13 @@ package com.silvermob.sdk.rendering.sdk;
 
 import android.util.Log;
 
-import com.silvermob.sdk.rendering.networking.tracking.ServerConnection;
-
-import org.jetbrains.annotations.Nullable;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.networking.ResponseHandler;
 import com.silvermob.sdk.rendering.networking.tracking.ServerConnection;
+
+import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicBoolean;

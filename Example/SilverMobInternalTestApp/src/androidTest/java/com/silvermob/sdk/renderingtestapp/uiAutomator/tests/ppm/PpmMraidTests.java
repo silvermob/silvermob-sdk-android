@@ -18,16 +18,14 @@ package com.silvermob.sdk.renderingtestapp.uiAutomator.tests.ppm;
 
 import android.os.RemoteException;
 
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.BaseUiAutomatorTest;
-
-import androidx.test.uiautomator.By;
-
-import org.json.JSONException;
-import org.junit.Test;
 import com.silvermob.sdk.renderingtestapp.R;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.BaseUiAutomatorTest;
+
+import org.json.JSONException;
+import org.junit.Test;
+
+import androidx.test.uiautomator.By;
 
 public class PpmMraidTests extends BaseUiAutomatorTest {
     @Test

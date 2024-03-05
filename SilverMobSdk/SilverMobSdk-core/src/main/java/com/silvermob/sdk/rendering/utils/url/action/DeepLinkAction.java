@@ -23,9 +23,6 @@ import android.text.TextUtils;
 import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
 import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
 import com.silvermob.sdk.rendering.utils.url.UrlHandler;
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
 
 import static com.silvermob.sdk.SilverMob.SCHEME_HTTP;
 import static com.silvermob.sdk.SilverMob.SCHEME_HTTPS;

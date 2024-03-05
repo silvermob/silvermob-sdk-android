@@ -1,15 +1,16 @@
 package com.silvermob.sdk.api.original;
 
+import com.silvermob.sdk.ResultCode;
+import com.silvermob.sdk.api.data.BidInfo;
+
+import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
-
-import org.junit.Test;
-import org.mockito.ArgumentCaptor;
-import com.silvermob.sdk.ResultCode;
-import com.silvermob.sdk.api.data.BidInfo;
 
 public class PrebidAdUnitTest {
 

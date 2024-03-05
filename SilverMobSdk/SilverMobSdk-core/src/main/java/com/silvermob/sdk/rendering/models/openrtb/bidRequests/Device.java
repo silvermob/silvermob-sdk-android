@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
+
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
 
 public class Device extends BaseBid {
 

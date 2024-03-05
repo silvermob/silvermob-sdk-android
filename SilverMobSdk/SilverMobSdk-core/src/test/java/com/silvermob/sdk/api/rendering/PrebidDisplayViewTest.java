@@ -20,15 +20,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.rendering.views.AdViewManagerListener;
-
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
@@ -40,11 +31,22 @@ import com.silvermob.sdk.rendering.models.AdDetails;
 import com.silvermob.sdk.rendering.views.AdViewManager;
 import com.silvermob.sdk.rendering.views.AdViewManagerListener;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

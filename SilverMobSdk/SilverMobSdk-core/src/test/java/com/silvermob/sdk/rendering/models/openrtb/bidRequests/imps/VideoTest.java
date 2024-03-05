@@ -18,12 +18,11 @@ package com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps;
 
 import com.silvermob.sdk.rendering.networking.parameters.BasicParameterBuilder;
 
-import static org.junit.Assert.assertEquals;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.rendering.networking.parameters.BasicParameterBuilder;
+
+import static org.junit.Assert.assertEquals;
 
 public class VideoTest {
 

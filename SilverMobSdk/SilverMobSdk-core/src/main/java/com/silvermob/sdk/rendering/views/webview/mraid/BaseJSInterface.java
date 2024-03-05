@@ -21,7 +21,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Rect;
-import android.os.*;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -29,24 +33,6 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.webkit.JavascriptInterface;
 
-import com.silvermob.sdk.rendering.networking.parameters.GeoLocationParameterBuilder;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.LocationInfoManager;
-import com.silvermob.sdk.rendering.utils.broadcast.MraidOrientationBroadcastReceiver;
-import com.silvermob.sdk.rendering.utils.device.DeviceVolumeObserver;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
-import com.silvermob.sdk.rendering.utils.helpers.HandlerQueueManager;
-import com.silvermob.sdk.rendering.utils.helpers.MraidUtils;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-import org.json.JSONException;
-import org.json.JSONObject;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.HTMLCreative;
 import com.silvermob.sdk.rendering.models.internal.MraidEvent;
@@ -69,9 +55,16 @@ import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.lang.ref.WeakReference;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.RunnableFuture;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 @SuppressLint("NewApi")
 public class BaseJSInterface implements JSInterface {

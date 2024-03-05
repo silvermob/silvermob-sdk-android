@@ -24,8 +24,6 @@ import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
 
 import androidx.annotation.NonNull;
 
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
-
 public class FetchPropertiesHandler extends Handler {
     @NonNull private final FetchPropertyCallback callback;
 

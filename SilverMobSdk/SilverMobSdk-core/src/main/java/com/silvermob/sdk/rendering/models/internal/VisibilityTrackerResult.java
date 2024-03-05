@@ -16,7 +16,6 @@
 
 package com.silvermob.sdk.rendering.models.internal;
 
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
 import com.silvermob.sdk.rendering.models.ntv.NativeEventTracker;
 import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
 

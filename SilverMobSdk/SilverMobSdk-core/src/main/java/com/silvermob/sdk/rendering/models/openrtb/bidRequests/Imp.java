@@ -16,11 +16,12 @@
 
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Banner;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Pmp;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.imps.Video;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Imp extends BaseBid {
     public String id = null;

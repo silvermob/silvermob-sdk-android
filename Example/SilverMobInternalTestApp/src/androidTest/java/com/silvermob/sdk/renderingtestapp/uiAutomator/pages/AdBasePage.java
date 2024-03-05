@@ -16,14 +16,20 @@
 
 package com.silvermob.sdk.renderingtestapp.uiAutomator.pages;
 
-import androidx.test.uiautomator.*;
-
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import androidx.test.uiautomator.By;
+import androidx.test.uiautomator.BySelector;
+import androidx.test.uiautomator.UiDevice;
+import androidx.test.uiautomator.UiObject2;
+import androidx.test.uiautomator.Until;
+
 import static androidx.test.uiautomator.By.copy;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 public class AdBasePage<T> extends BasePage<T> {
 

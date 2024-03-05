@@ -23,7 +23,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.FrameLayout
 import android.widget.TextView
-import com.silvermob.sdk.rendering.views.webview.mraid.Views
 import com.silvermob.sdk.renderingtestapp.R
 
 private const val TAG = "FeedAdapter"

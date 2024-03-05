@@ -17,13 +17,11 @@
 package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.factory;
 
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
-
-import androidx.test.uiautomator.UiDevice;
-
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.gam.GamBannerPage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.ppm.PpmBannerPage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.ppm.PpmBannerVideoPage;
+
+import androidx.test.uiautomator.UiDevice;
 
 public class BannerPageFactory extends PageFactory {
 

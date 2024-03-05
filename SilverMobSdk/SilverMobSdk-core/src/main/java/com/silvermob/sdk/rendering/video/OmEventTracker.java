@@ -20,10 +20,6 @@ import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.TrackingEvent;
 import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
 import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.models.TrackingEvent;
-import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
-import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 
 import java.lang.ref.WeakReference;
 

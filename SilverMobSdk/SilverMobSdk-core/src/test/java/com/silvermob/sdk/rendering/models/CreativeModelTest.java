@@ -16,20 +16,23 @@
 
 package com.silvermob.sdk.rendering.models;
 
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 import com.silvermob.sdk.rendering.video.OmEventTracker;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

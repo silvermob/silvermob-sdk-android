@@ -16,18 +16,19 @@
 
 package com.silvermob.sdk;
 
-import static org.junit.Assert.assertTrue;
+import com.silvermob.sdk.testutils.BaseSetup;
 
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.testutils.BaseSetup;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = BaseSetup.testSDK, manifest = Config.NONE)

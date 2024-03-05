@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk.rendering.bidding.data.bid;
 
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 
 import java.util.ArrayList;
 import java.util.List;

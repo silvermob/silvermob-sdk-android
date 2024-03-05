@@ -21,14 +21,13 @@ import android.os.Looper;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
 
 import java.util.LinkedList;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class ScreenMetricsWaiter {
 

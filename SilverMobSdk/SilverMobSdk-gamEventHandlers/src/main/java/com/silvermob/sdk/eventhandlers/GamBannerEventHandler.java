@@ -21,7 +21,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
-import androidx.annotation.NonNull;
+
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
@@ -29,6 +29,8 @@ import com.silvermob.sdk.eventhandlers.global.Constants;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 import com.silvermob.sdk.rendering.bidding.interfaces.BannerEventHandler;
 import com.silvermob.sdk.rendering.bidding.listeners.BannerEventListener;
+
+import androidx.annotation.NonNull;
 
 /**
  * This class is compatible with Prebid Rendering SDK v1.10.

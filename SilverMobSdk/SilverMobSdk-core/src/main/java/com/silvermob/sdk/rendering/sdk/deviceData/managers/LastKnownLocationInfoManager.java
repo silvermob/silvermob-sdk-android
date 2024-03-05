@@ -16,17 +16,16 @@
 
 package com.silvermob.sdk.rendering.sdk.deviceData.managers;
 
-import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
-import static android.Manifest.permission.ACCESS_FINE_LOCATION;
-import static android.content.pm.PackageManager.PERMISSION_GRANTED;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
 
 import com.silvermob.sdk.rendering.sdk.BaseManager;
-import com.silvermob.sdk.rendering.sdk.BaseManager;
+
+import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
+import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 
 public final class LastKnownLocationInfoManager extends BaseManager implements LocationInfoManager {
 

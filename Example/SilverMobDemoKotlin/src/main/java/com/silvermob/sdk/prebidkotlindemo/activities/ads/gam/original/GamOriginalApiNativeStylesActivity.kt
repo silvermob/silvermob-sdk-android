@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
 import com.google.android.gms.ads.admanager.AdManagerAdView
-import com.silvermob.sdk.*
+import com.silvermob.sdk.NativeEventTracker
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class GamOriginalApiNativeStylesActivity : BaseAdActivity() {

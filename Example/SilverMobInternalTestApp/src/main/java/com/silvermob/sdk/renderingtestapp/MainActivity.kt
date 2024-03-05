@@ -32,7 +32,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import androidx.test.espresso.IdlingResource
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.silvermob.sdk.rendering.sdk.deviceData.listeners.SdkInitListener
 import com.silvermob.sdk.renderingtestapp.plugplay.utilities.consent.ConsentUpdateManager
 import com.silvermob.sdk.renderingtestapp.utils.CommandLineArgumentParser
 import com.silvermob.sdk.renderingtestapp.utils.PermissionHelper

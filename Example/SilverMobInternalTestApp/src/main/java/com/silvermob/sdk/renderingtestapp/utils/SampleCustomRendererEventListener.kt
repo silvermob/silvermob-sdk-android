@@ -16,8 +16,6 @@
 
 package com.silvermob.sdk.renderingtestapp.utils
 
-import com.silvermob.sdk.api.rendering.pluginrenderer.PluginEventListener
-
 interface SampleCustomRendererEventListener : com.silvermob.sdk.api.rendering.pluginrenderer.PluginEventListener {
     override fun getPluginRendererName(): String = SampleCustomRenderer.SAMPLE_PLUGIN_RENDERER_NAME
     fun onImpression()

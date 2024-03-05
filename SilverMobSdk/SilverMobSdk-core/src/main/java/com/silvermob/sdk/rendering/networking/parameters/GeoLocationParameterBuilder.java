@@ -16,8 +16,6 @@
 
 package com.silvermob.sdk.rendering.networking.parameters;
 
-import static com.silvermob.sdk.SilverMob.getApplicationContext;
-
 import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
@@ -32,6 +30,8 @@ import com.silvermob.sdk.rendering.sdk.deviceData.managers.LocationInfoManager;
 
 import java.util.List;
 import java.util.Locale;
+
+import static com.silvermob.sdk.SilverMob.getApplicationContext;
 
 public class GeoLocationParameterBuilder extends ParameterBuilder {
 

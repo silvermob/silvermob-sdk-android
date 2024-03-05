@@ -4,13 +4,13 @@ import androidx.annotation.StringRes
 import androidx.test.uiautomator.By
 import androidx.test.uiautomator.BySelector
 import androidx.test.uiautomator.Until
+import com.silvermob.sdk.prebidkotlindemo.R
+import com.silvermob.sdk.prebidkotlindemo.testcases.IntegrationKind
+import com.silvermob.sdk.prebidkotlindemo.testcases.TestCase
 import junit.framework.TestCase.assertNotNull
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
-import com.silvermob.sdk.prebidkotlindemo.R
-import com.silvermob.sdk.prebidkotlindemo.testcases.IntegrationKind
-import com.silvermob.sdk.prebidkotlindemo.testcases.TestCase
 
 @RunWith(Parameterized::class)
 class NativeAdsTest(

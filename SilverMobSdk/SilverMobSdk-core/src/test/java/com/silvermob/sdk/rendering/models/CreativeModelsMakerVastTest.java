@@ -16,18 +16,6 @@
 
 package com.silvermob.sdk.rendering.models;
 
-import com.silvermob.sdk.rendering.networking.modelcontrollers.AsyncVastLoader;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-
-import okhttp3.HttpUrl;
-import okhttp3.mockwebserver.MockResponse;
-import okhttp3.mockwebserver.MockWebServer;
-import org.hamcrest.MatcherAssert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.ArgumentCaptor;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.loading.AdLoadListener;
@@ -43,6 +31,12 @@ import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.rendering.video.VideoAdEvent;
 import com.silvermob.sdk.rendering.video.VideoCreativeModel;
 import com.silvermob.sdk.test.utils.ResourceUtils;
+
+import org.hamcrest.MatcherAssert;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.ArgumentCaptor;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
@@ -52,11 +46,18 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+import okhttp3.HttpUrl;
+import okhttp3.mockwebserver.MockResponse;
+import okhttp3.mockwebserver.MockWebServer;
+
+import static com.silvermob.sdk.rendering.video.VideoAdEvent.Event.AD_IMPRESSION;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.*;
-import static com.silvermob.sdk.rendering.video.VideoAdEvent.Event.AD_IMPRESSION;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.verify;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 21, shadows = {MyShadowAsyncTask.class})

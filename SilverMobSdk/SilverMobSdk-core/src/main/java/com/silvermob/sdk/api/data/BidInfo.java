@@ -2,17 +2,14 @@ package com.silvermob.sdk.api.data;
 
 import com.silvermob.sdk.CacheManager;
 import com.silvermob.sdk.ResultCode;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.silvermob.sdk.CacheManager;
-import com.silvermob.sdk.ResultCode;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 
 import java.util.Map;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class BidInfo {
 

@@ -23,21 +23,6 @@ import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.listeners.BidRequesterListener;
-import com.silvermob.sdk.rendering.networking.modelcontrollers.BidRequester;
-import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
-import com.silvermob.sdk.rendering.utils.helpers.RefreshTimerTask;
-
-import static java.lang.Math.max;
-
-import androidx.annotation.NonNull;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.api.data.AdFormat;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.rendering.bidding.listeners.BidRequesterListener;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.MobileSdkPassThrough;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.networking.ResponseHandler;
@@ -47,6 +32,10 @@ import com.silvermob.sdk.rendering.utils.helpers.RefreshTimerTask;
 
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import androidx.annotation.NonNull;
+
+import static java.lang.Math.max;
 
 public class BidLoader {
 

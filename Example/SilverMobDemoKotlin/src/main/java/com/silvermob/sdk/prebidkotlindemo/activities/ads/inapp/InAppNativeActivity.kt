@@ -21,10 +21,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.silvermob.sdk.*
+import com.silvermob.sdk.NativeEventTracker
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 import com.silvermob.sdk.prebidkotlindemo.utils.ImageUtils
-import com.silvermob.sdk.rendering.utils.ntv.NativeAdProvider
 
 class InAppNativeActivity : BaseAdActivity() {
 

@@ -18,23 +18,26 @@ package com.silvermob.sdk.rendering.video;
 
 import android.app.Activity;
 import android.content.Context;
-import okhttp3.HttpUrl;
-import okhttp3.mockwebserver.MockResponse;
-import okhttp3.mockwebserver.MockWebServer;
+
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
+import com.silvermob.sdk.rendering.loading.FileDownloadListener;
+import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.loading.FileDownloadListener;
-import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
 import java.io.File;
 import java.io.IOException;
+
+import okhttp3.HttpUrl;
+import okhttp3.mockwebserver.MockResponse;
+import okhttp3.mockwebserver.MockWebServer;
 
 import static org.junit.Assert.assertNotNull;
 

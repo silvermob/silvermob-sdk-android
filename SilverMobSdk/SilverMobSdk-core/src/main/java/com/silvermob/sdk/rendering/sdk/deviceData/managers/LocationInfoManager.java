@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.sdk.deviceData.managers;
 
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 
 /**
  * Manager for retrieving location information.

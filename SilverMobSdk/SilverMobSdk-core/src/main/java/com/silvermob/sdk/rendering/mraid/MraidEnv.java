@@ -16,13 +16,11 @@
 
 package com.silvermob.sdk.rendering.mraid;
 
+import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 
 import androidx.annotation.NonNull;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 
 public class MraidEnv {
 

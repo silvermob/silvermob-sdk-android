@@ -20,11 +20,11 @@ import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
 import java.util.HashMap;
 import java.util.UUID;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 public class CacheManager {
     private static final int NATIVE_AD_EXPIRY_TIMEOUT = 300000;

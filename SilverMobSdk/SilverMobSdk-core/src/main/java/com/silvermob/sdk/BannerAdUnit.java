@@ -16,13 +16,13 @@
 
 package com.silvermob.sdk;
 
-import androidx.annotation.NonNull;
-
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.AdUnitFormat;
 
 import java.util.EnumSet;
 import java.util.HashSet;
+
+import androidx.annotation.NonNull;
 
 public class BannerAdUnit extends BannerBaseAdUnit {
 

@@ -29,15 +29,12 @@ import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-
-import androidx.annotation.VisibleForTesting;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.core.R;
 import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
+
+import androidx.annotation.VisibleForTesting;
 
 final class BrowserControls extends TableLayout {
 

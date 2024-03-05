@@ -18,8 +18,6 @@ package com.silvermob.sdk.api.rendering.listeners;
 
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.api.rendering.RewardedAdUnit;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.rendering.RewardedAdUnit;
 
 /**
  * Listener interface representing RewardedAdUnit events.

@@ -23,15 +23,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.ViewGroup;
 
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.JsExecutor;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.listeners.WebViewDelegate;
@@ -46,6 +37,10 @@ import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
 import com.silvermob.sdk.rendering.views.webview.mraid.JsExecutor;
 import com.silvermob.sdk.test.utils.ResourceUtils;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
@@ -54,7 +49,14 @@ import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

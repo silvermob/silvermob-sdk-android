@@ -23,11 +23,10 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.util.Log;
 
-import androidx.annotation.VisibleForTesting;
-
 import com.google.android.gms.security.ProviderInstaller;
-
 import com.silvermob.sdk.LogUtil;
+
+import androidx.annotation.VisibleForTesting;
 
 public class AppInfoManager {
     private static final String TAG = AppInfoManager.class.getSimpleName();

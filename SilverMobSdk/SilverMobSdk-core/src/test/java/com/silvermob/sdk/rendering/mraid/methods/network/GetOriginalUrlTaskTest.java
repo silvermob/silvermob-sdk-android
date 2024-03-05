@@ -16,19 +16,17 @@
 
 package com.silvermob.sdk.rendering.mraid.methods.network;
 
-import okhttp3.HttpUrl;
-import okhttp3.mockwebserver.MockResponse;
-import okhttp3.mockwebserver.MockWebServer;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask.GetUrlResult;
 import com.silvermob.sdk.rendering.networking.ResponseHandler;
 import com.silvermob.sdk.test.utils.ResourceUtils;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
@@ -38,8 +36,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Locale;
 
-import static org.junit.Assert.*;
+import okhttp3.HttpUrl;
+import okhttp3.mockwebserver.MockResponse;
+import okhttp3.mockwebserver.MockWebServer;
+
 import static com.silvermob.sdk.rendering.networking.BaseNetworkTask.REDIRECT_TASK;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 25)

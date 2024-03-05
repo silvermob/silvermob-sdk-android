@@ -18,6 +18,7 @@ package com.silvermob.sdk.rendering.sdk;
 
 import android.content.Context;
 import android.content.res.Resources;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

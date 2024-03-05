@@ -17,6 +17,7 @@
 package com.silvermob.sdk.rendering.utils.url.action;
 
 import android.net.Uri;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

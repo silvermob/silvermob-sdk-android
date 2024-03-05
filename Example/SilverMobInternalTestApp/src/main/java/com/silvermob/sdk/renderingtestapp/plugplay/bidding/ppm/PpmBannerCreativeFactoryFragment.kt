@@ -15,8 +15,6 @@
  */
 
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
-import com.silvermob.sdk.SilverMob
-import com.silvermob.sdk.api.rendering.BannerView
 import com.silvermob.sdk.renderingtestapp.R
 
 class PpmBannerCreativeFactoryFragment : PpmBannerFragment() {

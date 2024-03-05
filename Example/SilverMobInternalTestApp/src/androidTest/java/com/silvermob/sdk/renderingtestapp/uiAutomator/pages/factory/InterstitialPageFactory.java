@@ -17,12 +17,10 @@
 package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.factory;
 
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
-
-import androidx.test.uiautomator.UiDevice;
-
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.gam.GamInterstitialPage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.ppm.PpmInterstitialPage;
+
+import androidx.test.uiautomator.UiDevice;
 
 public class InterstitialPageFactory extends PageFactory {
 

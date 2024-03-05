@@ -19,10 +19,6 @@ package com.silvermob.sdk.renderingtestapp.plugplay.bidding.base
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.exceptions.AdException
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
-import com.silvermob.sdk.api.rendering.listeners.InterstitialAdUnitListener
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentBiddingInterstitialBinding

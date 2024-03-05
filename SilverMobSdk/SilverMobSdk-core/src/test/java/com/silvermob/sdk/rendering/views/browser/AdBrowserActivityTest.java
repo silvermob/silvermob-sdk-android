@@ -22,20 +22,20 @@ import android.webkit.WebView;
 import android.widget.VideoView;
 
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
+import com.silvermob.sdk.test.utils.WhiteBox;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.test.utils.WhiteBox;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.*;
-import static com.silvermob.sdk.rendering.views.browser.AdBrowserActivity.EXTRA_URL;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

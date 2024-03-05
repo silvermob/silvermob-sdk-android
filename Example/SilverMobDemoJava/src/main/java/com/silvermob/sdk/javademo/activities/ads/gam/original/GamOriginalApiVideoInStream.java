@@ -4,8 +4,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
-import androidx.annotation.Nullable;
-
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ext.ima.ImaAdsLoader;
@@ -17,8 +15,6 @@ import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.javademo.activities.BaseAdActivity;
-
 import com.silvermob.sdk.InStreamVideoAdUnit;
 import com.silvermob.sdk.Signals;
 import com.silvermob.sdk.Util;
@@ -28,6 +24,8 @@ import com.silvermob.sdk.javademo.activities.BaseAdActivity;
 
 import java.util.Collections;
 import java.util.HashSet;
+
+import androidx.annotation.Nullable;
 
 public class GamOriginalApiVideoInStream extends BaseAdActivity {
 

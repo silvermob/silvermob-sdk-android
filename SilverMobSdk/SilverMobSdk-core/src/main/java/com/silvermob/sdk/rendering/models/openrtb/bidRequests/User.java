@@ -17,15 +17,15 @@
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
 import com.silvermob.sdk.DataObject;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
 
-import androidx.annotation.Nullable;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.DataObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
 
 import java.util.ArrayList;
+
+import androidx.annotation.Nullable;
 
 public class User extends BaseBid {
 

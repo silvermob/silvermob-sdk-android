@@ -24,7 +24,6 @@ import android.webkit.WebView
 import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
 import com.applovin.sdk.AppLovinSdk
-import com.silvermob.sdk.SilverMob
 import com.silvermob.sdk.renderingtestapp.utils.DemoItemProvider
 import com.silvermob.sdk.renderingtestapp.utils.SourcePicker
 

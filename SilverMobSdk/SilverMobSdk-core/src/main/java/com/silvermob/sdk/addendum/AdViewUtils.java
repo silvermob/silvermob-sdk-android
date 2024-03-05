@@ -29,19 +29,19 @@ import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.PrebidNativeAd;
 import com.silvermob.sdk.PrebidNativeAdListener;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.Size;
-import com.silvermob.sdk.CacheManager;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.PrebidNativeAd;
-import com.silvermob.sdk.PrebidNativeAdListener;
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public final class AdViewUtils {
 

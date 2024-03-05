@@ -21,10 +21,6 @@ import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.data.VideoPlacementType
-import com.silvermob.sdk.api.rendering.BannerView
-import com.silvermob.sdk.eventhandlers.GamBannerEventHandler
 import com.silvermob.sdk.renderingtestapp.utils.OpenRtbConfigs
 
 class FeedGamAdapter(context: Context,

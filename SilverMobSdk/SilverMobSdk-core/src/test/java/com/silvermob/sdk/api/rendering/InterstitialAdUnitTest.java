@@ -16,35 +16,9 @@
 
 package com.silvermob.sdk.api.rendering;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.eq;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoInteractions;
-import static org.mockito.Mockito.when;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.LOADING;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.PREBID_LOADING;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_FOR_LOAD;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_GAM;
-import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_PREBID;
-import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
-
 import android.app.Activity;
 import android.content.Context;
 
-import com.silvermob.sdk.testutils.FakePrebidMobilePluginRenderer;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.api.data.AdFormat;
@@ -64,10 +38,35 @@ import com.silvermob.sdk.rendering.bidding.loader.BidLoader;
 import com.silvermob.sdk.rendering.models.AdPosition;
 import com.silvermob.sdk.test.utils.WhiteBox;
 import com.silvermob.sdk.testutils.FakePrebidMobilePluginRenderer;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
 import java.util.EnumSet;
+
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.LOADING;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.PREBID_LOADING;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_FOR_LOAD;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_GAM;
+import static com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit.InterstitialAdUnitState.READY_TO_DISPLAY_PREBID;
+import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 public class InterstitialAdUnitTest {

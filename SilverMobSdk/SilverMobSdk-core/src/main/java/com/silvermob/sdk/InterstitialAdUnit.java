@@ -16,15 +16,15 @@
 
 package com.silvermob.sdk;
 
-import androidx.annotation.IntRange;
-import androidx.annotation.NonNull;
-
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.AdUnitFormat;
 import com.silvermob.sdk.rendering.models.AdPosition;
 import com.silvermob.sdk.rendering.models.PlacementType;
 
 import java.util.EnumSet;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
 
 public class InterstitialAdUnit extends BannerBaseAdUnit {
 

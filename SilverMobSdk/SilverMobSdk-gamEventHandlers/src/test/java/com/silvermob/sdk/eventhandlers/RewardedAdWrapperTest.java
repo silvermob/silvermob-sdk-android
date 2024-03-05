@@ -19,10 +19,12 @@ package com.silvermob.sdk.eventhandlers;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 import com.silvermob.sdk.eventhandlers.global.Constants;
+import com.silvermob.sdk.test.utils.WhiteBox;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -32,14 +34,18 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
-import com.silvermob.sdk.test.utils.WhiteBox;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-import static com.silvermob.sdk.eventhandlers.global.Constants.APP_EVENT;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

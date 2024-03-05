@@ -23,11 +23,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;

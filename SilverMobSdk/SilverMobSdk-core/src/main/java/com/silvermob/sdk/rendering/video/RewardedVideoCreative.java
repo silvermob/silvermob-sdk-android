@@ -20,8 +20,6 @@ import android.content.Context;
 
 import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 
 public class RewardedVideoCreative extends VideoCreative {
 

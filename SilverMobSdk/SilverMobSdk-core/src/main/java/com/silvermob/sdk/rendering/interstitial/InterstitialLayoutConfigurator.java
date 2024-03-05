@@ -19,7 +19,6 @@ package com.silvermob.sdk.rendering.interstitial;
 import android.text.TextUtils;
 
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
 import com.silvermob.sdk.rendering.models.InterstitialLayout;
 

@@ -18,14 +18,13 @@ package com.silvermob.sdk.rendering.networking.targeting;
 
 import android.util.Pair;
 
+import com.silvermob.sdk.TargetingParams;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 import com.silvermob.sdk.rendering.networking.parameters.UserParameters;
 
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.TargetingParams;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
-import com.silvermob.sdk.rendering.networking.parameters.UserParameters;
 import org.robolectric.RobolectricTestRunner;
 
 import java.util.Calendar;

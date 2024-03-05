@@ -1,5 +1,19 @@
 package com.silvermob.sdk.api.original;
 
+import com.silvermob.sdk.NativeParameters;
+import com.silvermob.sdk.ResultCode;
+import com.silvermob.sdk.api.data.BidInfo;
+import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
+
+import java.util.HashMap;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -7,19 +21,6 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.openMocks;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Mock;
-import com.silvermob.sdk.NativeParameters;
-import com.silvermob.sdk.ResultCode;
-import com.silvermob.sdk.api.data.BidInfo;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-
-import java.util.HashMap;
 
 public class OnCompleteListenerImplTest {
 

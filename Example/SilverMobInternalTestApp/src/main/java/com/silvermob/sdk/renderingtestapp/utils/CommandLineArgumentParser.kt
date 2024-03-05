@@ -9,15 +9,9 @@ import androidx.preference.PreferenceManager
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.google.gson.reflect.TypeToken
+import com.silvermob.sdk.renderingtestapp.plugplay.utilities.consent.ConsentUpdateManager
 import org.json.JSONArray
 import org.json.JSONObject
-import com.silvermob.sdk.*
-import com.silvermob.sdk.api.mediation.MediationBaseAdUnit
-import com.silvermob.sdk.api.mediation.MediationNativeAdUnit
-import com.silvermob.sdk.api.rendering.BannerView
-import com.silvermob.sdk.api.rendering.BaseInterstitialAdUnit
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext
-import com.silvermob.sdk.renderingtestapp.plugplay.utilities.consent.ConsentUpdateManager
 
 object CommandLineArgumentParser {
 

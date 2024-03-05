@@ -16,23 +16,12 @@
 
 package com.silvermob.sdk;
 
-import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MAX;
-import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MIN;
-
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.text.TextUtils;
 
-import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
-
-import androidx.annotation.IntRange;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
-import org.jetbrains.annotations.NotNull;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.BidInfo;
 import com.silvermob.sdk.api.data.FetchDemandResult;
@@ -45,6 +34,8 @@ import com.silvermob.sdk.rendering.bidding.loader.BidLoader;
 import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
 import com.silvermob.sdk.tasksmanager.TasksManager;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.EnumSet;
@@ -52,6 +43,14 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+
+import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MAX;
+import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MIN;
 
 public abstract class AdUnit {
 

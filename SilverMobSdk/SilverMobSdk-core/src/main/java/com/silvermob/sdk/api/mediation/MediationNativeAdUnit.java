@@ -10,20 +10,10 @@ import com.silvermob.sdk.ResultCode;
 import com.silvermob.sdk.api.data.FetchDemandResult;
 import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener;
 
-import androidx.annotation.NonNull;
-
-import com.silvermob.sdk.ContentObject;
-import com.silvermob.sdk.DataObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.NativeAdUnit;
-import com.silvermob.sdk.NativeAsset;
-import com.silvermob.sdk.NativeEventTracker;
-import com.silvermob.sdk.ResultCode;
-import com.silvermob.sdk.api.data.FetchDemandResult;
-import com.silvermob.sdk.api.mediation.listeners.OnFetchCompleteListener;
-
 import java.util.ArrayList;
 import java.util.Set;
+
+import androidx.annotation.NonNull;
 
 public class MediationNativeAdUnit {
 

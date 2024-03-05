@@ -16,8 +16,6 @@
 
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.gam.rendering
 
-import com.silvermob.sdk.AdSize
-
 class GamMultisizeBannerFragment : GamBannerFragment() {
 
     override fun getAdditionalPrebidBannerSizeArray() = arrayOf(com.silvermob.sdk.AdSize(728, 90))

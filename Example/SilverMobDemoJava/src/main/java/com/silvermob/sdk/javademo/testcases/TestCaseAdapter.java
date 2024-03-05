@@ -4,13 +4,13 @@ import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.silvermob.sdk.javademo.databinding.ListItemAdTypeBinding;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class TestCaseAdapter extends RecyclerView.Adapter<TestCaseAdapter.AdTypeViewHolder> {
 

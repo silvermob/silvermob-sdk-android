@@ -10,9 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdSize;
@@ -25,10 +22,6 @@ import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import com.silvermob.sdk.javademo.activities.BaseAdActivity;
-import com.silvermob.sdk.javademo.utils.ImageUtils;
-
-import org.jetbrains.annotations.NotNull;
 import com.silvermob.sdk.BannerParameters;
 import com.silvermob.sdk.NativeAdUnit;
 import com.silvermob.sdk.NativeAsset;
@@ -48,8 +41,13 @@ import com.silvermob.sdk.javademo.R;
 import com.silvermob.sdk.javademo.activities.BaseAdActivity;
 import com.silvermob.sdk.javademo.utils.ImageUtils;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Random;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class GamOriginalApiMultiformatBannerVideoNativeInApp extends BaseAdActivity {
 

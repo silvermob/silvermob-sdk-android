@@ -4,9 +4,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
-import com.silvermob.sdk.BannerAdUnit
-import com.silvermob.sdk.OnCompleteListener
-import com.silvermob.sdk.ResultCode
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentBiddingBannerBinding

@@ -16,11 +16,11 @@
 
 package com.silvermob.sdk;
 
-import androidx.annotation.NonNull;
-
 import com.silvermob.sdk.api.data.AdFormat;
 
 import java.util.EnumSet;
+
+import androidx.annotation.NonNull;
 
 
 public class InStreamVideoAdUnit extends VideoBaseAdUnit {

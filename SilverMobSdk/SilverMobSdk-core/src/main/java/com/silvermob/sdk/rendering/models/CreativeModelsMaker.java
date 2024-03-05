@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.models;
 
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.parser.AdResponseParserBase;
 
 import java.util.List;

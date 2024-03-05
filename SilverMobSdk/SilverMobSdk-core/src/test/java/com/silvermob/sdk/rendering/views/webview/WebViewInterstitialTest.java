@@ -21,13 +21,11 @@ import android.content.Context;
 
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;
+import com.silvermob.sdk.test.utils.ResourceUtils;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;

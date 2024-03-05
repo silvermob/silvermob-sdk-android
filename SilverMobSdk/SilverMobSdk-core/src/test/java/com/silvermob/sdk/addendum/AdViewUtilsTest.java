@@ -16,13 +16,17 @@
 
 package com.silvermob.sdk.addendum;
 
+import com.silvermob.sdk.testutils.BaseSetup;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.testutils.BaseSetup;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = BaseSetup.testSDK)

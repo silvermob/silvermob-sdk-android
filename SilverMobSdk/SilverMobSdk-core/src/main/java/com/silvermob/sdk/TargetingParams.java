@@ -20,15 +20,11 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import com.silvermob.sdk.rendering.sdk.UserConsentUtils;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import org.json.JSONArray;
 import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 import com.silvermob.sdk.rendering.sdk.UserConsentUtils;
+
+import org.json.JSONArray;
 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -36,6 +32,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * TargetingParams class sets the Targeting parameters like yob, gender, location

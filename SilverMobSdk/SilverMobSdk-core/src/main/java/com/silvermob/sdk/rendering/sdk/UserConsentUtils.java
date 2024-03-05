@@ -2,12 +2,12 @@ package com.silvermob.sdk.rendering.sdk;
 
 import android.content.Context;
 
-import androidx.annotation.Nullable;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
 import com.silvermob.sdk.rendering.sdk.deviceData.managers.UserConsentManager;
+
+import androidx.annotation.Nullable;
 
 /**
  * Helps to get/set consents values, checks if UserConsentManager was created

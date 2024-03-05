@@ -6,14 +6,10 @@ import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;
 import com.silvermob.sdk.rendering.networking.tracking.ServerConnection;
 
+import org.json.JSONObject;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.rendering.bidding.data.bid.Prebid;
-import com.silvermob.sdk.rendering.networking.tracking.ServerConnection;
 
 /**
  * Class for sending events from bids (seatbid.bid.ext.prebid.events.*)

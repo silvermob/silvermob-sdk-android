@@ -17,8 +17,6 @@
 package com.silvermob.sdk.rendering.models.internal;
 
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.parser.AdResponseParserBase;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 

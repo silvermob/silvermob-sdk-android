@@ -21,14 +21,6 @@ import android.content.Context;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBanner;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewInterstitial;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
@@ -38,12 +30,19 @@ import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBanner;
 import com.silvermob.sdk.rendering.views.webview.PrebidWebViewInterstitial;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import static org.hamcrest.Matchers.instanceOf;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 
 @RunWith(RobolectricTestRunner.class)

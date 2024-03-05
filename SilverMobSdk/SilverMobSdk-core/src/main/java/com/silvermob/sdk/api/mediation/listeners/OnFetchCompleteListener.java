@@ -19,7 +19,6 @@ package com.silvermob.sdk.api.mediation.listeners;
 import com.silvermob.sdk.api.data.FetchDemandResult;
 
 import androidx.annotation.MainThread;
-import com.silvermob.sdk.api.data.FetchDemandResult;
 
 public interface OnFetchCompleteListener {
 

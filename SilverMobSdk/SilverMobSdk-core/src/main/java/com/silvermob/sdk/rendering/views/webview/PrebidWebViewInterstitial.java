@@ -17,6 +17,7 @@
 package com.silvermob.sdk.rendering.views.webview;
 
 import android.content.Context;
+
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;

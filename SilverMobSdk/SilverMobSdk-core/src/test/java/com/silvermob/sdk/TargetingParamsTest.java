@@ -16,28 +16,20 @@
 
 package com.silvermob.sdk;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
+import com.silvermob.sdk.reflection.sdk.UserConsentManagerReflection;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.rendering.sdk.deviceData.managers.UserConsentManager;
+import com.silvermob.sdk.testutils.BaseSetup;
 
 import org.apache.commons.lang3.reflect.FieldUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
-import com.silvermob.sdk.reflection.sdk.UserConsentManagerReflection;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.UserConsentManager;
-import com.silvermob.sdk.testutils.BaseSetup;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
@@ -48,6 +40,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = BaseSetup.testSDK)

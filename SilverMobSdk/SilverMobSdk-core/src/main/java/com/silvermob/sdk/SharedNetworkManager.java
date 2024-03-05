@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+
 import com.silvermob.sdk.http.HTTPGet;
 import com.silvermob.sdk.http.HTTPResponse;
 import com.silvermob.sdk.http.HttpErrorCode;

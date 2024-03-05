@@ -1,7 +1,7 @@
 package com.applovin.mediation.adapters.prebid.utils;
 
 import android.util.Log;
-import androidx.annotation.Nullable;
+
 import com.applovin.mediation.adapters.SilverMobMaxMediationAdapter;
 import com.applovin.mediation.ads.MaxAdView;
 import com.silvermob.sdk.LogUtil;
@@ -13,6 +13,8 @@ import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
 
 public class MaxMediationBannerUtils implements PrebidMediationDelegate {
 

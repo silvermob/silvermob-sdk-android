@@ -16,6 +16,8 @@
 
 package com.silvermob.sdk.rendering.mraid.methods;
 
+import com.silvermob.sdk.rendering.models.HTMLCreative;
+import com.silvermob.sdk.rendering.models.internal.MraidEvent;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.rendering.views.webview.mraid.JsExecutor;
 
@@ -24,10 +26,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.rendering.models.HTMLCreative;
-import com.silvermob.sdk.rendering.models.internal.MraidEvent;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.JsExecutor;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 

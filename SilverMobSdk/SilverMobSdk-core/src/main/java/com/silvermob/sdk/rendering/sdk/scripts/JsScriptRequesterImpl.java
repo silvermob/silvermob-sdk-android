@@ -2,7 +2,6 @@ package com.silvermob.sdk.rendering.sdk.scripts;
 
 import android.os.AsyncTask;
 
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 import com.silvermob.sdk.rendering.loading.FileDownloadTask;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;

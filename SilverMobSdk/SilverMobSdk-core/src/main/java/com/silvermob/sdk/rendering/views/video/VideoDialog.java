@@ -22,7 +22,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.silvermob.sdk.rendering.views.AdViewManager;
 import com.silvermob.sdk.rendering.interstitial.AdBaseDialog;
 import com.silvermob.sdk.rendering.listeners.VideoDialogListener;
 import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;

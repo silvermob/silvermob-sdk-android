@@ -16,12 +16,13 @@
 
 package com.silvermob.sdk.rendering.utils.helpers;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.junit.Test;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 import com.silvermob.sdk.rendering.models.internal.MacrosModel;
 import com.silvermob.sdk.test.utils.ResourceUtils;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.util.Base64;

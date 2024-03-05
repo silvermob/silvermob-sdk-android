@@ -26,11 +26,6 @@ import android.net.Uri;
 import android.util.Log;
 import android.webkit.URLUtil;
 
-import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.core.BuildConfig;
@@ -40,6 +35,10 @@ import com.silvermob.sdk.rendering.utils.url.ActionNotResolvedException;
 import com.silvermob.sdk.rendering.views.browser.AdBrowserActivity;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 

@@ -26,10 +26,6 @@ import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
 import com.silvermob.sdk.rendering.models.AbstractCreative;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.listeners.VideoCreativeViewListener;
-import com.silvermob.sdk.rendering.models.AbstractCreative;
 
 import java.lang.ref.WeakReference;
 

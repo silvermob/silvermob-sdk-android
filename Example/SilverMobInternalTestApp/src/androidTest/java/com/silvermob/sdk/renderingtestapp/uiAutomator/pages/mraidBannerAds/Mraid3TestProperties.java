@@ -18,20 +18,21 @@ package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds;
 
 import android.view.KeyEvent;
 
+import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import androidx.test.uiautomator.By;
 import androidx.test.uiautomator.BySelector;
 import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.Until;
-import org.json.JSONException;
-import org.json.JSONObject;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 
 public class Mraid3TestProperties extends MraidBasicPage {
 

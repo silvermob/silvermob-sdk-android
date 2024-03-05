@@ -16,7 +16,12 @@
 
 package com.silvermob.sdk.rendering.loading;
 
+import com.silvermob.sdk.api.exceptions.AdException;
+import com.silvermob.sdk.rendering.models.internal.VastExtractorResult;
 import com.silvermob.sdk.rendering.networking.modelcontrollers.AsyncVastLoader;
+import com.silvermob.sdk.rendering.parser.AdResponseParserVast;
+import com.silvermob.sdk.test.utils.ResourceUtils;
+import com.silvermob.sdk.test.utils.WhiteBox;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,21 +29,21 @@ import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.models.internal.VastExtractorResult;
-import com.silvermob.sdk.rendering.networking.modelcontrollers.AsyncVastLoader;
-import com.silvermob.sdk.rendering.parser.AdResponseParserVast;
-import com.silvermob.sdk.test.utils.ResourceUtils;
-import com.silvermob.sdk.test.utils.WhiteBox;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.io.IOException;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 import static com.silvermob.sdk.api.exceptions.AdException.INTERNAL_ERROR;
 import static com.silvermob.sdk.rendering.video.vast.VASTErrorCodes.WRAPPER_LIMIT_REACH_ERROR;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyString;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

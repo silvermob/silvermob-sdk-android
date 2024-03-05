@@ -21,8 +21,6 @@ import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 
-import androidx.annotation.Nullable;
-
 import com.iab.omid.library.prebidorg.Omid;
 import com.iab.omid.library.prebidorg.ScriptInjector;
 import com.iab.omid.library.prebidorg.adsession.AdEvents;
@@ -46,14 +44,6 @@ import com.silvermob.sdk.rendering.models.TrackingEvent;
 import com.silvermob.sdk.rendering.models.internal.InternalFriendlyObstruction;
 import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
 import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.TargetingParams;
-import com.silvermob.sdk.core.BuildConfig;
-import com.silvermob.sdk.rendering.models.TrackingEvent;
-import com.silvermob.sdk.rendering.models.internal.InternalFriendlyObstruction;
-import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
-import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
 import com.silvermob.sdk.rendering.video.VideoAdEvent;
 import com.silvermob.sdk.rendering.video.vast.AdVerifications;
 import com.silvermob.sdk.rendering.video.vast.Verification;
@@ -62,6 +52,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * OmAdSessionManager is an implementation of Open Measurement used to track

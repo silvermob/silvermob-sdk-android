@@ -15,15 +15,13 @@ import com.google.android.gms.ads.formats.OnAdManagerAdViewLoadedListener
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd
 import com.google.common.collect.Lists
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import com.silvermob.sdk.*
-import com.silvermob.sdk.addendum.AdViewUtils
-import com.silvermob.sdk.eventhandlers.utils.GamUtils
+import com.silvermob.sdk.NativeEventTracker
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm.PpmNativeFragment
 import com.silvermob.sdk.renderingtestapp.utils.loadImage
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.lang.ref.WeakReference
 
 class GamOriginalNativeInAppFragment : PpmNativeFragment() {

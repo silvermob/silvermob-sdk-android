@@ -22,23 +22,16 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.silvermob.sdk.LogUtil;
+import com.silvermob.sdk.api.rendering.InterstitialView;
+import com.silvermob.sdk.api.rendering.VideoView;
+import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.interstitial.AdBaseDialog;
 import com.silvermob.sdk.rendering.interstitial.AdInterstitialDialog;
 import com.silvermob.sdk.rendering.interstitial.InterstitialLayoutConfigurator;
 import com.silvermob.sdk.rendering.interstitial.InterstitialManagerDisplayDelegate;
 import com.silvermob.sdk.rendering.interstitial.InterstitialManagerInterface;
 import com.silvermob.sdk.rendering.interstitial.InterstitialManagerVideoDelegate;
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewInterstitial;
-import com.silvermob.sdk.rendering.views.webview.WebViewBanner;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-
-import androidx.annotation.VisibleForTesting;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.rendering.InterstitialView;
-import com.silvermob.sdk.api.rendering.VideoView;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.interstitial.*;
 import com.silvermob.sdk.rendering.models.HTMLCreative;
 import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
 import com.silvermob.sdk.rendering.mraid.methods.InterstitialManagerMraidDelegate;
@@ -48,6 +41,8 @@ import com.silvermob.sdk.rendering.views.webview.WebViewBanner;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 
 import java.util.Stack;
+
+import androidx.annotation.VisibleForTesting;
 
 public class InterstitialManager implements InterstitialManagerInterface {
 

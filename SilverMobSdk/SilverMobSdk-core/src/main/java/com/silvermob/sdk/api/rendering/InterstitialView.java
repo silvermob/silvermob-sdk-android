@@ -23,14 +23,6 @@ import android.view.View;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.utils.constants.IntentActions;
-import com.silvermob.sdk.rendering.utils.helpers.InsetsUtils;
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.rendering.views.AdViewManagerListener;
-import com.silvermob.sdk.rendering.views.base.BaseAdView;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialVideo;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.core.R;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;

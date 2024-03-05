@@ -20,11 +20,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import com.silvermob.sdk.PrebidNativeAd
-import com.silvermob.sdk.PrebidNativeAdEventListener
-import com.silvermob.sdk.api.data.FetchDemandResult
-import com.silvermob.sdk.api.mediation.MediationNativeAdUnit
-import com.silvermob.sdk.rendering.utils.ntv.NativeAdProvider
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentNativeBinding

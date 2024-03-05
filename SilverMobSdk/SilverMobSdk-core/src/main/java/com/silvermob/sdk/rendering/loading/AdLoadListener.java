@@ -18,8 +18,6 @@ package com.silvermob.sdk.rendering.loading;
 
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.models.CreativeModelsMaker;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.models.CreativeModelsMaker;
 
 public interface AdLoadListener {
     void onCreativeModelReady(CreativeModelsMaker.Result result);

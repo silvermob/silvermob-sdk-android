@@ -21,10 +21,6 @@ import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.LoadAdError
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.admob.AdMobMediationBannerUtils
-import com.silvermob.sdk.admob.PrebidBannerAdapter
-import com.silvermob.sdk.api.mediation.MediationBannerAdUnit
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class AdMobDisplayBanner320x50Activity : BaseAdActivity() {

@@ -17,8 +17,6 @@
 package com.silvermob.sdk.renderingtestapp.utils
 
 import com.google.gson.Gson
-import com.silvermob.sdk.TargetingParams
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext
 import java.lang.reflect.InvocationTargetException
 
 object OpenRtbConfigs {

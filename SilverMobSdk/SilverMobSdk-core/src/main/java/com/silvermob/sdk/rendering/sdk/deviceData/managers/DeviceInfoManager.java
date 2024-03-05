@@ -20,8 +20,6 @@ import android.content.Context;
 
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.rendering.sdk.calendar.CalendarEventWrapper;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.calendar.CalendarEventWrapper;
 
 import java.io.IOException;
 

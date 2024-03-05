@@ -22,7 +22,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 
-import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.rendering.interstitial.AdBaseDialog;
 import com.silvermob.sdk.rendering.models.internal.MraidVariableContainer;
@@ -31,8 +30,6 @@ import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static com.silvermob.sdk.rendering.views.webview.AdWebViewClient.AdAssetsLoadedListener;
 
 public class WebViewBase extends AdWebView implements AdWebViewClient.AdAssetsLoadedListener {
 

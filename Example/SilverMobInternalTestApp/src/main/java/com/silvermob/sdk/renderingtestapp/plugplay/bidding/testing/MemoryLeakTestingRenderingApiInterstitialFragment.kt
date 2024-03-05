@@ -2,17 +2,12 @@ package com.silvermob.sdk.renderingtestapp.plugplay.bidding.testing
 
 import android.os.Bundle
 import android.view.View
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.exceptions.AdException
-import com.silvermob.sdk.api.rendering.InterstitialAdUnit
-import com.silvermob.sdk.api.rendering.listeners.InterstitialAdUnitListener
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentBiddingInterstitialBinding
 import com.silvermob.sdk.renderingtestapp.plugplay.config.AdConfiguratorDialogFragment
 import java.lang.ref.WeakReference
-import java.util.*
+import java.util.EnumSet
 
 /**
  * Example for testing memory leaks with rendering API ad units.

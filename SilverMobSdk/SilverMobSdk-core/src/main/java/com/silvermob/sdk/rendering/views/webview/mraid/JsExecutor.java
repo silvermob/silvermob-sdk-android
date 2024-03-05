@@ -24,12 +24,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.webkit.WebView;
 
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
-import com.silvermob.sdk.rendering.utils.helpers.HandlerQueueManager;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.internal.MraidVariableContainer;
 import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
@@ -38,6 +32,9 @@ import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 
 import java.lang.ref.WeakReference;
 import java.util.Locale;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 public class JsExecutor {
 

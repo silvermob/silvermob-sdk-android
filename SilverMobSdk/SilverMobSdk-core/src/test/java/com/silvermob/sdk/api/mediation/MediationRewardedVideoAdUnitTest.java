@@ -18,16 +18,18 @@ package com.silvermob.sdk.api.mediation;
 
 import android.app.Activity;
 import android.content.Context;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.config.MockMediationUtils;
 import com.silvermob.sdk.rendering.bidding.loader.BidLoader;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;

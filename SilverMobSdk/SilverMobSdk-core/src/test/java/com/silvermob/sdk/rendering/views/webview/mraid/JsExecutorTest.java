@@ -21,6 +21,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.webkit.WebView;
 
+import com.silvermob.sdk.rendering.models.internal.MraidVariableContainer;
 import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
 import com.silvermob.sdk.rendering.utils.helpers.HandlerQueueManager;
 
@@ -29,13 +30,19 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import com.silvermob.sdk.rendering.models.internal.MraidVariableContainer;
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
-import com.silvermob.sdk.rendering.utils.helpers.HandlerQueueManager;
 import org.robolectric.RobolectricTestRunner;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 public class JsExecutorTest {

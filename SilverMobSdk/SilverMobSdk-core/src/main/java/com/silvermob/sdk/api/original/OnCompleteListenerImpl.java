@@ -6,16 +6,10 @@ import com.silvermob.sdk.ResultCode;
 import com.silvermob.sdk.Util;
 import com.silvermob.sdk.api.data.BidInfo;
 
+import java.util.Map;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
-import com.silvermob.sdk.OnCompleteListener;
-import com.silvermob.sdk.OnCompleteListener2;
-import com.silvermob.sdk.ResultCode;
-import com.silvermob.sdk.Util;
-import com.silvermob.sdk.api.data.BidInfo;
-
-import java.util.Map;
 
 /**
  * Listener implementation for multiformat PrebidAdUnit.

@@ -16,41 +16,18 @@
 
 package com.silvermob.sdk.rendering.networking.parameters;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static com.silvermob.sdk.rendering.networking.parameters.BasicParameterBuilder.KEY_OM_PARTNER_NAME;
-import static com.silvermob.sdk.rendering.networking.parameters.BasicParameterBuilder.KEY_OM_PARTNER_VERSION;
-import static com.silvermob.sdk.rendering.networking.parameters.BasicParameterBuilder.VIDEO_INTERSTITIAL_PLAYBACK_END;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 
 import com.google.common.collect.Sets;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.testutils.FakePrebidMobilePluginRenderer;
-
-import org.assertj.core.util.Lists;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.BannerParameters;
 import com.silvermob.sdk.DataObject;
 import com.silvermob.sdk.ExternalUserId;
 import com.silvermob.sdk.NativeTitleAsset;
-import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.Signals;
+import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.TargetingParams;
 import com.silvermob.sdk.VideoParameters;
 import com.silvermob.sdk.api.data.AdFormat;
@@ -77,6 +54,15 @@ import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.testutils.FakePrebidMobilePluginRenderer;
+
+import org.assertj.core.util.Lists;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
@@ -88,6 +74,14 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19, qualifiers = "w1920dp-h1080dp")

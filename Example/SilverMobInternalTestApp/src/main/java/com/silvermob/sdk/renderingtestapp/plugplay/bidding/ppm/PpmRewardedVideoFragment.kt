@@ -16,7 +16,6 @@
 
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
 
-import com.silvermob.sdk.api.rendering.RewardedAdUnit
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseBidRewardedFragment
 
 class PpmRewardedVideoFragment : BaseBidRewardedFragment() {

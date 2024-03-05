@@ -19,8 +19,7 @@ package com.silvermob.sdk.eventhandlers;
 import android.content.Context;
 import android.util.Log;
 import android.view.View;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.admanager.AdManagerAdRequest;
@@ -34,6 +33,9 @@ import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * This class is responsible for wrapping usage of PublisherAdView from GAM SDK.

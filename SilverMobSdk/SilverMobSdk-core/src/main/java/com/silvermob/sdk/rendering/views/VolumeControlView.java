@@ -19,8 +19,10 @@ package com.silvermob.sdk.rendering.views;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;
-import androidx.annotation.Nullable;
+
 import com.silvermob.sdk.core.R;
+
+import androidx.annotation.Nullable;
 
 
 public class VolumeControlView extends ImageView {

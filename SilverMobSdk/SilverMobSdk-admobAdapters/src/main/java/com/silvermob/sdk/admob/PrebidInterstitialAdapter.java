@@ -1,16 +1,15 @@
 package com.silvermob.sdk.admob;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.mediation.MediationAdLoadCallback;
 import com.google.android.gms.ads.mediation.MediationInterstitialAd;
 import com.google.android.gms.ads.mediation.MediationInterstitialAdCallback;
 import com.google.android.gms.ads.mediation.MediationInterstitialAdConfiguration;
-
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.bidding.display.InterstitialController;
 import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class PrebidInterstitialAdapter extends PrebidBaseAdapter {
 

@@ -27,11 +27,6 @@ import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
 import com.silvermob.sdk.rendering.views.webview.mraid.Views;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
 
 @SuppressLint("NewApi")
 public class AdInterstitialDialog extends AdBaseDialog {

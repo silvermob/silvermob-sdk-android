@@ -33,28 +33,8 @@ import com.silvermob.sdk.rendering.video.vast.Extension;
 import com.silvermob.sdk.rendering.video.vast.Impression;
 import com.silvermob.sdk.rendering.video.vast.InLine;
 import com.silvermob.sdk.rendering.video.vast.MediaFile;
-import com.silvermob.sdk.rendering.video.vast.Tracking;
 import com.silvermob.sdk.rendering.video.vast.VAST;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.errors.VastParseError;
-import com.silvermob.sdk.rendering.networking.parameters.BasicParameterBuilder;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.video.VideoAdEvent;
-import com.silvermob.sdk.rendering.video.vast.Ad;
-import com.silvermob.sdk.rendering.video.vast.AdVerifications;
-import com.silvermob.sdk.rendering.video.vast.ClickTracking;
-import com.silvermob.sdk.rendering.video.vast.Companion;
-import com.silvermob.sdk.rendering.video.vast.Creative;
-import com.silvermob.sdk.rendering.video.vast.Extension;
-import com.silvermob.sdk.rendering.video.vast.Impression;
-import com.silvermob.sdk.rendering.video.vast.InLine;
-import com.silvermob.sdk.rendering.video.vast.MediaFile;
-import com.silvermob.sdk.rendering.video.vast.VAST;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -63,6 +43,10 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 public class AdResponseParserVast extends AdResponseParserBase {
 

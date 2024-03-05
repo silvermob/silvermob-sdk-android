@@ -16,26 +16,27 @@
 
 package com.silvermob.sdk.api.mediation;
 
-import static org.junit.Assert.assertEquals;
-
 import android.app.Activity;
 import android.content.Context;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.AdUnitFormat;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.config.MockMediationUtils;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.EnumSet;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

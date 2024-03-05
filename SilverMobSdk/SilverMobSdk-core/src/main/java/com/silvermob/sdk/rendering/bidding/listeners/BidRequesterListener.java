@@ -18,8 +18,6 @@ package com.silvermob.sdk.rendering.bidding.listeners;
 
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 
 public interface BidRequesterListener {
 

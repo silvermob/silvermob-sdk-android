@@ -20,8 +20,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Looper;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.eventhandlers.global.Constants;
@@ -30,6 +29,9 @@ import com.silvermob.sdk.rendering.bidding.interfaces.RewardedEventHandler;
 import com.silvermob.sdk.rendering.bidding.listeners.RewardedVideoEventListener;
 
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class GamRewardedEventHandler implements RewardedEventHandler, GamAdEventListener {
 

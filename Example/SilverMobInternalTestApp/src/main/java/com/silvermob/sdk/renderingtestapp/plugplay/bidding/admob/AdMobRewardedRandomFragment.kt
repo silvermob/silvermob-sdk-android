@@ -5,8 +5,6 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
-import com.silvermob.sdk.admob.PrebidRewardedAdapter
-import com.silvermob.sdk.rendering.bidding.display.BidResponseCache
 import com.silvermob.sdk.renderingtestapp.R
 import kotlin.random.Random
 

@@ -24,7 +24,6 @@ import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;

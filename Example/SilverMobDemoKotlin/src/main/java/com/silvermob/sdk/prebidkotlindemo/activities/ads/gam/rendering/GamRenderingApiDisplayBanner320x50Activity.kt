@@ -16,9 +16,7 @@
 package com.silvermob.sdk.prebidkotlindemo.activities.ads.gam.rendering
 
 import android.os.Bundle
-import com.silvermob.sdk.AdSize
 import com.silvermob.sdk.api.rendering.BannerView
-import com.silvermob.sdk.eventhandlers.GamBannerEventHandler
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class GamRenderingApiDisplayBanner320x50Activity : BaseAdActivity() {
@@ -30,7 +28,7 @@ class GamRenderingApiDisplayBanner320x50Activity : BaseAdActivity() {
         const val HEIGHT = 50
     }
 
-    private var adView: com.silvermob.sdk.api.rendering.BannerView? = null
+    private var adView: BannerView? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

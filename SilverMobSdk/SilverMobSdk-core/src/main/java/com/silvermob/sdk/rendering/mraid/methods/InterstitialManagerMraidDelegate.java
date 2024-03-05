@@ -18,7 +18,6 @@ package com.silvermob.sdk.rendering.mraid.methods;
 
 import android.view.View;
 
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 import com.silvermob.sdk.rendering.models.internal.MraidEvent;
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 

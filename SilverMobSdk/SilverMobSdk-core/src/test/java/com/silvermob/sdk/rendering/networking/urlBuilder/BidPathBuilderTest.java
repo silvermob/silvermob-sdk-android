@@ -16,8 +16,6 @@
 
 package com.silvermob.sdk.rendering.networking.urlBuilder;
 
-import static org.junit.Assert.assertEquals;
-
 /*
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

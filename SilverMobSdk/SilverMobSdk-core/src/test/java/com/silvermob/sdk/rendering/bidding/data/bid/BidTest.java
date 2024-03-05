@@ -16,21 +16,22 @@
 
 package com.silvermob.sdk.rendering.bidding.data.bid;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import com.silvermob.sdk.api.data.BidInfo;
+import com.silvermob.sdk.test.utils.ResourceUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.api.data.BidInfo;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 import org.robolectric.RobolectricTestRunner;
 
 import java.io.IOException;
 import java.util.Map;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 @RunWith(RobolectricTestRunner.class)
 public class BidTest {

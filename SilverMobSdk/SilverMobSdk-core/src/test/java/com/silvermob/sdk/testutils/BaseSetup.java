@@ -17,7 +17,7 @@
 package com.silvermob.sdk.testutils;
 
 import android.app.Activity;
-import okhttp3.mockwebserver.MockWebServer;
+
 import org.junit.After;
 import org.junit.Before;
 import org.robolectric.Robolectric;
@@ -25,6 +25,8 @@ import org.robolectric.shadows.httpclient.FakeHttp;
 import org.robolectric.util.Scheduler;
 
 import java.io.IOException;
+
+import okhttp3.mockwebserver.MockWebServer;
 
 import static org.junit.Assert.fail;
 import static org.robolectric.Shadows.shadowOf;

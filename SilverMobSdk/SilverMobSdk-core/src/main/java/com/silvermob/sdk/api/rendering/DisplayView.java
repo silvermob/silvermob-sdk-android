@@ -20,15 +20,15 @@ import android.content.Context;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import androidx.annotation.NonNull;
-
-import com.silvermob.sdk.rendering.bidding.listeners.DisplayVideoListener;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister;
 import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.listeners.DisplayVideoListener;
 import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
 import com.silvermob.sdk.rendering.networking.WinNotifier;
+
+import androidx.annotation.NonNull;
 
 public class DisplayView extends FrameLayout {
     private View adView;

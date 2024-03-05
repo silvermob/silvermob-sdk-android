@@ -1,26 +1,14 @@
 package com.silvermob.sdk.rendering.sdk;
 
-import static android.os.Looper.getMainLooper;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.startsWith;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
-import static org.robolectric.Shadows.shadowOf;
-import static java.lang.Thread.sleep;
-
 import android.app.Activity;
 import android.content.Context;
 
+import com.silvermob.sdk.SilverMob;
+import com.silvermob.sdk.api.data.InitializationStatus;
+import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister;
 import com.silvermob.sdk.reflection.Reflection;
+import com.silvermob.sdk.reflection.sdk.PrebidMobileReflection;
+import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
 
 import org.hamcrest.MatcherAssert;
 import org.junit.After;
@@ -28,12 +16,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.api.data.InitializationStatus;
-import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister;
-import com.silvermob.sdk.reflection.Reflection;
-import com.silvermob.sdk.reflection.sdk.PrebidMobileReflection;
-import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
@@ -48,6 +30,23 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
+
+import static android.os.Looper.getMainLooper;
+import static com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRegister.PREBID_MOBILE_RENDERER_NAME;
+import static java.lang.Thread.sleep;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.startsWith;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.robolectric.Shadows.shadowOf;
 
 @RunWith(RobolectricTestRunner.class)
 public class SdkInitializerTest {

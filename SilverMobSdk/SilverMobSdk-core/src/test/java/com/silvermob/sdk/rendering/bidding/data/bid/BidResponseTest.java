@@ -16,16 +16,6 @@
 
 package com.silvermob.sdk.rendering.bidding.data.bid;
 
-import com.silvermob.sdk.core.BuildConfig;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.After;
-import org.junit.Test;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.api.data.Position;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
@@ -33,7 +23,16 @@ import com.silvermob.sdk.core.BuildConfig;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.MobileSdkPassThrough;
 import com.silvermob.sdk.test.utils.ResourceUtils;
 
+import org.junit.After;
+import org.junit.Test;
+
 import java.io.IOException;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 public class BidResponseTest {
 

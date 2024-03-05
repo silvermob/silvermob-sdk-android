@@ -16,11 +16,10 @@
 
 package com.silvermob.sdk.rendering.networking.urlBuilder;
 
+import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 
 import org.json.JSONObject;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 
 public class BidUrlComponents extends URLComponents {
     private final static String TAG = BidUrlComponents.class.getSimpleName();

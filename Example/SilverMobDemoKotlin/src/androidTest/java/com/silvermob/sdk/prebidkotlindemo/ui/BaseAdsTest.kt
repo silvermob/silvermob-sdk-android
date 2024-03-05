@@ -8,14 +8,14 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SdkSuppress
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.*
+import com.silvermob.sdk.prebidkotlindemo.testcases.TestCase
+import com.silvermob.sdk.prebidkotlindemo.testcases.TestCaseRepository
+import com.silvermob.sdk.prebidkotlindemo.utils.RetryRule
 import org.hamcrest.CoreMatchers.notNullValue
 import org.junit.Assert.assertThat
 import org.junit.Before
 import org.junit.Rule
 import org.junit.runner.RunWith
-import com.silvermob.sdk.prebidkotlindemo.testcases.TestCase
-import com.silvermob.sdk.prebidkotlindemo.testcases.TestCaseRepository
-import com.silvermob.sdk.prebidkotlindemo.utils.RetryRule
 
 
 @RunWith(AndroidJUnit4::class)

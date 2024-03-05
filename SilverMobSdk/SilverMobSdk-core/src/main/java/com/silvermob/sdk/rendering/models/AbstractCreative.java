@@ -22,13 +22,6 @@ import android.view.View;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-
-import androidx.annotation.NonNull;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.listeners.CreativeResolutionListener;
 import com.silvermob.sdk.rendering.listeners.CreativeViewListener;
 import com.silvermob.sdk.rendering.models.internal.InternalFriendlyObstruction;
@@ -39,6 +32,8 @@ import com.silvermob.sdk.rendering.views.AdViewManager;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.NonNull;
 
 public abstract class AbstractCreative {
 

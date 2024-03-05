@@ -16,10 +16,11 @@
 
 package com.silvermob.sdk.rendering.bidding.data.bid;
 
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 
 import java.io.IOException;
 

@@ -28,9 +28,12 @@ import android.widget.FrameLayout
 import android.widget.ProgressBar
 import androidx.preference.PreferenceManager
 import androidx.test.espresso.idling.CountingIdlingResource
-import com.silvermob.sdk.*
-import com.silvermob.sdk.api.mediation.MediationNativeAdUnit
-import com.silvermob.sdk.renderingtestapp.plugplay.config.*
+import com.silvermob.sdk.NativeEventTracker
+import com.silvermob.sdk.renderingtestapp.plugplay.config.AdConfiguratorDialogFragment
+import com.silvermob.sdk.renderingtestapp.plugplay.config.EXTRA_CONFIG_ID
+import com.silvermob.sdk.renderingtestapp.plugplay.config.EXTRA_HEIGHT
+import com.silvermob.sdk.renderingtestapp.plugplay.config.EXTRA_REFRESH_DELAY
+import com.silvermob.sdk.renderingtestapp.plugplay.config.EXTRA_WIDTH
 import com.silvermob.sdk.renderingtestapp.utils.BaseFragment
 import com.silvermob.sdk.renderingtestapp.utils.ConfigurationViewSettings
 import com.silvermob.sdk.renderingtestapp.utils.OpenRtbConfigs

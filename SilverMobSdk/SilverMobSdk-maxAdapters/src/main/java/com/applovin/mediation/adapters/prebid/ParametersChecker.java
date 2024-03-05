@@ -2,7 +2,7 @@ package com.applovin.mediation.adapters.prebid;
 
 import android.os.Bundle;
 import android.util.Log;
-import androidx.annotation.Nullable;
+
 import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
 import com.silvermob.sdk.ParametersMatcher;
 import com.silvermob.sdk.PrebidNativeAd;
@@ -11,6 +11,8 @@ import com.silvermob.sdk.rendering.bidding.display.BidResponseCache;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.annotation.Nullable;
 
 import static com.applovin.mediation.adapters.SilverMobMaxMediationAdapter.EXTRA_KEYWORDS_ID;
 import static com.applovin.mediation.adapters.SilverMobMaxMediationAdapter.EXTRA_RESPONSE_ID;

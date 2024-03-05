@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.sdk.calendar;
 
 import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 
 final public class CalendarFactory {
 

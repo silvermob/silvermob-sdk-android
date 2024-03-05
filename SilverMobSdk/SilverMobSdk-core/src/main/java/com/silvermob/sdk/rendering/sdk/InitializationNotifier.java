@@ -3,14 +3,15 @@ package com.silvermob.sdk.rendering.sdk;
 import android.os.Handler;
 import android.os.Looper;
 
-import androidx.annotation.Nullable;
-
-import org.jetbrains.annotations.NotNull;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.api.data.InitializationStatus;
 import com.silvermob.sdk.api.exceptions.InitError;
 import com.silvermob.sdk.rendering.listeners.SdkInitializationListener;
+
+import org.jetbrains.annotations.NotNull;
+
+import androidx.annotation.Nullable;
 
 
 public class InitializationNotifier {

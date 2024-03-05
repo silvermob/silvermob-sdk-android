@@ -26,16 +26,14 @@ import android.os.Build;
 import android.os.Environment;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.view.*;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.webkit.MimeTypeMap;
 import android.widget.FrameLayout;
-import androidx.annotation.LayoutRes;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.data.Position;
 import com.silvermob.sdk.core.R;
@@ -43,6 +41,10 @@ import com.silvermob.sdk.rendering.models.InterstitialDisplayPropertiesInternal;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.parser.AdResponseParserVast;
 import com.silvermob.sdk.rendering.video.vast.VAST;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
@@ -53,9 +55,23 @@ import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+import java.util.TimeZone;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MAX;
 import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MIN;

@@ -16,13 +16,7 @@
 
 package com.silvermob.sdk.rendering.networking;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static com.silvermob.sdk.rendering.networking.BaseNetworkTask.REDIRECT_TASK;
-
-import androidx.test.filters.Suppress;
+import com.silvermob.sdk.SilverMob;
 
 import org.hamcrest.MatcherAssert;
 import org.junit.After;
@@ -30,17 +24,23 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.SilverMob;
 import org.robolectric.RobolectricTestRunner;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 
+import androidx.test.filters.Suppress;
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
+
+import static com.silvermob.sdk.rendering.networking.BaseNetworkTask.REDIRECT_TASK;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
 public class BaseNetworkTaskTest {

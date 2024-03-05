@@ -1,11 +1,7 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.gam.original
 
-import com.silvermob.sdk.AdUnit
-import com.silvermob.sdk.InterstitialAdUnit
-import com.silvermob.sdk.VideoParameters
-import com.silvermob.sdk.api.data.AdUnitFormat
 import com.silvermob.sdk.renderingtestapp.R
-import java.util.*
+import java.util.EnumSet
 import kotlin.random.Random
 
 class GamOriginalInterstitialRandomMultiformatFragment : GamOriginalInterstitialFragment() {

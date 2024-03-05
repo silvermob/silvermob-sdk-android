@@ -20,11 +20,13 @@ import android.graphics.Rect;
 import android.os.SystemClock;
 import android.view.View;
 import android.view.ViewParent;
-import androidx.annotation.Nullable;
+
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.internal.VisibilityTrackerOption;
 import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
 import com.silvermob.sdk.rendering.utils.exposure.ViewExposureChecker;
+
+import androidx.annotation.Nullable;
 
 import static com.silvermob.sdk.rendering.models.ntv.NativeEventTracker.EventType.IMPRESSION;
 import static com.silvermob.sdk.rendering.models.ntv.NativeEventTracker.EventType.OMID;

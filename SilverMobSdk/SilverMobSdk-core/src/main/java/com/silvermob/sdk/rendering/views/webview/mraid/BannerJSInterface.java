@@ -20,7 +20,6 @@ import android.content.Context;
 import android.webkit.JavascriptInterface;
 
 import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
 
 public class BannerJSInterface extends BaseJSInterface {
     /**

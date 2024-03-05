@@ -8,10 +8,6 @@ import com.silvermob.sdk.configuration.NativeAdUnitConfiguration;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.NativeAsset;
-import com.silvermob.sdk.NativeEventTracker;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.configuration.NativeAdUnitConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;

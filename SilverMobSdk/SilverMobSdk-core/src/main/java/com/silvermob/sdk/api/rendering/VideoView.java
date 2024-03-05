@@ -23,17 +23,6 @@ import android.widget.FrameLayout;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.utils.constants.IntentActions;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.AdViewManager;
-import com.silvermob.sdk.rendering.views.AdViewManagerListener;
-import com.silvermob.sdk.rendering.views.base.BaseAdView;
-import com.silvermob.sdk.rendering.views.video.VideoViewListener;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
-
-import androidx.core.content.ContextCompat;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.models.AdDetails;
@@ -50,6 +39,8 @@ import com.silvermob.sdk.rendering.views.AdViewManagerListener;
 import com.silvermob.sdk.rendering.views.base.BaseAdView;
 import com.silvermob.sdk.rendering.views.video.VideoViewListener;
 import com.silvermob.sdk.rendering.views.webview.mraid.Views;
+
+import androidx.core.content.ContextCompat;
 
 public class VideoView extends BaseAdView {
 

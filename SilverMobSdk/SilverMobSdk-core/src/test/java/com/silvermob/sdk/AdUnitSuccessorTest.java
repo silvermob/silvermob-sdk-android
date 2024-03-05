@@ -17,27 +17,28 @@
 
 package com.silvermob.sdk;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.verify;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.AdUnitFormat;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.reflection.AdUnitReflection;
 import com.silvermob.sdk.rendering.bidding.loader.BidLoader;
 import com.silvermob.sdk.testutils.BaseSetup;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.verify;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = BaseSetup.testSDK)

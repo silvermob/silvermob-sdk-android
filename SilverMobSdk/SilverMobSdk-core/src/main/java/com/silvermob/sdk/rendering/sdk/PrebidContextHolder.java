@@ -2,10 +2,10 @@ package com.silvermob.sdk.rendering.sdk;
 
 import android.content.Context;
 
+import java.lang.ref.WeakReference;
+
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
-
-import java.lang.ref.WeakReference;
 
 /**
  * Global Context holder for Prebid SDK.

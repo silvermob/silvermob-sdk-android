@@ -21,9 +21,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.silvermob.sdk.rendering.utils.broadcast.local.EventForwardingLocalBroadcastReceiver;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-import com.silvermob.sdk.rendering.views.AdViewManager;
 import com.silvermob.sdk.ContentObject;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;

@@ -18,6 +18,7 @@ package com.silvermob.sdk.tasksmanager;
 
 import android.os.Handler;
 import android.os.HandlerThread;
+
 import androidx.annotation.VisibleForTesting;
 
 public class BackgroundThreadExecutor implements CancellableExecutor {

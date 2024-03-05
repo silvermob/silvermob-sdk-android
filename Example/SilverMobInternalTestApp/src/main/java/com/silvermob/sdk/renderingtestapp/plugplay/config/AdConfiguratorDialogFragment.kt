@@ -28,7 +28,6 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
-import com.silvermob.sdk.SilverMob
 import com.silvermob.sdk.renderingtestapp.R
 
 private const val ARG_CONFIGURATOR_MODE = "ARG_CONFIGURATOR_MODE"

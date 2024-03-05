@@ -1,7 +1,6 @@
 package com.silvermob.sdk.admob;
 
 import com.google.android.gms.ads.AdError;
-
 import com.silvermob.sdk.LogUtil;
 
 class AdErrors {

@@ -16,10 +16,11 @@
 
 package com.silvermob.sdk.rendering.bidding.display;
 
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 

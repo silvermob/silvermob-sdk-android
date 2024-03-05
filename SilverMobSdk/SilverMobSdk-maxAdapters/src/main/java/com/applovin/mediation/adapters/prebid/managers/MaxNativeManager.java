@@ -9,21 +9,20 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 
-import androidx.annotation.Nullable;
-
 import com.applovin.mediation.adapter.MaxAdapterError;
 import com.applovin.mediation.adapter.listeners.MaxNativeAdAdapterListener;
 import com.applovin.mediation.adapter.parameters.MaxAdapterResponseParameters;
 import com.applovin.mediation.adapters.prebid.ParametersChecker;
 import com.applovin.mediation.adapters.prebid.PrebidMaxNativeAd;
 import com.applovin.mediation.nativeAds.MaxNativeAd;
-
 import com.silvermob.sdk.PrebidNativeAd;
 import com.silvermob.sdk.rendering.bidding.events.EventsNotifier;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import androidx.annotation.Nullable;
 
 public class MaxNativeManager {
 

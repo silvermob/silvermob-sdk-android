@@ -1,5 +1,21 @@
 package com.silvermob.sdk;
 
+import android.app.Application;
+import android.content.Context;
+import android.view.View;
+
+import com.silvermob.sdk.reflection.Reflection;
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
+import org.hamcrest.Matchers;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.robolectric.RobolectricTestRunner;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.hamcrest.Matchers.hasItem;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -7,21 +23,6 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-
-import android.app.Application;
-import android.content.Context;
-import android.view.View;
-
-import org.hamcrest.Matchers;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import com.silvermob.sdk.reflection.Reflection;
-import com.silvermob.sdk.test.utils.ResourceUtils;
-import org.robolectric.RobolectricTestRunner;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 @RunWith(RobolectricTestRunner.class)
 public class PrebidNativeAdTest {

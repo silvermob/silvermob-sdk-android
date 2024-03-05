@@ -16,22 +16,6 @@
 
 package com.silvermob.sdk.rendering.bidding.loader;
 
-import com.silvermob.sdk.reflection.sdk.PrebidMobileReflection;
-import com.silvermob.sdk.rendering.networking.modelcontrollers.BidRequester;
-import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
-import com.silvermob.sdk.rendering.utils.helpers.RefreshTimerTask;
-
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.reflection.sdk.PrebidMobileReflection;
@@ -40,10 +24,22 @@ import com.silvermob.sdk.rendering.networking.modelcontrollers.BidRequester;
 import com.silvermob.sdk.rendering.sdk.PrebidContextHolder;
 import com.silvermob.sdk.rendering.utils.helpers.RefreshTimerTask;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

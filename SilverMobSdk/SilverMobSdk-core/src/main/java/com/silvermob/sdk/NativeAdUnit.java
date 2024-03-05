@@ -1,17 +1,18 @@
 package com.silvermob.sdk;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
-
-import org.json.JSONObject;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.configuration.NativeAdUnitConfiguration;
 import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
 import com.silvermob.sdk.rendering.bidding.listeners.BidRequesterListener;
 
+import org.json.JSONObject;
+
 import java.util.EnumSet;
 import java.util.HashMap;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 /**
  * For details of the configuration of native imps, please check this documentation:

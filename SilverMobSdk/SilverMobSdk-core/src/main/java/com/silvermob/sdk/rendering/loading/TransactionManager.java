@@ -26,14 +26,6 @@ import com.silvermob.sdk.rendering.models.AbstractCreative;
 import com.silvermob.sdk.rendering.models.CreativeModelMakerBids;
 import com.silvermob.sdk.rendering.models.CreativeModelsMaker;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
-import com.silvermob.sdk.rendering.models.AbstractCreative;
-import com.silvermob.sdk.rendering.models.CreativeModelMakerBids;
-import com.silvermob.sdk.rendering.models.CreativeModelsMaker;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

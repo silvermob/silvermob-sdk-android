@@ -24,7 +24,7 @@ import com.applovin.mediation.ads.MaxInterstitialAd
 import com.silvermob.sdk.api.data.AdUnitFormat
 import com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
-import java.util.*
+import java.util.EnumSet
 
 class AppLovinMaxDisplayInterstitialActivity : BaseAdActivity() {
 

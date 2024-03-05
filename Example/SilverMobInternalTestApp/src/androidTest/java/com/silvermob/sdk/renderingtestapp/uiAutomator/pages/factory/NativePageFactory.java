@@ -17,13 +17,11 @@
 package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.factory;
 
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
-
-import androidx.test.uiautomator.UiDevice;
-
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.PageFactory;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.gam.GamNativeStylesPage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.ppm.PpmNativePage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.ppm.PpmNativeStylesPage;
+
+import androidx.test.uiautomator.UiDevice;
 
 public class NativePageFactory extends PageFactory {
     public NativePageFactory(UiDevice device) {

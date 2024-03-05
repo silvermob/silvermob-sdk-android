@@ -1,9 +1,8 @@
 package com.silvermob.sdk.testutils;
 
-import static org.junit.Assert.assertNotNull;
+import com.silvermob.sdk.LogUtil;
 
 import org.jetbrains.annotations.NotNull;
-import com.silvermob.sdk.LogUtil;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,6 +10,8 @@ import java.util.List;
 import java.util.Objects;
 
 import kotlin.jvm.internal.Intrinsics;
+
+import static org.junit.Assert.assertNotNull;
 
 
 public final class TestLogger implements LogUtil.PrebidLogger {

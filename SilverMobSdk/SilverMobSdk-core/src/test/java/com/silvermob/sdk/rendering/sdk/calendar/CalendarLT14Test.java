@@ -19,12 +19,14 @@ package com.silvermob.sdk.rendering.sdk.calendar;
 import android.app.Activity;
 import android.content.Intent;
 import android.provider.CalendarContract;
+
+import com.silvermob.sdk.test.utils.ResourceUtils;
+
 import org.json.JSONObject;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.test.utils.ResourceUtils;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;

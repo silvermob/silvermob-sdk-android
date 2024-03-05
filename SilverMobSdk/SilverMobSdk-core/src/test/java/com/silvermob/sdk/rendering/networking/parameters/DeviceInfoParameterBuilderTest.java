@@ -16,18 +16,8 @@
 
 package com.silvermob.sdk.rendering.networking.parameters;
 
-import static com.silvermob.sdk.test.utils.ResourceUtils.assertJsonEquals;
-
 import android.app.Activity;
 
-import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.reflection.sdk.ManagersResolverReflection;
 import com.silvermob.sdk.rendering.models.openrtb.BidRequest;
@@ -35,11 +25,17 @@ import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Device;
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 import com.silvermob.sdk.rendering.utils.helpers.AdIdManager;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import java.util.Locale;
+
+import static com.silvermob.sdk.test.utils.ResourceUtils.assertJsonEquals;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19, qualifiers = "w1920dp-h1080dp")

@@ -16,11 +16,6 @@
 
 package com.silvermob.sdk.rendering.sdk.deviceData.managers;
 
-import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
-import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
-import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
-import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
-
 import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.ContentResolver;
@@ -37,14 +32,6 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.WindowManager;
-
-import com.silvermob.sdk.rendering.sdk.BaseManager;
-import com.silvermob.sdk.rendering.sdk.calendar.CalendarEventWrapper;
-import com.silvermob.sdk.rendering.sdk.calendar.CalendarFactory;
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
-
-import androidx.annotation.VisibleForTesting;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.core.R;
@@ -65,6 +52,13 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
+
+import androidx.annotation.VisibleForTesting;
+
+import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
+import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
+import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
 
 public class DeviceInfoImpl extends BaseManager implements DeviceInfoManager {
 

@@ -21,12 +21,11 @@ import android.util.LruCache;
 
 import com.silvermob.sdk.LogUtil;
 
-import androidx.annotation.NonNull;
-import com.silvermob.sdk.LogUtil;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+
+import androidx.annotation.NonNull;
 
 public class LruController {
     private final static String TAG = LruController.class.getSimpleName();

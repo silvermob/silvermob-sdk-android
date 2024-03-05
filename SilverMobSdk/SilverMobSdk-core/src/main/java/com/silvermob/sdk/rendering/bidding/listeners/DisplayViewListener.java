@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.bidding.listeners;
 
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.exceptions.AdException;
 
 public interface DisplayViewListener {
     // Called every time an ad had loaded and is ready for display

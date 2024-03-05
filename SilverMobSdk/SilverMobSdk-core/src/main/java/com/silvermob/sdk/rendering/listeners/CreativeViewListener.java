@@ -19,7 +19,6 @@ package com.silvermob.sdk.rendering.listeners;
 import android.view.ViewGroup;
 
 import com.silvermob.sdk.rendering.models.AbstractCreative;
-import com.silvermob.sdk.rendering.models.AbstractCreative;
 
 public interface CreativeViewListener {
     /**

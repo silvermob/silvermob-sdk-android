@@ -20,8 +20,6 @@ import android.util.Log;
 
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.errors.ServerWrongStatusCode;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.errors.ServerWrongStatusCode;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 
 import java.io.File;

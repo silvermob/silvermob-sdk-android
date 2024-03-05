@@ -5,9 +5,6 @@ import com.silvermob.sdk.NativeAsset;
 import com.silvermob.sdk.NativeEventTracker;
 
 import org.json.JSONObject;
-import com.silvermob.sdk.NativeAdUnit;
-import com.silvermob.sdk.NativeAsset;
-import com.silvermob.sdk.NativeEventTracker;
 
 import java.util.ArrayList;
 import java.util.List;

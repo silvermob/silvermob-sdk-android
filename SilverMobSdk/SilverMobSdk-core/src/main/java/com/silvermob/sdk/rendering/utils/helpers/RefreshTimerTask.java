@@ -18,8 +18,10 @@ package com.silvermob.sdk.rendering.utils.helpers;
 
 import android.os.Handler;
 import android.os.Looper;
-import androidx.annotation.VisibleForTesting;
+
 import com.silvermob.sdk.LogUtil;
+
+import androidx.annotation.VisibleForTesting;
 
 public class RefreshTimerTask {
     private static final String TAG = RefreshTimerTask.class.getSimpleName();

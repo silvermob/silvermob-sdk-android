@@ -18,8 +18,6 @@ package com.silvermob.sdk.rendering.networking.modelcontrollers;
 
 import android.os.AsyncTask;
 
-import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
 import com.silvermob.sdk.rendering.networking.BaseResponseHandler;
 import com.silvermob.sdk.rendering.utils.helpers.AppInfoManager;

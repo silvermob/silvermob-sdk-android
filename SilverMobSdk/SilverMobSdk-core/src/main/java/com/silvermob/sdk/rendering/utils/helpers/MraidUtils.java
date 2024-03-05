@@ -17,6 +17,7 @@
 package com.silvermob.sdk.rendering.utils.helpers;
 
 import android.text.TextUtils;
+
 import com.silvermob.sdk.rendering.sdk.ManagersResolver;
 
 public class MraidUtils {

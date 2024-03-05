@@ -16,10 +16,11 @@
 
 package com.silvermob.sdk.rendering.models.ntv;
 
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 import org.robolectric.RobolectricTestRunner;
 
 import java.util.ArrayList;

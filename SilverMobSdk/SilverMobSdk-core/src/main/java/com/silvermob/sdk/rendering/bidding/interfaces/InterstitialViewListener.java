@@ -18,8 +18,6 @@ package com.silvermob.sdk.rendering.bidding.interfaces;
 
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.api.rendering.InterstitialView;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.rendering.InterstitialView;
 import com.silvermob.sdk.rendering.models.AdDetails;
 
 public interface InterstitialViewListener {

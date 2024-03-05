@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.view.WindowManager;
+
 import com.silvermob.sdk.LogUtil;
 
 public class OrientationBroadcastReceiver extends BroadcastReceiver {

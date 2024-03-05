@@ -22,11 +22,7 @@ import com.google.android.gms.ads.nativead.NativeAd.OnNativeAdLoadedListener
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd.OnCustomFormatAdLoadedListener
 import com.google.common.collect.Lists
-import com.silvermob.sdk.*
-import com.silvermob.sdk.addendum.AdViewUtils
-import com.silvermob.sdk.addendum.PbFindSizeError
-import com.silvermob.sdk.api.original.PrebidAdUnit
-import com.silvermob.sdk.api.original.PrebidRequest
+import com.silvermob.sdk.NativeEventTracker
 import com.silvermob.sdk.prebidkotlindemo.R
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 import com.silvermob.sdk.prebidkotlindemo.utils.ImageUtils

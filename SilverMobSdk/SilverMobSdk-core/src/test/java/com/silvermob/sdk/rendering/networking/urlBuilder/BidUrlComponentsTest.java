@@ -16,14 +16,13 @@
 
 package com.silvermob.sdk.rendering.networking.urlBuilder;
 
+import com.silvermob.sdk.rendering.models.openrtb.BidRequest;
 import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.rendering.models.openrtb.BidRequest;
-import com.silvermob.sdk.rendering.networking.parameters.AdRequestInput;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 

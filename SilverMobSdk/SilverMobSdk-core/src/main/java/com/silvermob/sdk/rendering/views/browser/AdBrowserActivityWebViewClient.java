@@ -19,10 +19,6 @@ package com.silvermob.sdk.rendering.views.browser;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.silvermob.sdk.rendering.utils.url.UrlHandler;
-import com.silvermob.sdk.rendering.utils.url.action.DeepLinkAction;
-import com.silvermob.sdk.rendering.utils.url.action.DeepLinkPlusAction;
-import com.silvermob.sdk.rendering.utils.url.action.UrlAction;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.utils.url.UrlHandler;
 import com.silvermob.sdk.rendering.utils.url.action.DeepLinkAction;

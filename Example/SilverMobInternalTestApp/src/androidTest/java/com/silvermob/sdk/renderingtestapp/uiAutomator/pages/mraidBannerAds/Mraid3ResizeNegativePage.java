@@ -16,13 +16,13 @@
 
 package com.silvermob.sdk.renderingtestapp.uiAutomator.pages.mraidBannerAds;
 
+import java.util.Arrays;
+import java.util.List;
+
 import androidx.test.uiautomator.By;
 import androidx.test.uiautomator.BySelector;
 import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.Until;
-
-import java.util.Arrays;
-import java.util.List;
 
 import static org.junit.Assert.assertNotNull;
 

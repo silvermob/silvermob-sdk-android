@@ -2,15 +2,10 @@ package com.silvermob.sdk.javademo.activities.ads.gam.original;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.admanager.AdManagerAdRequest;
 import com.google.android.gms.ads.admanager.AdManagerAdView;
-import com.silvermob.sdk.javademo.activities.BaseAdActivity;
-
 import com.silvermob.sdk.BannerAdUnit;
 import com.silvermob.sdk.Signals;
 import com.silvermob.sdk.VideoParameters;
@@ -21,6 +16,9 @@ import com.silvermob.sdk.javademo.activities.BaseAdActivity;
 
 import java.util.Collections;
 import java.util.EnumSet;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class GamOriginalApiVideoBanner extends BaseAdActivity {
 

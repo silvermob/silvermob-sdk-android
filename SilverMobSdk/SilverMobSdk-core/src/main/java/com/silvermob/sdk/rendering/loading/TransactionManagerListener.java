@@ -17,7 +17,6 @@
 package com.silvermob.sdk.rendering.loading;
 
 import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.api.exceptions.AdException;
 
 public interface TransactionManagerListener {
     /**

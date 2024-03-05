@@ -21,7 +21,6 @@ import android.content.Intent;
 import android.provider.CalendarContract;
 
 import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
 
 final class CalendarGTE14 implements ICalendar
 {

@@ -17,9 +17,7 @@
 package com.silvermob.sdk.rendering.mraid.methods.network;
 
 import android.os.AsyncTask;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
+
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.SilverMob;
 
@@ -29,6 +27,10 @@ import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 @VisibleForTesting
 public class UrlResolutionTask extends AsyncTask<String, Void, String> {

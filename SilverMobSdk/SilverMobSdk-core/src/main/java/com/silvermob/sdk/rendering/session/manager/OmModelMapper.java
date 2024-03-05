@@ -20,8 +20,6 @@ import com.iab.omid.library.prebidorg.adsession.FriendlyObstructionPurpose;
 import com.iab.omid.library.prebidorg.adsession.media.PlayerState;
 import com.silvermob.sdk.rendering.models.internal.InternalFriendlyObstruction;
 import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
-import com.silvermob.sdk.rendering.models.internal.InternalFriendlyObstruction;
-import com.silvermob.sdk.rendering.models.internal.InternalPlayerState;
 
 /**
  * Helper class to map models from internal SDK to OM SDK.

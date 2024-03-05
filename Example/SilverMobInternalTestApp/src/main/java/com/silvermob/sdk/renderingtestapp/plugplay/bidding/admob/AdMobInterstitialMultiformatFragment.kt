@@ -1,11 +1,8 @@
 package com.silvermob.sdk.renderingtestapp.plugplay.bidding.admob
 
 import android.os.Bundle
-import com.silvermob.sdk.admob.AdMobMediationInterstitialUtils
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit
 import com.silvermob.sdk.renderingtestapp.R
-import java.util.*
+import java.util.EnumSet
 
 open class AdMobInterstitialMultiformatFragment : AdMobInterstitialFragment() {
 

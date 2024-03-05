@@ -19,8 +19,6 @@ package com.silvermob.sdk.renderingtestapp.plugplay.bidding.ppm
 import android.view.View
 import android.widget.Button
 import androidx.annotation.IdRes
-import com.silvermob.sdk.NativeData
-import com.silvermob.sdk.PrebidNativeAd
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.widgets.EventCounterView
 

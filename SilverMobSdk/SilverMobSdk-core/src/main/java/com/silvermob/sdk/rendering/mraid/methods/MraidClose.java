@@ -24,13 +24,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.silvermob.sdk.rendering.views.browser.AdBrowserActivity;
-import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;
-import com.silvermob.sdk.rendering.views.webview.WebViewBanner;
-import com.silvermob.sdk.rendering.views.webview.WebViewBase;
-import com.silvermob.sdk.rendering.views.webview.mraid.BaseJSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.JSInterface;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.views.browser.AdBrowserActivity;
 import com.silvermob.sdk.rendering.views.webview.PrebidWebViewBase;

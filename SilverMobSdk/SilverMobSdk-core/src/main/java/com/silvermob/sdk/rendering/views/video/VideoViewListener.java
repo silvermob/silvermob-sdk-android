@@ -16,10 +16,11 @@
 
 package com.silvermob.sdk.rendering.views.video;
 
-import androidx.annotation.NonNull;
 import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.api.rendering.VideoView;
 import com.silvermob.sdk.rendering.models.AdDetails;
+
+import androidx.annotation.NonNull;
 
 public abstract class VideoViewListener {
     public void onLoaded(

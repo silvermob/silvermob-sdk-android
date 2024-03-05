@@ -25,8 +25,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
-import com.silvermob.sdk.*
-import com.silvermob.sdk.admob.PrebidNativeAdapter
+import com.silvermob.sdk.NativeEventTracker
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 import com.silvermob.sdk.prebidkotlindemo.databinding.ViewNativeAdAdMobBinding
 

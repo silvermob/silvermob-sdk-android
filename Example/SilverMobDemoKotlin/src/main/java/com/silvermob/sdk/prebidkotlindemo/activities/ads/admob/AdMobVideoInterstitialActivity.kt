@@ -21,12 +21,9 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
-import com.silvermob.sdk.admob.AdMobMediationInterstitialUtils
-import com.silvermob.sdk.admob.PrebidInterstitialAdapter
 import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
-import java.util.*
+import java.util.EnumSet
 
 class AdMobVideoInterstitialActivity : BaseAdActivity() {
 

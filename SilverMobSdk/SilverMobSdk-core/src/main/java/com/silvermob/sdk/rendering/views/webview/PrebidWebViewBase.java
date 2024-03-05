@@ -28,10 +28,6 @@ import android.view.animation.AnimationUtils;
 import android.webkit.WebView;
 import android.widget.FrameLayout;
 
-import com.silvermob.sdk.rendering.sdk.ManagersResolver;
-import com.silvermob.sdk.rendering.sdk.deviceData.managers.DeviceInfoManager;
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
-import com.silvermob.sdk.rendering.utils.helpers.Utils;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.listeners.WebViewDelegate;
 import com.silvermob.sdk.rendering.models.HTMLCreative;

@@ -1,12 +1,14 @@
 package com.silvermob.sdk.rendering.utils.ntv;
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.NativeAdUnit;
 import com.silvermob.sdk.PrebidNativeAd;
 import com.silvermob.sdk.rendering.bidding.events.EventsNotifier;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class NativeAdProvider {
 

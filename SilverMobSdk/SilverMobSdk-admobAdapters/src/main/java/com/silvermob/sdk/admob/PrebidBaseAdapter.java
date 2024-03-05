@@ -3,15 +3,11 @@ package com.silvermob.sdk.admob;
 import android.content.Context;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.google.android.gms.ads.mediation.Adapter;
 import com.google.android.gms.ads.mediation.InitializationCompleteCallback;
 import com.google.android.gms.ads.mediation.MediationAdConfiguration;
 import com.google.android.gms.ads.mediation.MediationConfiguration;
 import com.google.android.gms.ads.mediation.VersionInfo;
-
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.ParametersMatcher;
 import com.silvermob.sdk.SilverMob;
@@ -20,6 +16,9 @@ import com.silvermob.sdk.rendering.bidding.display.BidResponseCache;
 
 import java.util.HashMap;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public abstract class PrebidBaseAdapter extends Adapter {
 

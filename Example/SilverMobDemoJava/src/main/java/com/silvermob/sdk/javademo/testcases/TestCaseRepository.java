@@ -1,7 +1,6 @@
 package com.silvermob.sdk.javademo.testcases;
 
 import com.google.common.collect.Lists;
-
 import com.silvermob.sdk.javademo.R;
 import com.silvermob.sdk.javademo.activities.ads.gam.original.GamOriginalApiDisplayBanner300x250;
 import com.silvermob.sdk.javademo.activities.ads.gam.original.GamOriginalApiDisplayBanner320x50;

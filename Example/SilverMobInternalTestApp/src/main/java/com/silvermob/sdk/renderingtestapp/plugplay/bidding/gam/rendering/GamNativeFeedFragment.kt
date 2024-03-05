@@ -18,7 +18,6 @@ package com.silvermob.sdk.renderingtestapp.plugplay.bidding.gam.rendering
 
 import android.os.Bundle
 import com.google.android.gms.ads.AdLoader
-import com.silvermob.sdk.api.mediation.MediationNativeAdUnit
 import com.silvermob.sdk.renderingtestapp.plugplay.bidding.base.BaseFeedFragment
 import com.silvermob.sdk.renderingtestapp.utils.adapters.BaseFeedAdapter
 import com.silvermob.sdk.renderingtestapp.utils.adapters.NativeGamFeedAdapter

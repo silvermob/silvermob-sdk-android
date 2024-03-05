@@ -1,15 +1,11 @@
 package com.silvermob.sdk.rendering.sdk;
 
+import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.reflection.Reflection;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.reflection.Reflection;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -17,6 +13,9 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.HttpUrl;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class StatusRequesterTest {
 

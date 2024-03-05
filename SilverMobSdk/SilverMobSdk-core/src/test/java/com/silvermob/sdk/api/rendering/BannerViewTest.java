@@ -22,13 +22,6 @@ import android.util.AttributeSet;
 import android.util.Pair;
 import android.view.View;
 
-import com.silvermob.sdk.rendering.utils.broadcast.ScreenStateReceiver;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.api.data.AdFormat;
 import com.silvermob.sdk.api.data.BannerAdPosition;
@@ -48,6 +41,12 @@ import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener;
 import com.silvermob.sdk.rendering.bidding.loader.BidLoader;
 import com.silvermob.sdk.rendering.utils.broadcast.ScreenStateReceiver;
 import com.silvermob.sdk.test.utils.WhiteBox;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
@@ -57,8 +56,19 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.Mockito.when;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 19)

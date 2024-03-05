@@ -29,18 +29,8 @@ import android.view.ViewTreeObserver
 import android.webkit.WebView
 import android.widget.FrameLayout
 import android.widget.ImageButton
-import org.json.JSONObject
-import com.silvermob.sdk.LogUtil
-import com.silvermob.sdk.api.data.AdFormat
 import com.silvermob.sdk.api.exceptions.AdException
-import com.silvermob.sdk.api.rendering.PrebidMobileInterstitialControllerInterface
-import com.silvermob.sdk.rendering.bidding.listeners.DisplayVideoListener
-import com.silvermob.sdk.api.rendering.pluginrenderer.PluginEventListener
-import com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer
-import com.silvermob.sdk.configuration.AdUnitConfiguration
-import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse
-import com.silvermob.sdk.rendering.bidding.interfaces.InterstitialControllerListener
-import com.silvermob.sdk.rendering.bidding.listeners.DisplayViewListener
+import org.json.JSONObject
 
 class SampleCustomRenderer : com.silvermob.sdk.api.rendering.pluginrenderer.PrebidMobilePluginRenderer {
 

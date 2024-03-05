@@ -24,20 +24,19 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 
+import com.silvermob.sdk.rendering.bidding.events.EventsNotifier;
 import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.bidding.events.EventsNotifier;
-import com.silvermob.sdk.rendering.utils.helpers.ExternalViewerUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class PrebidNativeAd {
 

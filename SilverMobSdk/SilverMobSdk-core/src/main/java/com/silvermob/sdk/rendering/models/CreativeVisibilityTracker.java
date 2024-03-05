@@ -23,15 +23,6 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 
 import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
-import com.silvermob.sdk.rendering.utils.exposure.ViewExposureChecker;
-import com.silvermob.sdk.rendering.utils.helpers.VisibilityChecker;
-import com.silvermob.sdk.rendering.views.webview.mraid.Views;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.rendering.models.internal.VisibilityTrackerOption;
 import com.silvermob.sdk.rendering.models.internal.VisibilityTrackerResult;
 import com.silvermob.sdk.rendering.utils.exposure.ViewExposure;
@@ -44,6 +35,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 public class CreativeVisibilityTracker {
 

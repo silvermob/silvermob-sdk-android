@@ -5,16 +5,9 @@ import com.silvermob.sdk.ResultCode;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.api.data.BidInfo;
 
-import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MAX;
-import static com.silvermob.sdk.SilverMob.AUTO_REFRESH_DELAY_MIN;
-
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.ResultCode;
-import com.silvermob.sdk.api.data.BidInfo;
 
 public class PrebidAdUnit {
 

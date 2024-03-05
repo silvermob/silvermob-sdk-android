@@ -22,8 +22,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.silvermob.sdk.renderingtestapp.R;
-
 import androidx.appcompat.app.ActionBar;
 
 public abstract class AdActivity extends BaseActivity {

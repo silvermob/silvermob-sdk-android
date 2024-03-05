@@ -16,10 +16,10 @@
 
 package com.silvermob.sdk;
 
+import java.util.Map;
+
 import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
-
-import java.util.Map;
 
 public interface OnCompleteListener2 {
     /**

@@ -33,8 +33,7 @@ import com.google.android.gms.ads.formats.OnAdManagerAdViewLoadedListener
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeCustomFormatAd
 import com.google.common.collect.Lists
-import com.silvermob.sdk.*
-import com.silvermob.sdk.addendum.AdViewUtils
+import com.silvermob.sdk.NativeEventTracker
 import com.silvermob.sdk.prebidkotlindemo.R
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 import com.silvermob.sdk.prebidkotlindemo.utils.ImageUtils

@@ -9,17 +9,13 @@ import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
-import com.silvermob.sdk.admob.AdMobMediationInterstitialUtils
-import com.silvermob.sdk.admob.PrebidInterstitialAdapter
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentAdmobRewardedBinding
 import com.silvermob.sdk.renderingtestapp.plugplay.config.AdConfiguratorDialogFragment
 import com.silvermob.sdk.renderingtestapp.utils.BaseEvents
 import com.silvermob.sdk.renderingtestapp.utils.CommandLineArgumentParser
-import java.util.*
+import java.util.EnumSet
 
 open class AdMobInterstitialFragment : AdFragment() {
 

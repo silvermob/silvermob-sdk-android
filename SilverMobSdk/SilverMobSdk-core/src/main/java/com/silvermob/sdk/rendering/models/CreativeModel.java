@@ -19,17 +19,14 @@ package com.silvermob.sdk.rendering.models;
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.configuration.AdUnitConfiguration;
 import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
-
-import androidx.annotation.Nullable;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.configuration.AdUnitConfiguration;
-import com.silvermob.sdk.rendering.networking.tracking.TrackingManager;
 import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 import com.silvermob.sdk.rendering.video.OmEventTracker;
 import com.silvermob.sdk.rendering.video.VideoAdEvent;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
 
 // CreativeModel is visible to the publisher, and defines:
 // --- displayDurationInSeconds indicates the time the creative will display for

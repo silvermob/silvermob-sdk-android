@@ -16,8 +16,6 @@
 package com.silvermob.sdk.prebidkotlindemo.activities.ads.inapp
 
 import android.os.Bundle
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.rendering.BannerView
 import com.silvermob.sdk.prebidkotlindemo.activities.BaseAdActivity
 
 class InAppDisplayBannerMraidResizeWithErrorsActivity : BaseAdActivity() {

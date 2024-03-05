@@ -16,9 +16,10 @@
 
 package com.silvermob.sdk.rendering.bidding.data;
 
+import com.silvermob.sdk.AdSize;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.AdSize;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 

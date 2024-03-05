@@ -1,14 +1,14 @@
 package com.silvermob.sdk.eventhandlers.global;
 
-import static org.junit.Assert.assertEquals;
-
 import com.google.android.gms.ads.MobileAds;
+import com.silvermob.sdk.SilverMob;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.silvermob.sdk.SilverMob;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 29)

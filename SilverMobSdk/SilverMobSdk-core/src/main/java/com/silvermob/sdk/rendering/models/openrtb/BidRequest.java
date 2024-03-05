@@ -26,16 +26,15 @@ import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Ext;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Imp;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.Regs;
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.User;
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.source.Source;
 
-import androidx.annotation.VisibleForTesting;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.SilverMob;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.*;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.source.Source;
 
 import java.util.ArrayList;
+
+import androidx.annotation.VisibleForTesting;
 
 public class BidRequest extends BaseBid {
 

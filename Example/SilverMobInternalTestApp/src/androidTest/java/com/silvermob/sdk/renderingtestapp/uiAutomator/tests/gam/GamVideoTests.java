@@ -16,13 +16,11 @@
 
 package com.silvermob.sdk.renderingtestapp.uiAutomator.tests.gam;
 
+import com.silvermob.sdk.renderingtestapp.R;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
 import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.BaseUiAutomatorTest;
 
 import org.junit.Test;
-import com.silvermob.sdk.renderingtestapp.R;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.pages.AdBasePage;
-import com.silvermob.sdk.renderingtestapp.uiAutomator.utils.BaseUiAutomatorTest;
 
 import static com.silvermob.sdk.renderingtestapp.uiAutomator.pages.bidding.gam.GamInterstitialPage.VIDEO_DURATION_TIMEOUT;
 

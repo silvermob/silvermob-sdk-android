@@ -16,12 +16,15 @@
 
 package com.silvermob.sdk.rendering.models.openrtb.bidRequests;
 
+import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
+
 import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.devices.Geo;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
 
 public class DeviceTest {
 

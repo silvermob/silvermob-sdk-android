@@ -6,8 +6,6 @@ import com.applovin.mediation.MaxAdFormat
 import com.applovin.mediation.adapters.prebid.utils.MaxMediationBannerUtils
 import com.applovin.mediation.ads.MaxAdView
 import com.applovin.sdk.AppLovinSdkUtils
-import com.silvermob.sdk.AdSize
-import com.silvermob.sdk.api.mediation.MediationBannerAdUnit
 
 class MaxBannerFragmentAdaptive : MaxBannerFragment() {
 

@@ -22,7 +22,6 @@ import android.graphics.Rect;
 import com.silvermob.sdk.rendering.utils.helpers.Dips;
 
 import androidx.annotation.NonNull;
-import com.silvermob.sdk.rendering.utils.helpers.Dips;
 
 /**
  * Screen metrics needed by the MRAID container.

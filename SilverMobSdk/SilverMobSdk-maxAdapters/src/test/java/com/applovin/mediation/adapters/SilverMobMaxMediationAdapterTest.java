@@ -1,8 +1,9 @@
 package com.applovin.mediation.adapters;
 
+import com.silvermob.sdk.Util;
+
 import org.junit.Before;
 import org.junit.Test;
-import com.silvermob.sdk.Util;
 
 import static org.junit.Assert.assertEquals;
 

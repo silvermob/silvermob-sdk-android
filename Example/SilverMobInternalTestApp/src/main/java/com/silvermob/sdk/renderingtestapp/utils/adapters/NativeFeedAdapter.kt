@@ -24,12 +24,6 @@ import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.silvermob.sdk.LogUtil
-import com.silvermob.sdk.PrebidNativeAd
-import com.silvermob.sdk.PrebidNativeAdEventListener
-import com.silvermob.sdk.api.data.FetchDemandResult
-import com.silvermob.sdk.api.mediation.MediationNativeAdUnit
-import com.silvermob.sdk.rendering.utils.ntv.NativeAdProvider
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.utils.loadImage
 

@@ -23,12 +23,6 @@ import com.silvermob.sdk.api.exceptions.AdException;
 import com.silvermob.sdk.rendering.models.CreativeModel;
 import com.silvermob.sdk.rendering.models.CreativeModelsMaker;
 import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
-import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
-import com.silvermob.sdk.LogUtil;
-import com.silvermob.sdk.api.exceptions.AdException;
-import com.silvermob.sdk.rendering.models.CreativeModel;
-import com.silvermob.sdk.rendering.models.CreativeModelsMaker;
-import com.silvermob.sdk.rendering.sdk.JSLibraryManager;
 import com.silvermob.sdk.rendering.session.manager.OmAdSessionManager;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialManager;
 

@@ -8,14 +8,12 @@ import com.applovin.mediation.MaxAdListener
 import com.applovin.mediation.MaxError
 import com.applovin.mediation.adapters.prebid.utils.MaxMediationInterstitialUtils
 import com.applovin.mediation.ads.MaxInterstitialAd
-import com.silvermob.sdk.api.data.AdUnitFormat
-import com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit
 import com.silvermob.sdk.renderingtestapp.AdFragment
 import com.silvermob.sdk.renderingtestapp.R
 import com.silvermob.sdk.renderingtestapp.databinding.FragmentBiddingInterstitialApplovinMaxBinding
 import com.silvermob.sdk.renderingtestapp.plugplay.config.AdConfiguratorDialogFragment
 import com.silvermob.sdk.renderingtestapp.utils.BaseEvents
-import java.util.*
+import java.util.EnumSet
 
 open class MaxInterstitialFragment : AdFragment() {
 

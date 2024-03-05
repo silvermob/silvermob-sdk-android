@@ -18,11 +18,11 @@ package com.silvermob.sdk.rendering.models.openrtb.bidRequests.apps;
 
 import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
 
-import androidx.annotation.VisibleForTesting;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.silvermob.sdk.rendering.models.openrtb.bidRequests.BaseBid;
+
+import androidx.annotation.VisibleForTesting;
 
 //TODO: ORTB2.5: get back for In-stream video - per Product
 public class Content extends BaseBid {

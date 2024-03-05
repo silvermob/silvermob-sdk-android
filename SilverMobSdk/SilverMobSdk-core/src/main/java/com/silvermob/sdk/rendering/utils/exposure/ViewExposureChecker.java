@@ -22,7 +22,7 @@ import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import androidx.annotation.VisibleForTesting;
+
 import com.silvermob.sdk.LogUtil;
 import com.silvermob.sdk.core.R;
 
@@ -31,6 +31,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import androidx.annotation.VisibleForTesting;
 
 public class ViewExposureChecker {
 

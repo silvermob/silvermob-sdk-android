@@ -18,12 +18,10 @@ package com.silvermob.sdk.rendering.bidding.interfaces;
 
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
+import com.silvermob.sdk.rendering.bidding.listeners.BannerEventListener;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.silvermob.sdk.AdSize;
-import com.silvermob.sdk.rendering.bidding.data.bid.Bid;
-import com.silvermob.sdk.rendering.bidding.listeners.BannerEventListener;
 
 public interface BannerEventHandler {
     AdSize[] getAdSizeArray();
