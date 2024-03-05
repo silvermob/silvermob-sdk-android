@@ -19,8 +19,21 @@ import com.applovin.mediation.adapters.prebid.managers.MaxBannerManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxInterstitialManager;
 import com.applovin.mediation.adapters.prebid.managers.MaxNativeManager;
 import com.applovin.sdk.AppLovinSdk;
+import com.applovin.sdk.AppLovinSdkUtils;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.TargetingParams;
+import com.silvermob.sdk.api.data.AdUnitFormat;
+import com.silvermob.sdk.api.mediation.MediationBannerAdUnit;
+import com.silvermob.sdk.AdSize;
+import com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit;
+import com.silvermob.sdk.api.mediation.MediationRewardedVideoAdUnit;
+import com.silvermob.sdk.rendering.bidding.data.bid.BidResponse;
+import com.silvermob.sdk.rendering.bidding.display.PrebidMediationDelegate;
+
+import java.util.EnumSet;
+import java.util.HashMap;
+
+import androidx.annotation.Nullable;
 
 public class SilverMobMaxMediationAdapter extends MediationAdapterBase implements MaxAdViewAdapter, MaxInterstitialAdapter, MaxRewardedAdapter, MaxNativeAdAdapter {
 
@@ -31,6 +44,10 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
     private MaxBannerManager maxBannerManager;
     private MaxInterstitialManager maxInterstitialManager;
     private MaxNativeManager maxNativeManager;
+    private String responseId;
+    private MediationBannerAdUnit bannerAdUnit;
+    private MediationInterstitialAdUnit interstitialAdUnit;
+    private MediationRewardedVideoAdUnit rewardedVideoAdUnit;
 
     public SilverMobMaxMediationAdapter(AppLovinSdk appLovinSdk) {
         super(appLovinSdk);
@@ -75,8 +92,27 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
             Activity activity,
             MaxAdViewAdapterListener listener
     ) {
-        maxBannerManager = new MaxBannerManager();
-        maxBannerManager.loadAd(parameters, maxAdFormat, activity, listener);
+        PrebidMediationDelegate mediationUtils = new PrebidMediationDelegate() {
+            @Override
+            public void handleKeywordsUpdate(@Nullable HashMap<String, String> keywords) {}
+            @Override
+            public void setResponseToLocalExtras(@Nullable BidResponse response) {
+                responseId = response.getId();
+            }
+            @Override
+            public boolean canPerformRefresh() {return true;}
+        };
+        AppLovinSdkUtils.Size size = maxAdFormat.getSize();
+        bannerAdUnit = new MediationBannerAdUnit(
+                activity,
+                parameters.getThirdPartyAdPlacementId(),
+                new AdSize(size.getWidth(), size.getHeight()),
+                mediationUtils
+        );
+        bannerAdUnit.fetchDemand(result -> {
+            maxBannerManager = new MaxBannerManager();
+            maxBannerManager.loadAd(parameters, maxAdFormat, activity, listener,responseId);
+        });
     }
 
 
@@ -86,8 +122,28 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
             Activity activity,
             MaxInterstitialAdapterListener maxListener
     ) {
-        maxInterstitialManager = new MaxInterstitialManager();
-        maxInterstitialManager.loadAd(parameters, activity, maxListener);
+        PrebidMediationDelegate mediationUtils = new PrebidMediationDelegate() {
+            @Override
+            public void handleKeywordsUpdate(@Nullable HashMap<String, String> keywords) {}
+            @Override
+            public void setResponseToLocalExtras(@Nullable BidResponse response) {
+                responseId = response.getId();
+            }
+            @Override
+            public boolean canPerformRefresh() {return true;}
+        };
+        EnumSet<AdUnitFormat> adUnitFormats = EnumSet.of(AdUnitFormat.BANNER, AdUnitFormat.VIDEO);
+        interstitialAdUnit = new MediationInterstitialAdUnit(
+                activity,
+                parameters.getThirdPartyAdPlacementId(),
+                adUnitFormats,
+                mediationUtils
+        );
+        interstitialAdUnit.setMinSizePercentage(1,1);
+        interstitialAdUnit.fetchDemand(result -> {
+            maxInterstitialManager = new MaxInterstitialManager();
+            maxInterstitialManager.loadAd(parameters, activity, maxListener,responseId);
+        });
     }
 
     @Override
@@ -96,8 +152,28 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
             Activity activity,
             MaxRewardedAdapterListener maxListener
     ) {
-        maxInterstitialManager = new MaxInterstitialManager();
-        maxInterstitialManager.loadAd(parameters, activity, maxListener);
+        PrebidMediationDelegate mediationUtils = new PrebidMediationDelegate() {
+            @Override
+            public void handleKeywordsUpdate(@Nullable HashMap<String, String> keywords) {}
+
+            @Override
+            public void setResponseToLocalExtras(@Nullable BidResponse response) {
+                responseId = response.getId();
+            }
+
+            @Override
+            public boolean canPerformRefresh() {return true;}
+        };
+        rewardedVideoAdUnit = new MediationRewardedVideoAdUnit(
+                activity,
+                parameters.getThirdPartyAdPlacementId(),
+                mediationUtils
+        );
+
+        rewardedVideoAdUnit.fetchDemand (result -> {
+            maxInterstitialManager = new MaxInterstitialManager();
+            maxInterstitialManager.loadAd(parameters, activity, maxListener,responseId);
+        });
     }
 
     @Override
@@ -133,7 +209,7 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
 
     @Override
     public void onDestroy() {
-        if (maxBannerManager != null) {
+       if (maxBannerManager != null) {
             maxBannerManager.destroy();
         }
 
@@ -143,6 +219,16 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
 
         if (maxNativeManager != null) {
             maxNativeManager.destroy();
+        }
+        if(bannerAdUnit != null) {
+            bannerAdUnit.destroy();
+        }
+        if(interstitialAdUnit != null) {
+            interstitialAdUnit.destroy();
+        }
+
+        if(rewardedVideoAdUnit != null) {
+            rewardedVideoAdUnit.destroy();
         }
     }
 

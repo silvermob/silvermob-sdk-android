@@ -33,13 +33,9 @@ class AppLovinMaxDisplayBanner320x50Activity : BaseAdActivity() {
 
     companion object {
         const val AD_UNIT_ID = "b55547d91e0ba5a4"
-        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
-        const val WIDTH = 320
-        const val HEIGHT = 50
     }
 
     private var adView: MaxAdView? = null
-    private var adUnit: MediationBannerAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,24 +67,12 @@ class AppLovinMaxDisplayBanner320x50Activity : BaseAdActivity() {
 
         adWrapperView.addView(adView)
 
-        val mediationUtils = MaxMediationBannerUtils(adView)
-        adUnit = MediationBannerAdUnit(
-                this,
-                CONFIG_ID,
-                AdSize(WIDTH, HEIGHT),
-                mediationUtils
-        )
-        /*adUnit?.setRefreshInterval(refreshTimeSeconds)
-        adUnit?.fetchDemand {
-
-        }*/
         adView?.loadAd()
     }
 
 
     override fun onDestroy() {
         super.onDestroy()
-        adUnit?.destroy()
         adView?.destroy()
     }
 

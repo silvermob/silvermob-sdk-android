@@ -32,13 +32,11 @@ class AppLovinMaxDisplayBanner300x250Activity : BaseAdActivity() {
 
     companion object {
         const val AD_UNIT_ID = "9c13b9b0ed8e04d8"
-        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
         const val WIDTH = 300
         const val HEIGHT = 250
     }
 
     private var adView: MaxAdView? = null
-    private var adUnit: com.silvermob.sdk.api.mediation.MediationBannerAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,24 +67,12 @@ class AppLovinMaxDisplayBanner300x250Activity : BaseAdActivity() {
         )
 
         adWrapperView.addView(adView)
-
-        val mediationUtils = MaxMediationBannerUtils(adView)
-        adUnit = com.silvermob.sdk.api.mediation.MediationBannerAdUnit(
-                this,
-                CONFIG_ID,
-                com.silvermob.sdk.AdSize(WIDTH, HEIGHT),
-                mediationUtils
-        )
-        adUnit?.setRefreshInterval(refreshTimeSeconds)
-        adUnit?.fetchDemand {
-            adView?.loadAd()
-        }
+        adView?.loadAd()
     }
 
 
     override fun onDestroy() {
         super.onDestroy()
-        adUnit?.destroy()
         adView?.destroy()
     }
 

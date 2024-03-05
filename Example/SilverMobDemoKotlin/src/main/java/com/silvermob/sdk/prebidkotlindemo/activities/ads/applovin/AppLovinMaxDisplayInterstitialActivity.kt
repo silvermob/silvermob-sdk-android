@@ -30,11 +30,9 @@ class AppLovinMaxDisplayInterstitialActivity : BaseAdActivity() {
 
     companion object {
         const val AD_UNIT_ID = "df7ef64649dec96c"
-        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-1"
     }
 
     private var maxInterstitialAd: MaxInterstitialAd? = null
-    private var adUnit: MediationInterstitialAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,24 +54,12 @@ class AppLovinMaxDisplayInterstitialActivity : BaseAdActivity() {
             override fun onAdLoadFailed(adUnitId: String?, error: MaxError?) {}
             override fun onAdDisplayFailed(ad: MaxAd?, error: MaxError?) {}
         })
-
-        val mediationUtils = MaxMediationInterstitialUtils(maxInterstitialAd)
-        adUnit = MediationInterstitialAdUnit(
-                this,
-                CONFIG_ID,
-                EnumSet.of(AdUnitFormat.BANNER,AdUnitFormat.VIDEO),
-                mediationUtils
-        )
-        adUnit?.setMinSizePercentage(50,50)
-        adUnit?.fetchDemand {
-            maxInterstitialAd?.loadAd()
-        }
+        maxInterstitialAd?.loadAd()
     }
 
 
     override fun onDestroy() {
         super.onDestroy()
-        adUnit?.destroy()
         maxInterstitialAd?.destroy()
     }
 

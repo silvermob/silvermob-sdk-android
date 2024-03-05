@@ -31,11 +31,10 @@ public class MaxBannerManager {
             MaxAdapterResponseParameters parameters,
             MaxAdFormat maxAdFormat,
             Activity activity,
-            MaxAdViewAdapterListener listener
+            MaxAdViewAdapterListener listener,
+            String responseId
     ) {
         maxListener = listener;
-
-        String responseId = ParametersChecker.getResponseIdAndCheckKeywords(parameters, this::onError);
         BidResponse bidResponse = ParametersChecker.getBidResponse(responseId, this::onError);
         if (bidResponse == null) {
             return;
@@ -51,6 +50,15 @@ public class MaxBannerManager {
                 Log.e(TAG, error);
                 onError(1005, error);
         }
+    }
+    public void loadAd(
+            MaxAdapterResponseParameters parameters,
+            MaxAdFormat maxAdFormat,
+            Activity activity,
+            MaxAdViewAdapterListener listener
+    ) {
+        String responseId = ParametersChecker.getResponseIdAndCheckKeywords(parameters, this::onError);
+        loadAd(parameters,maxAdFormat,activity,listener,responseId);
     }
 
     public void destroy() {

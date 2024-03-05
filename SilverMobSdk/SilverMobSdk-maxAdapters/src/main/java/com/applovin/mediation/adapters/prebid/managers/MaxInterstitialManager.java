@@ -29,28 +29,30 @@ public class MaxInterstitialManager {
     public void loadAd(
             MaxAdapterResponseParameters parameters,
             Activity activity,
-            MaxInterstitialAdapterListener maxListener
+            MaxInterstitialAdapterListener maxListener,
+            String responseId
     ) {
         this.maxListener = maxListener;
         isRewarded = false;
-        loadAd(parameters, activity);
+        loadAd(parameters, activity,responseId);
     }
 
     public void loadAd(
             MaxAdapterResponseParameters parameters,
             Activity activity,
-            MaxRewardedAdapterListener maxListener
+            MaxRewardedAdapterListener maxListener,
+            String responseId
     ) {
         this.maxListener = maxListener;
         isRewarded = true;
-        loadAd(parameters, activity);
+        loadAd(parameters, activity,responseId);
     }
 
     private void loadAd(
             MaxAdapterResponseParameters parameters,
-            Activity activity
+            Activity activity,
+            String responseId
     ) {
-        String responseId = ParametersChecker.getResponseIdAndCheckKeywords(parameters, this::onError);
         if (responseId == null) {
             return;
         }

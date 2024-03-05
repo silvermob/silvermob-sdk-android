@@ -29,11 +29,9 @@ class AppLovinMaxVideoRewardedActivity : BaseAdActivity() {
 
     companion object {
         const val AD_UNIT_ID = "6a91bd61a5ea4992"
-        const val CONFIG_ID = "13c4f9d0-6d7d-4398-8e39-f08052acbc70-UNIT-2"
     }
 
     private var maxRewardedAd: MaxRewardedAd? = null
-    private var adUnit: MediationRewardedVideoAdUnit? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,22 +57,12 @@ class AppLovinMaxVideoRewardedActivity : BaseAdActivity() {
             override fun onUserRewarded(ad: MaxAd?, reward: MaxReward?) {}
         })
 
-        val mediationUtils = MaxMediationRewardedUtils(maxRewardedAd)
-        adUnit = MediationRewardedVideoAdUnit(
-                this,
-                CONFIG_ID,
-                mediationUtils
-        )
-
-        adUnit?.fetchDemand {
-            maxRewardedAd?.loadAd()
-        }
+        maxRewardedAd?.loadAd()
     }
 
 
     override fun onDestroy() {
         super.onDestroy()
-        adUnit?.destroy()
         maxRewardedAd?.destroy()
     }
 
