@@ -106,95 +106,13 @@ adUnit?.loadAd()
 ## Integrate SilverMob SDK with your existing Applovin MAX SDK
 This guide assumes you already have [Applovin MAX SDK](https://dash.applovin.com/documentation/mediation/android/getting-started/integration) correctly integrated. 
 
+*Don't forget to integrate and initialize SilverMob SDK as shown [here](#initialize-sdk-in-your-app-initialization-code).*
+
 ### Integrate SilverMob Adapters
 
 ```groovy
 implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.4")
 ```
-
-### Adjust banner integration
-**Code for the small banner integration:**
-```kotlin
-// 1. Create MaxAdView
-adView = MaxAdView(adUnitId, requireContext())
-adView?.setListener(createListener())
-adWrapperView.addView(adView)
-
-// 2. Create MaxMediationBannerUtils
-val mediationUtils = MaxMediationBannerUtils(adView)
-
-// 3. Create MediationBannerAdUnit
-adUnit = MediationBannerAdUnit(
-        requireContext(),
-        SILVERMOB_SDK_AD_UNIT,
-        AdSize(width, height),
-        mediationUtils
-)
-
-// 4. Make a bid request
-adUnit?.fetchDemand {
-
-    // 5. Make an ad request to MAX
-    adView?.loadAd()
-}
-```
-**Code for interstitial integration:**
-```kotlin
-// 1. Create MaxInterstitialAd
-maxInterstitialAd = MaxInterstitialAd(adUnitId, activity)
-maxInterstitialAd?.setListener(createListener())
-        
-// 2. Create MaxMediationInterstitialUtils
-val mediationUtils = MaxMediationInterstitialUtils(maxInterstitialAd)
-
-// 3. Create MediationInterstitialAdUnit
-adUnit = MediationInterstitialAdUnit(
-            activity,
-            SILVERMOB_SDK_AD_UNIT,
-            EnumSet.of(AdUnitFormat.BANNER),
-            mediationUtils
-        )
-adUnit?.setMinSizePercentage(50,50) //Set minimum % of screen ad should occupy       
-// 5. Make a bid request
-adUnit?.fetchDemand {
- 
-    // 6. Make an ad request to MAX
-    maxInterstitialAd?.loadAd()
-}
-```
-The default ad format for interstitial is **DISPLAY**. In order to make a `multiformat bid request`, set the respective values into the `adUnitFormats` parameter.
-```kotlin
-adUnit = MediationInterstitialAdUnit(
-            activity,
-            SILVERMOB_SDK_AD_UNIT,
-            EnumSet.of(AdUnitFormat.BANNER, AdUnitFormat.VIDEO),
-            mediationUtils
-        )
-```
-**Code for rewarded video integration:**
-```kotlin
-// 1. Get an instance of MaxRewardedAd
-maxRewardedAd = MaxRewardedAd.getInstance(adUnitId, activity)
-maxRewardedAd?.setListener(createListener())
-
-// 2. Create MaxMediationRewardedUtils
-val mediationUtils = MaxMediationRewardedUtils(maxRewardedAd)
-    
-// 3. Create MediationRewardedVideoAdUnit
-adUnit = MediationRewardedVideoAdUnit(
-            activity,
-            SILVERMOB_SDK_AD_UNIT,
-            mediationUtils
-        )
-        
-// 4. Make a bid request
-adUnit?.fetchDemand {
-
-    // 5. Make an ad request to MAX
-    maxRewardedAd?.loadAd()
-}
-```
-
 
 ### Setup SilverMob SDK adapter in your Applovin account
 
@@ -209,7 +127,9 @@ Custom Network Name `SilverMob`, iOS Adapter Class Name `SilverMobMaxMediationAd
 *Note: don't leave iOS adapter name empty or adapter integration might not work.*
 
 
-3. Enable SilverMob network for your Ad Units: go to ad unit waterfall settings, scroll to **"Custom Networks"**, enable **SilverMob** and adjust settings accordingly. Wait around 60 minutes for Applovin to update Ad Unit and Network changes.
+3. Enable SilverMob network for your Ad Units: go to ad unit waterfall settings, scroll to **"Custom Networks"**, enable **SilverMob** and adjust settings accordingly.
+Add your **SilverMob ad unit id in "Placement ID"** for your placement. Supported ad types: **Banner, Interstitial, MREC, Rewarded.** Wait around 60 minutes for Applovin to update Ad Unit and Network changes.
+
 ![ad unit settings](https://files.silvermob.com/img/2024-02-02_14-39-29.png)
 *Note: mediation adapters don't work in Test Mode, be sure to disable it for testing mediation.*
 ## Acknowledgments
