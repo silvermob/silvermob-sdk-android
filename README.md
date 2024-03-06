@@ -130,7 +130,7 @@ Custom Network Name `SilverMob`, iOS Adapter Class Name `SilverMobMaxMediationAd
 3. Enable SilverMob network for your Ad Units: go to ad unit waterfall settings, scroll to **"Custom Networks"**, enable **SilverMob** and adjust settings accordingly.
 Add your **SilverMob ad unit id in "Placement ID"** for your placement. Supported ad types: **Banner, Interstitial, MREC, Rewarded.** Wait around 60 minutes for Applovin to update Ad Unit and Network changes.
 
-![ad unit settings](https://files.silvermob.com/img/2024-02-02_14-39-29.png)
+![ad unit settings](https://files.silvermob.com/img/2024-02-02_14-39-29-2.png)
 *Note: mediation adapters don't work in Test Mode, be sure to disable it for testing mediation.*
 ## Acknowledgments
 
