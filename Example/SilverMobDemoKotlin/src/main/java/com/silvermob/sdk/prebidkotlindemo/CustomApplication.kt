@@ -66,6 +66,7 @@ class CustomApplication : Application() {
         AppLovinSdk.getInstance(this).mediationProvider = "max"
         AppLovinSdk.getInstance(this).initializeSdk { }
         AppLovinSdk.getInstance(this).settings.setVerboseLogging(true)
+
     }
 
 }

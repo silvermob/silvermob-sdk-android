@@ -16,6 +16,7 @@
 
 package com.silvermob.sdk.api.rendering;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.util.Log;
@@ -37,6 +38,7 @@ import com.silvermob.sdk.rendering.views.AdViewManagerListener;
 import com.silvermob.sdk.rendering.views.base.BaseAdView;
 import com.silvermob.sdk.rendering.views.interstitial.InterstitialVideo;
 
+import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.List;
 
@@ -155,25 +157,36 @@ public class InterstitialView extends BaseAdView {
         }
     }
 
-    public void showAsInterstitialFromRoot() {
+    public void showAsInterstitialFromRoot(Context activity) {
         try {
+            adViewManager.contextReference = new WeakReference<>(activity);
             interstitialManager.configureInterstitialProperties(adViewManager.getAdConfiguration());
-            interstitialManager.displayAdViewInInterstitial(getContext(), InterstitialView.this);
+            interstitialManager.displayAdViewInInterstitial(activity, InterstitialView.this);
         } catch (final Exception e) {
             LogUtil.error(TAG, "Interstitial failed to show:" + Log.getStackTraceString(e));
             notifyErrorListeners(new AdException(AdException.INTERNAL_ERROR, e.getMessage()));
         }
     }
 
+    public void showAsInterstitialFromRoot() {
+        showAsInterstitialFromRoot(getContext());
+    }
+
+
     public void showVideoAsInterstitial() {
+        showVideoAsInterstitial(getContext());
+    }
+
+    public void showVideoAsInterstitial(Context context) {
         try {
+            adViewManager.contextReference = new WeakReference<>(context);
             final AdUnitConfiguration adConfiguration = adViewManager.getAdConfiguration();
             interstitialManager.configureInterstitialProperties(adConfiguration);
             interstitialVideo = new InterstitialVideo(
-                getContext(),
-                InterstitialView.this,
-                interstitialManager,
-                adConfiguration
+                    context,
+                    InterstitialView.this,
+                    interstitialManager,
+                    adConfiguration
             );
             interstitialVideo.setHasEndCard(adViewManager.hasNextCreative());
             interstitialVideo.setDialogListener(this::handleDialogEvent);

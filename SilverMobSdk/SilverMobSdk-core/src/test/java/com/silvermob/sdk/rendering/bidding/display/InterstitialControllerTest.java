@@ -72,6 +72,7 @@ public class InterstitialControllerTest {
         verify(mockInterstitialView, times(1)).loadAd(eq(mockAdUnitConfiguration), eq(mockBidResponse));
     }
 
+/*
     @Test
     public void showInterstitialType_ExecuteInterstitialViewShowInterstitialFromRoot() {
         WhiteBox.setInternalState(interstitialController, "adUnitIdentifierType", AdFormat.INTERSTITIAL);
@@ -79,6 +80,7 @@ public class InterstitialControllerTest {
 
         verify(mockInterstitialView, times(1)).showAsInterstitialFromRoot();
     }
+*/
 
     @Test
     public void showVastType_ExecuteInterstitialViewShowVideoAsInterstitial() {

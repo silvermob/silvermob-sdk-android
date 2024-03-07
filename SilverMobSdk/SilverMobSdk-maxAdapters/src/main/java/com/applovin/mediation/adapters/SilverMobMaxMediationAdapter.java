@@ -182,7 +182,8 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
             Activity activity,
             MaxInterstitialAdapterListener maxListener
     ) {
-        maxInterstitialManager.showAd();
+
+        maxInterstitialManager.showAd(activity);
     }
 
 
@@ -192,7 +193,7 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
             Activity activity,
             MaxRewardedAdapterListener maxListener
     ) {
-        maxInterstitialManager.showAd();
+        maxInterstitialManager.showAd(activity);
     }
 
 

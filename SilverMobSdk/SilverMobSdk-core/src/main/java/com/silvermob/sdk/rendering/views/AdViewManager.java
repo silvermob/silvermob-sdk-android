@@ -58,7 +58,7 @@ public class AdViewManager implements CreativeViewListener, TransactionManagerLi
 
     private AdUnitConfiguration adConfiguration = new AdUnitConfiguration();
     private TransactionManager transactionManager;
-    private WeakReference<Context> contextReference;
+    public WeakReference<Context> contextReference;
     private ViewGroup adView;
     private AdViewManagerListener adViewListener;
     private AbstractCreative currentCreative;

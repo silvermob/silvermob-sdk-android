@@ -70,7 +70,7 @@ public class MaxInterstitialManager {
         });
     }
 
-    public void showAd() {
+    public void showAd(Activity activity) {
         if (interstitialController == null) {
             MaxAdapterError error = new MaxAdapterError(2010, "InterstitialController is null");
             if (isRewarded) {
@@ -86,7 +86,7 @@ public class MaxInterstitialManager {
             }
             return;
         }
-        interstitialController.show();
+        interstitialController.show(activity);
     }
 
     public void destroy() {

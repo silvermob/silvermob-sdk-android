@@ -16,6 +16,7 @@
 
 package com.silvermob.sdk.rendering.bidding.display;
 
+import android.app.Activity;
 import android.content.Context;
 
 import com.silvermob.sdk.LogUtil;
@@ -136,6 +137,27 @@ public class InterstitialController implements PrebidMobileInterstitialControlle
         loadAd(adUnitConfiguration, bidResponse);
     }
 
+    public void show(Activity activity) {
+        if (adUnitIdentifierType == null) {
+            LogUtil.error(TAG, "show: Failed. AdUnitIdentifierType is not defined!");
+            return;
+        }
+
+        switch (adUnitIdentifierType) {
+            case INTERSTITIAL:
+                bidInterstitialView.showAsInterstitialFromRoot(activity);
+                break;
+            case VAST:
+                bidInterstitialView.showVideoAsInterstitial(activity);
+                break;
+            default:
+                LogUtil.error(TAG, "show: Failed. Did you specify correct AdUnitConfigurationType? "
+                    + "Supported types: VAST, INTERSTITIAL. "
+                    + "Provided type: " + adUnitIdentifierType
+                );
+        }
+    }
+
     public void show() {
         if (adUnitIdentifierType == null) {
             LogUtil.error(TAG, "show: Failed. AdUnitIdentifierType is not defined!");
@@ -151,11 +173,12 @@ public class InterstitialController implements PrebidMobileInterstitialControlle
                 break;
             default:
                 LogUtil.error(TAG, "show: Failed. Did you specify correct AdUnitConfigurationType? "
-                    + "Supported types: VAST, INTERSTITIAL. "
-                    + "Provided type: " + adUnitIdentifierType
+                        + "Supported types: VAST, INTERSTITIAL. "
+                        + "Provided type: " + adUnitIdentifierType
                 );
         }
     }
+
 
     public void destroy() {
         bidInterstitialView.destroy();
