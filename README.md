@@ -29,7 +29,7 @@ allprojects {
 ```
 App module build.gradle:
 ```groovy
-implementation("com.silvermob:silvermob-sdk:2.2.5")
+implementation("com.silvermob:silvermob-sdk:2.2.6")
 ```
 ### Initialize SDK in your app initialization code
 ```kotlin
@@ -111,7 +111,7 @@ This guide assumes you already have [Applovin MAX SDK](https://dash.applovin.com
 ### Integrate SilverMob Adapters
 
 ```groovy
-implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.5")
+implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.6")
 ```
 
 ### Setup SilverMob SDK adapter in your Applovin account
