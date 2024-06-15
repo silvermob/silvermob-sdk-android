@@ -33,6 +33,8 @@ public class Imp extends BaseBid {
     public Banner banner = null;
     public Video video = null;
     public Pmp pmp = null;
+
+    public Double bidfloor = null;
     public Native nativeObj;
     private Ext ext = null;
 
@@ -48,6 +50,7 @@ public class Imp extends BaseBid {
         toJSON(jsonObject, "instl", instl);
         toJSON(jsonObject, "tagid", tagid);
         toJSON(jsonObject, "clickbrowser", clickBrowser);
+        toJSON(jsonObject, "bidfloor", bidfloor);
 
         toJSON(jsonObject, "secure", secure);
 

@@ -18,6 +18,7 @@ package com.silvermob.sdk.prebidkotlindemo.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -28,6 +29,10 @@ import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.ads.MobileAds
+import com.google.android.ump.ConsentForm
+import com.google.android.ump.ConsentInformation
+import com.google.android.ump.ConsentRequestParameters
+import com.google.android.ump.UserMessagingPlatform
 import com.silvermob.sdk.prebidkotlindemo.R
 import com.silvermob.sdk.prebidkotlindemo.databinding.ActivityMainBinding
 import com.silvermob.sdk.prebidkotlindemo.testcases.AdFormat
@@ -45,6 +50,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var testCaseAdapter: TestCaseAdapter
+    private lateinit var consentInformation: ConsentInformation
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +62,36 @@ class MainActivity : AppCompatActivity() {
         initList()
 
         com.silvermob.sdk.SilverMob.checkGoogleMobileAdsCompatibility(MobileAds.getVersion().toString())
+
+
+        // Create a ConsentRequestParameters object.
+        val params = ConsentRequestParameters
+            .Builder()
+            .build()
+
+        consentInformation = UserMessagingPlatform.getConsentInformation(this)
+        consentInformation.requestConsentInfoUpdate(
+            this,
+            params,
+            ConsentInformation.OnConsentInfoUpdateSuccessListener {
+                UserMessagingPlatform.loadAndShowConsentFormIfRequired(
+                    this@MainActivity,
+                    ConsentForm.OnConsentFormDismissedListener {
+                            loadAndShowError ->
+                        if (loadAndShowError != null) {
+                            // Consent gathering failed.
+                            Log.w("CONSENT", "${loadAndShowError.errorCode}: ${loadAndShowError.message}")
+                        }
+
+                        // Consent has been gathered.
+                    }
+                )
+            },
+            ConsentInformation.OnConsentInfoUpdateFailureListener {
+                    requestConsentError ->
+                // Consent gathering failed.
+                Log.w("CONSENT", "${requestConsentError.errorCode}: ${requestConsentError.message}")
+            })
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

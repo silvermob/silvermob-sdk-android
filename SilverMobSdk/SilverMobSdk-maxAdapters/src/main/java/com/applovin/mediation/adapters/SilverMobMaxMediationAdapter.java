@@ -3,6 +3,7 @@ package com.applovin.mediation.adapters;
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Looper;
+import android.text.TextUtils;
 
 import com.applovin.mediation.MaxAdFormat;
 import com.applovin.mediation.adapter.MaxAdViewAdapter;
@@ -69,6 +70,12 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
                     return;
                 }
 
+                //String accountId = parameters.getServerParameters().getString( "app_id", "default" );
+                //SilverMob.setServerAccountId(accountId);
+                if(SilverMob.getPrebidServerAccountId() == null || TextUtils.isEmpty(SilverMob.getPrebidServerAccountId())){
+                    SilverMob.setServerAccountId("default");
+                }
+
                 SilverMob.initializeSdk(activity.getApplicationContext(), status -> {
                     if (onCompletionListener != null) {
                         if (status != com.silvermob.sdk.api.data.InitializationStatus.FAILED) {
@@ -83,6 +90,13 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
 
             onCompletionListener.onCompletion(InitializationStatus.INITIALIZING, null);
         }
+    }
+
+    private double extractBidFloor(MaxAdapterResponseParameters parameters){
+        double bidFloor = parameters.getCustomParameters().getDouble("floor_price",-1);
+        if(bidFloor!= -1) return bidFloor;
+        bidFloor = parameters.getCustomParameters().getInt("floor_price",-1);
+        return bidFloor;
     }
 
     @Override
@@ -102,6 +116,7 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
             @Override
             public boolean canPerformRefresh() {return true;}
         };
+
         AppLovinSdkUtils.Size size = maxAdFormat.getSize();
         bannerAdUnit = new MediationBannerAdUnit(
                 activity,
@@ -109,6 +124,12 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
                 new AdSize(size.getWidth(), size.getHeight()),
                 mediationUtils
         );
+
+        double bidFloor = extractBidFloor(parameters);
+        if(bidFloor!= -1){
+            bannerAdUnit.getConfiguration().setBidFloor(bidFloor);
+        }
+
         bannerAdUnit.fetchDemand(result -> {
             maxBannerManager = new MaxBannerManager();
             maxBannerManager.loadAd(parameters, maxAdFormat, activity, listener,responseId);
@@ -139,6 +160,12 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
                 adUnitFormats,
                 mediationUtils
         );
+
+        double bidFloor = extractBidFloor(parameters);
+        if(bidFloor!= -1){
+            interstitialAdUnit.getConfiguration().setBidFloor(bidFloor);
+        }
+
         interstitialAdUnit.setMinSizePercentage(1,1);
         interstitialAdUnit.fetchDemand(result -> {
             maxInterstitialManager = new MaxInterstitialManager();
@@ -169,6 +196,11 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
                 parameters.getThirdPartyAdPlacementId(),
                 mediationUtils
         );
+
+        double bidFloor = extractBidFloor(parameters);
+        if(bidFloor!= -1){
+            rewardedVideoAdUnit.getConfiguration().setBidFloor(bidFloor);
+        }
 
         rewardedVideoAdUnit.fetchDemand (result -> {
             maxInterstitialManager = new MaxInterstitialManager();

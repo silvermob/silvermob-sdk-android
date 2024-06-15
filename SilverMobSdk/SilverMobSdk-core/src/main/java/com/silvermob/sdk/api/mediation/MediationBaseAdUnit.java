@@ -50,6 +50,10 @@ public abstract class MediationBaseAdUnit {
     protected OnFetchCompleteListener onFetchCompleteListener;
     protected WeakReference<Context> contextWeakReference;
     protected AdUnitConfiguration adUnitConfig = new AdUnitConfiguration();
+
+    public AdUnitConfiguration getConfiguration(){
+        return adUnitConfig;
+    }
     protected PrebidMediationDelegate mediationDelegate;
     protected BidLoader bidLoader;
 

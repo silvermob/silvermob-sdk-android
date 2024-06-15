@@ -78,6 +78,15 @@ public class AdUnitConfiguration {
     @NonNull
     private Set<String> extKeywordsSet = new HashSet<>();
 
+    public Double bidFloor = null;
+
+    public void setBidFloor(Double bidFloor){
+        this.bidFloor = bidFloor;
+    }
+
+    public Double getBidFloor(){
+        return bidFloor;
+    }
 
     public void modifyUsingBidResponse(@Nullable BidResponse bidResponse) {
         if (bidResponse != null) {

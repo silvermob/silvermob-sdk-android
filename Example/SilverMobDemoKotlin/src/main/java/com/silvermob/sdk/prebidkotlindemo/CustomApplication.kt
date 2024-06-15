@@ -22,6 +22,7 @@ import com.applovin.sdk.AppLovinSdk
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.RequestConfiguration
 import com.silvermob.sdk.SilverMob
+import com.silvermob.sdk.TargetingParams
 import com.silvermob.sdk.api.data.InitializationStatus
 import com.silvermob.sdk.prebidkotlindemo.utils.Settings
 
@@ -33,7 +34,7 @@ class CustomApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        initSilverMobSdk()
+        //initSilverMobSdk()
         initAdMob()
         initApplovinMax()
         Settings.init(this)

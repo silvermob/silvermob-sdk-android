@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    setCompileSdkVersion(33)
+    setCompileSdkVersion(34)
     setBuildToolsVersion("30.0.3")
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
         versionName "1.0.0"
@@ -44,6 +44,9 @@ dependencies {
     implementation 'androidx.preference:preference-ktx:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+
+    implementation("com.google.android.ump:user-messaging-platform:2.2.0")
+
 
     // Advertisement
     implementation 'com.google.android.gms:play-services-ads:+'

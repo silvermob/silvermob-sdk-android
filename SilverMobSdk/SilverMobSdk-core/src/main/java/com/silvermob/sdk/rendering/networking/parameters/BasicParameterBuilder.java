@@ -398,6 +398,9 @@ public class BasicParameterBuilder extends ParameterBuilder {
             imp.getExt().put("keywords", string);
         }
 
+        if(adConfiguration.getBidFloor() != null){
+            imp.bidfloor = adConfiguration.getBidFloor();
+        }
         // TODO: 15.12.2020 uncomment when Prebid server will be able to process Ext content not related to bidders
         //imp.getExt().put(KEY_DEEPLINK_PLUS, 1);
     }
