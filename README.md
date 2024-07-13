@@ -3,19 +3,16 @@
 SilverMob Android SDK allows you to display SilverMob advertisement in your app.
 
 **Contents:**
-- [Add SDK to your project and initialize it](#add-sdk-to-your-project-and-initialize-it)
-    * [Integrate SilverMob](#integrate-silvermob)
-    * [Initialize SDK in your app initialization code](#initialize-sdk-in-your-app-initialization-code)
 - [Use SilverMob SDK standalone to display ads in your app](#use-silvermob-sdk-standalone-to-display-ads-in-your-app)
+  * [Integrate SilverMob](#integrate-silvermob)
+  * [Initialize SDK in your app initialization code](#initialize-sdk-in-your-app-initialization-code)
+  * [Setup banners](#setup-banners)
 - [Integrate SilverMob SDK with your existing Applovin MAX SDK](#integrate-silvermob-sdk-with-your-existing-applovin-max-sdk)
-    * [Integrate SilverMob Adapters](#integrate-silvermob-adapters)
-    * [Adjust banner integration](#adjust-banner-integration)
-    * [Setup SilverMob SDK adapter in your Applovin account](#setup-silvermob-sdk-adapter-in-your-applovin-account)
+  * [Integrate SilverMob SDK and SilverMob Adapters](#integrate-silvermob-sdk-and-silvermob-adapters)
+  * [Setup SilverMob SDK adapter in your Applovin account](#setup-silvermob-sdk-adapter-in-your-applovin-account)
 - [Acknowledgments](#acknowledgments)
 
-
-## Add SDK to your project and initialize it
-These steps are common for every integration.
+## Use SilverMob SDK standalone to display ads in your app
 ### Integrate SilverMob
 Root build.gradle
 ```groovy
@@ -44,8 +41,7 @@ implementation("com.silvermob:silvermob-sdk:2.2.6")
             }
         }
 ```
-
-## Use SilverMob SDK standalone to display ads in your app
+### Setup banners
 **Code for the small banner integration:**
 ```kotlin
 // 1. Create an Ad View
@@ -106,11 +102,10 @@ adUnit?.loadAd()
 ## Integrate SilverMob SDK with your existing Applovin MAX SDK
 This guide assumes you already have [Applovin MAX SDK](https://dash.applovin.com/documentation/mediation/android/getting-started/integration) correctly integrated. 
 
-*Don't forget to integrate and initialize SilverMob SDK as shown [here](#initialize-sdk-in-your-app-initialization-code).*
-
-### Integrate SilverMob Adapters
+### Integrate SilverMob SDK and SilverMob Adapters
 
 ```groovy
+implementation("com.silvermob:silvermob-sdk:2.2.6")
 implementation("com.silvermob:silvermob-sdk-max-adapters:2.2.6")
 ```
 
