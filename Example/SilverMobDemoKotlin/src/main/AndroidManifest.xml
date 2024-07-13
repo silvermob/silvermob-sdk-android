@@ -168,6 +168,9 @@
             android:name="com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner320x50Activity"
             android:exported="true" />
         <activity
+            android:name="com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner728x90Activity"
+            android:exported="true" />
+        <activity
             android:name="com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner300x250Activity"
             android:exported="true" />
         <activity

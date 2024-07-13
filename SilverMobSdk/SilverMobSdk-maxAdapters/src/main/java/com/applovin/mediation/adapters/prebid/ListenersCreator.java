@@ -1,6 +1,7 @@
 package com.applovin.mediation.adapters.prebid;
 
 import com.applovin.impl.mediation.MaxRewardImpl;
+import com.applovin.mediation.MaxErrorCode;
 import com.applovin.mediation.adapter.MaxAdapterError;
 import com.applovin.mediation.adapter.listeners.MaxAdViewAdapterListener;
 import com.applovin.mediation.adapter.listeners.MaxInterstitialAdapterListener;
@@ -28,7 +29,7 @@ public class ListenersCreator {
 
             @Override
             public void onAdFailed(AdException exception) {
-                maxListener.onAdViewAdDisplayFailed(new MaxAdapterError(2001, "Ad failed: " + exception.getMessage()));
+                maxListener.onAdViewAdLoadFailed(new MaxAdapterError(/*2001*/MaxErrorCode.NO_FILL, "Ad failed: " + exception.getMessage()));
             }
 
             @Override
