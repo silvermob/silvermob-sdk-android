@@ -8,7 +8,6 @@ import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobVideoInterst
 import com.silvermob.sdk.prebidkotlindemo.activities.ads.admob.AdMobVideoRewardedActivity
 import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner300x250Activity
 import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner320x50Activity
-import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayBanner728x90Activity
 import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxDisplayInterstitialActivity
 import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxNativeActivity
 import com.silvermob.sdk.prebidkotlindemo.activities.ads.applovin.AppLovinMaxVideoRewardedActivity
@@ -279,12 +278,6 @@ object TestCaseRepository {
             AdFormat.DISPLAY_BANNER,
             IntegrationKind.MAX,
             AppLovinMaxDisplayBanner320x50Activity::class.java,
-        ),
-        TestCase(
-            R.string.app_lovin_max_display_banner_728x90,
-            AdFormat.DISPLAY_BANNER,
-            IntegrationKind.MAX,
-            AppLovinMaxDisplayBanner728x90Activity::class.java,
         ),
         TestCase(
             R.string.app_lovin_max_display_banner_300x250,

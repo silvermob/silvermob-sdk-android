@@ -348,9 +348,9 @@ public class SilverMob {
         }
 
         if (prebidVersionBigger) {
-            LogUtil.error("You should update GMA SDK version to " + SilverMob.TESTED_GOOGLE_SDK_VERSION + " version that was tested with Prebid SDK (current version " + googleAdsVersion + ")");
+            LogUtil.error("You should update GMA SDK version to " + SilverMob.TESTED_GOOGLE_SDK_VERSION + " version that was tested with SilverMob SDK (current version " + googleAdsVersion + ")");
         } else if (publisherVersionBigger) {
-            LogUtil.error("The current version of Prebid SDK is not validated with your version of GMA SDK " + googleAdsVersion + " (Prebid SDK tested on " + SilverMob.TESTED_GOOGLE_SDK_VERSION + "). Please update the Prebid SDK or post a ticket on the github.");
+            //LogUtil.error("The current version of Prebid SDK is not validated with your version of GMA SDK " + googleAdsVersion + " (Prebid SDK tested on " + SilverMob.TESTED_GOOGLE_SDK_VERSION + "). Please update the Prebid SDK or post a ticket on the github.");
         }
     }
 

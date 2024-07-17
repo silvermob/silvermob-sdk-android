@@ -43,6 +43,7 @@ public class MaxBannerManager {
         switch (maxAdFormat.getLabel()) {
             case "BANNER":
             case "MREC":
+            case "LEADER":
                 showBanner(activity, parameters, bidResponse);
                 break;
             default:

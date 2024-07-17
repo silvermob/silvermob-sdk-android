@@ -60,7 +60,6 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
             Activity activity,
             OnCompletionListener onCompletionListener
     ) {
-        setConsents(parameters);
         if (SilverMob.isSdkInitialized()) {
             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_SUCCESS, null);
         } else {
@@ -90,6 +89,7 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
 
             onCompletionListener.onCompletion(InitializationStatus.INITIALIZING, null);
         }
+        setConsents(parameters);
     }
 
     private double extractBidFloor(MaxAdapterResponseParameters parameters){
