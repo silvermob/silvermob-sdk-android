@@ -24,6 +24,7 @@ import com.applovin.sdk.AppLovinSdkUtils;
 import com.silvermob.sdk.SilverMob;
 import com.silvermob.sdk.TargetingParams;
 import com.silvermob.sdk.api.data.AdUnitFormat;
+import com.silvermob.sdk.api.data.InitializationStatus;
 import com.silvermob.sdk.api.mediation.MediationBannerAdUnit;
 import com.silvermob.sdk.AdSize;
 import com.silvermob.sdk.api.mediation.MediationInterstitialAdUnit;
@@ -77,9 +78,9 @@ public class SilverMobMaxMediationAdapter extends MediationAdapterBase implement
 
                 SilverMob.initializeSdk(activity.getApplicationContext(), status -> {
                     if (onCompletionListener != null) {
-                        if (status != com.silvermob.sdk.api.data.InitializationStatus.FAILED) {
+                        if (status == com.silvermob.sdk.api.data.InitializationStatus.SUCCEEDED) {
                             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_SUCCESS, null);
-                        } else {
+                        } else {//status FAILED or status SERVER_STATUS_WARNING
                             onCompletionListener.onCompletion(InitializationStatus.INITIALIZED_FAILURE, status.getDescription());
                         }
                     }

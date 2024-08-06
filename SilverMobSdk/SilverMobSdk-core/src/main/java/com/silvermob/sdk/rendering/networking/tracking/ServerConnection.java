@@ -16,6 +16,8 @@
 
 package com.silvermob.sdk.rendering.networking.tracking;
 
+import static com.silvermob.sdk.SilverMob.SDK_VERSION;
+
 import android.os.AsyncTask;
 
 import com.silvermob.sdk.rendering.networking.BaseNetworkTask;
@@ -42,6 +44,7 @@ public class ServerConnection {
         params.requestType = "GET";
         params.userAgent = AppInfoManager.getUserAgent();
         params.name = BaseNetworkTask.STATUS_TASK;
+        params.queryParams = "?ver=" + SDK_VERSION;
 
         networkTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, params);
     }
